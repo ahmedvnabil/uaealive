@@ -17,7 +17,7 @@
       "wheelchair": false,
       "audio": true
     },
-    "hero_image": "/images/pois/coffee-museum.svg",
+    "hero_image": "/images/pois/coffee-museum.jpg",
     "order": 1
   },
   {
@@ -38,7 +38,7 @@
       "wheelchair": true,
       "audio": true
     },
-    "hero_image": "/images/pois/smccu.svg",
+    "hero_image": "/images/pois/smccu.jpg",
     "order": 2
   },
   {
@@ -59,7 +59,7 @@
       "wheelchair": false,
       "audio": true
     },
-    "hero_image": "/images/pois/coins-museum.svg",
+    "hero_image": "/images/pois/coins-museum.jpg",
     "order": 3
   },
   {
@@ -80,7 +80,7 @@
       "wheelchair": true,
       "audio": true
     },
-    "hero_image": "/images/pois/xva-gallery.svg",
+    "hero_image": "/images/pois/xva-gallery.jpg",
     "order": 4
   },
   {
@@ -101,7 +101,7 @@
       "wheelchair": true,
       "audio": true
     },
-    "hero_image": "/images/pois/arabian-tea-house.svg",
+    "hero_image": "/images/pois/arabian-tea-house.jpg",
     "order": 5
   },
   {
@@ -122,7 +122,7 @@
       "wheelchair": false,
       "audio": true
     },
-    "hero_image": "/images/pois/majlis-gallery.svg",
+    "hero_image": "/images/pois/majlis-gallery.jpg",
     "order": 6
   },
   {
@@ -143,7 +143,7 @@
       "wheelchair": true,
       "audio": true
     },
-    "hero_image": "/images/pois/calligraphy-house.svg",
+    "hero_image": "/images/pois/calligraphy-house.jpg",
     "order": 7
   },
   {
@@ -227,7 +227,7 @@
       "wheelchair": true,
       "audio": true
     },
-    "hero_image": "/images/pois/art-alley.svg",
+    "hero_image": "/images/pois/art-alley.jpg",
     "order": 11
   },
   {
@@ -248,7 +248,7 @@
       "wheelchair": true,
       "audio": true
     },
-    "hero_image": "/images/pois/creek-edge.svg",
+    "hero_image": "/images/pois/creek-edge.jpg",
     "order": 12
   },
   {
@@ -269,7 +269,7 @@
       "wheelchair": true,
       "audio": true
     },
-    "hero_image": "/images/pois/bastakiah-nights.svg",
+    "hero_image": "/images/pois/bastakiah-nights.jpg",
     "order": 13
   },
   {
@@ -290,7 +290,7 @@
       "wheelchair": false,
       "audio": true
     },
-    "hero_image": "/images/pois/philately-house.svg",
+    "hero_image": "/images/pois/philately-house.jpg",
     "order": 14
   },
   {
@@ -311,7 +311,7 @@
       "wheelchair": true,
       "audio": true
     },
-    "hero_image": "/images/pois/heritage-sikka.svg",
+    "hero_image": "/images/pois/heritage-sikka.jpg",
     "order": 15
   },
   {
@@ -332,7 +332,7 @@
       "wheelchair": true,
       "audio": true
     },
-    "hero_image": "/images/pois/dubai-museum-fort.svg",
+    "hero_image": "/images/pois/dubai-museum-fort.jpg",
     "order": 16
   },
   {
@@ -353,7 +353,7 @@
       "wheelchair": true,
       "audio": true
     },
-    "hero_image": "/images/pois/sheikh-saeed-house.svg",
+    "hero_image": "/images/pois/sheikh-saeed-house.jpg",
     "order": 17
   }
 ]

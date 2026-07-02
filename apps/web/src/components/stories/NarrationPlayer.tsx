@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Pause, Play, Square, Volume2 } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -47,34 +47,50 @@ export interface NarrationPlayerProps {
   /** Full text to narrate (story title + body). */
   text: string;
   locale: Locale;
+  /** Pre-rendered narration MP3 — preferred over speech synthesis when set. */
+  audioSrc?: string;
   className?: string;
 }
 
 /**
- * Web Speech narration controls (play / pause / stop) with an animated
- * equalizer while speaking. Renders nothing when the browser has no
- * usable speech synthesis or voices.
+ * Narration controls (play / pause / stop) with an animated equalizer.
+ * Plays a pre-rendered MP3 when `audioSrc` is given (falling back to Web
+ * Speech if it fails to load); otherwise uses speech synthesis. Renders
+ * nothing when neither engine is usable.
  */
-export function NarrationPlayer({ text, locale, className }: NarrationPlayerProps) {
+export function NarrationPlayer({ text, locale, audioSrc, className }: NarrationPlayerProps) {
   const t = useTranslations("stories");
   const [status, setStatus] = useState<Status>("idle");
   const [supported, setSupported] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  // Which engine the current playback runs on (audio survives a mid-play
+  // fallback; speech pause/stop must not touch a dead audio element).
+  const engineRef = useRef<"audio" | "speech">("speech");
+
+  const stopAudio = () => {
+    audioRef.current?.pause();
+    audioRef.current = null;
+  };
 
   useEffect(() => {
-    setSupported(isNarrationSupported());
-    return () => stopNarration();
-  }, []);
+    setSupported(Boolean(audioSrc) || isNarrationSupported());
+    return () => {
+      stopNarration();
+      stopAudio();
+    };
+  }, [audioSrc]);
 
-  // Switching audience (new text) invalidates the current utterance.
+  // Switching audience (new text/source) invalidates the current playback.
   useEffect(() => {
     stopNarration();
+    stopAudio();
     setStatus("idle");
-  }, [text]);
+  }, [text, audioSrc]);
 
   if (!supported) return null;
 
-  const play = async () => {
-    setStatus("playing");
+  const playSpeech = async () => {
+    engineRef.current = "speech";
     const started = await narrate(text, locale, {
       onEnd: () => setStatus("idle"),
       onError: () => setStatus("idle"),
@@ -86,18 +102,44 @@ export function NarrationPlayer({ text, locale, className }: NarrationPlayerProp
     }
   };
 
+  const play = async () => {
+    setStatus("playing");
+    if (!audioSrc) {
+      await playSpeech();
+      return;
+    }
+    engineRef.current = "audio";
+    const el = new Audio(audioSrc);
+    audioRef.current = el;
+    el.onended = () => setStatus("idle");
+    el.onerror = () => {
+      // Missing/corrupt file — degrade to speech synthesis mid-flight.
+      audioRef.current = null;
+      void playSpeech();
+    };
+    try {
+      await el.play();
+    } catch {
+      audioRef.current = null;
+      await playSpeech();
+    }
+  };
+
   const pause = () => {
-    window.speechSynthesis.pause();
+    if (engineRef.current === "audio") audioRef.current?.pause();
+    else window.speechSynthesis.pause();
     setStatus("paused");
   };
 
   const resume = () => {
-    window.speechSynthesis.resume();
+    if (engineRef.current === "audio") void audioRef.current?.play();
+    else window.speechSynthesis.resume();
     setStatus("playing");
   };
 
   const stop = () => {
     stopNarration();
+    stopAudio();
     setStatus("idle");
   };
 

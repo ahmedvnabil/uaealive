@@ -7,6 +7,7 @@ import { Link } from "@/i18n/routing";
 import { Badge } from "@/components/ui/Badge";
 import { buttonClasses } from "@/components/ui/Button";
 import { track } from "@/lib/api";
+import { narrationAudioSrc } from "@/lib/narrationManifest";
 import type { Audience, Locale, PoiDetailOut, PoiOut } from "@/lib/types";
 import { pickLocale } from "@/lib/utils";
 import { AudienceToggle } from "./AudienceToggle";
@@ -130,6 +131,7 @@ export function StoryDetail({ poi, prev, next }: StoryDetailProps) {
             <NarrationPlayer
               text={`${storyTitle}. ${pickLocale(story.body, locale)}`}
               locale={locale}
+              audioSrc={narrationAudioSrc(poi.slug, locale, audience)}
               className="mt-5"
             />
             <h2 className="mt-10 text-2xl font-bold sm:text-3xl">{storyTitle}</h2>
