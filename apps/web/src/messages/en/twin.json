@@ -1,3 +1,29 @@
 {
-  "title": "Digital Twin"
+  "title": "Digital Twin",
+  "kicker": "Travel through time",
+  "intro": "A living 3D model of Al Fahidi, built from the district's real building footprints and wind towers. Slide between eras and watch the quarter transform from the age of pearl diving to the present day.",
+  "loading": "Building the digital twin…",
+  "error": "Could not load the district data. Check your connection and try again.",
+  "retry": "Try again",
+  "webglFallback": "Your browser does not support 3D scenes — try a newer browser.",
+  "sceneLabel": "3D scene of the Al Fahidi Historical District with its buildings, wind towers and Dubai Creek",
+  "hint": "Click a golden building to discover its story, and drag to wander through the district.",
+  "eraLegend": "Choose an era",
+  "eraToday": "Today",
+  "flyTo": "Fly to a landmark",
+  "info": {
+    "openStory": "Open the story",
+    "close": "Close card",
+    "builtIn": "Built in {era}"
+  },
+  "kinds": {
+    "museum": "Museum",
+    "gallery": "Art gallery",
+    "cafe": "Café",
+    "house": "Heritage house",
+    "mosque": "Mosque",
+    "landmark": "Landmark",
+    "alley": "Sikka",
+    "viewpoint": "Viewpoint"
+  }
 }
