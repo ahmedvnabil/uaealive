@@ -1,3 +1,58 @@
 {
-  "title": "Treasure Hunt"
+  "meta": {
+    "title": "Treasure Hunt",
+    "description": "Chase hidden codes through the lanes of historic Al Fahidi: follow the hints, check in at real places, and collect badges"
+  },
+  "header": {
+    "kicker": "Explore & play",
+    "title": "Treasure Hunt",
+    "intro": "Hidden codes wait at real spots between the sikkas of Al Fahidi. Read each hint, find the stop in the district, then enter the code you discover there to check in and earn badges."
+  },
+  "progress": {
+    "label": "Hunt progress",
+    "summary": "{found, plural, =0 {No stops discovered yet — your first hint is waiting} other {You discovered {foundText} of {totalText} stops}}",
+    "complete": "Hunt complete! You walked the quarter lane by lane and gathered every code — you are now a keeper of Al Fahidi's memory."
+  },
+  "stops": {
+    "title": "The stops",
+    "stopNumber": "Stop {number}",
+    "foundChip": "Discovered",
+    "arrivedCta": "I'm here! Enter the code",
+    "hideEntry": "Hide code entry",
+    "showOnMap": "Show on map"
+  },
+  "code": {
+    "label": "Code for “{title}”",
+    "charLabel": "Character {position} of {total}",
+    "hint": "The code is six Latin letters and digits, written at the stop itself.",
+    "submit": "Check the code",
+    "checking": "Checking…",
+    "wrong": "That code isn't right — double-check what you found at the stop and try again.",
+    "failed": "Couldn't verify right now — check your connection and try again shortly.",
+    "correct": "Correct! Your check-in at “{name}” is recorded.",
+    "continue": "Continue"
+  },
+  "map": {
+    "title": "Stops map",
+    "markerPending": "Stop {number}: {name} — not discovered yet",
+    "markerFound": "Stop {number}: {name} — discovered",
+    "legendFound": "Discovered",
+    "legendPending": "Not yet",
+    "loading": "Loading the map…"
+  },
+  "badges": {
+    "title": "Badge shelf",
+    "count": "{count, plural, =0 {No badges yet} one {# badge} other {# badges}}",
+    "empty": "Your shelf is still empty — discover your first stop to earn your first badge.",
+    "threshold": "{count, plural, one {Awarded at # stop} other {Awarded at # stops}}",
+    "modal": {
+      "title": "New badge!",
+      "subtitle": "Added to your shelf — keep the hunt going to collect the rest.",
+      "continue": "Continue the hunt"
+    }
+  },
+  "state": {
+    "loading": "Loading the hunt…",
+    "error": "Couldn't load the hunt stops. Make sure the server is running, then retry."
+  }
 }
