@@ -1,0 +1,1 @@
+"""UAE ALIVE API package."""
