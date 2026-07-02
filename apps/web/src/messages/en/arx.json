@@ -1,3 +1,123 @@
 {
-  "title": "AR Experience"
+  "title": "AR Experience",
+  "meta": {
+    "description": "Browser WebAR over Al Fahidi: floating place labels, marker tracking, and then-and-now photo overlays — no app required."
+  },
+  "hero": {
+    "kicker": "WebAR — in the browser",
+    "headline": "Raise your phone. Watch the district breathe.",
+    "intro": "A digital layer over the alleys of Al Fahidi: place labels float around you, and old photographs of Dubai settle over the scene in front of you — all inside the browser, with nothing to install."
+  },
+  "modes": {
+    "heading": "Two ways in",
+    "live": {
+      "index": "01",
+      "title": "Live AR — camera",
+      "desc": "Your phone's camera and compass become a magic window: point the phone around the district and floating labels reveal what you are looking at. Scan the printed Al Fahidi marker to anchor a 3D wind tower and an old-photo alignment card.",
+      "note": "Best on a phone over HTTPS (localhost works for development).",
+      "unavailable": "Camera access is not available in this browser — open the simulator instead.",
+      "cta": "Start with the camera"
+    },
+    "sim": {
+      "index": "02",
+      "title": "Simulator — no camera",
+      "desc": "A panoramic sweep of the district with the same floating labels and info hotspots. Built for projectors, juries and desktops — the demo never depends on a camera.",
+      "note": "Works on any device: drag the scene, use the arrow keys, or the angle slider.",
+      "cta": "Open the simulator"
+    }
+  },
+  "how": {
+    "heading": "How it works",
+    "step1": "Pick a mode: the camera on your phone, or the simulator on any screen.",
+    "step2": "Allow camera and motion-sensor access when the browser asks.",
+    "step3": "Move your device — or drag the scene — to explore the floating labels and open their stories.",
+    "step4": "Print the Al Fahidi marker (or show it on a second screen) and scan it in live AR."
+  },
+  "marker": {
+    "heading": "The Al Fahidi marker",
+    "desc": "A high-contrast wind-tower glyph. Print it on A5/A4 paper or display it on another screen, then scan it in live AR to summon the 3D barjeel and the old-photo card.",
+    "alt": "Printable AR marker: a geometric black, white and gold wind-tower glyph",
+    "download": "Download the marker (PNG)",
+    "printHint": "Matte paper and even lighting track best."
+  },
+  "archive": {
+    "heading": "From the Dubai archive",
+    "desc": "Three public-domain photographs travel with the experience — blend them over the live scene with the before/after slider.",
+    "creek": "Dubai Creek, 1964",
+    "alras": "Al Ras, Deira — mid-1960s",
+    "sheikh": "Sheikh Saeed and Sheikh Juma Al Maktoum, 1950"
+  },
+  "credits": {
+    "heading": "Photo credits",
+    "body": "Historical photographs via Wikimedia Commons, public domain: “Dubai Creek 1964” and “Al Ras, Deira, mid-1960s” by Noor Ali; “Sheikh Saeed and Sheikh Juma Al Maktoum, 1950”, photographer unknown.",
+    "license": "Public domain"
+  },
+  "live": {
+    "title": "Live AR",
+    "starting": "Starting the camera…",
+    "cameraError": "Could not access the camera",
+    "cameraErrorHint": "Check the browser permission, make sure the page is served over HTTPS, or switch to the simulator.",
+    "useSim": "Switch to the simulator",
+    "enableMotion": "Enable the motion sensor",
+    "motionHint": "iOS asks for permission before sharing the device orientation.",
+    "dragHint": "No compass? Drag the scene to look around.",
+    "compass": "Heading",
+    "photoToggle": "Then / now",
+    "markerToggle": "Marker mode",
+    "exitMarker": "Back to the magic window",
+    "close": "Exit the experience",
+    "cameraLabel": "Live camera feed of your surroundings",
+    "cardinal": {
+      "n": "N",
+      "ne": "NE",
+      "e": "E",
+      "se": "SE",
+      "s": "S",
+      "sw": "SW",
+      "w": "W",
+      "nw": "NW"
+    }
+  },
+  "marker3d": {
+    "title": "Marker tracking",
+    "loading": "Loading the tracking engine…",
+    "scan": "Point the camera at the printed Al Fahidi marker",
+    "missing": "The compiled marker target is not part of this build — download and print the marker for later, or keep exploring in magic-window mode.",
+    "failed": "The tracking engine failed to load — check the connection and try again.",
+    "download": "Download the marker"
+  },
+  "sim": {
+    "title": "District simulator",
+    "hint": "Drag the scene — or use the slider — to look around.",
+    "headingLabel": "View angle",
+    "panoramaMissing": "The panoramic backdrop is unavailable — the labels still work.",
+    "backdropAlt": "Stylized panorama of the Al Fahidi skyline with wind towers",
+    "close": "Exit the simulator"
+  },
+  "labels": {
+    "empty": "Could not load the places from the server — the scene stays navigable; try again later.",
+    "distance": "{m} m",
+    "kinds": {
+      "museum": "Museum",
+      "gallery": "Gallery",
+      "cafe": "Café",
+      "house": "House",
+      "mosque": "Mosque",
+      "alley": "Alley",
+      "landmark": "Landmark",
+      "viewpoint": "Viewpoint"
+    },
+    "story": "Read the story",
+    "map": "View on the map",
+    "close": "Close",
+    "listLabel": "Places around you"
+  },
+  "overlay": {
+    "title": "Before / after",
+    "before": "Before",
+    "after": "After",
+    "handle": "Comparison slider",
+    "choose": "Choose a photograph",
+    "close": "Close the comparison"
+  }
 }
