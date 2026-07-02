@@ -29,6 +29,9 @@ services:
       AI_MODEL_COPILOT: ${AI_MODEL_COPILOT:-claude-account-sonnet-4-6}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD:-change-me}
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080}
+      DATA_DIR: /srv/data
+    volumes:
+      - ../data:/srv/data:ro
     ports:
       - "8000:8000"
     depends_on:
@@ -39,8 +42,9 @@ services:
     build:
       context: ../apps/web
       dockerfile: Dockerfile
-    environment:
-      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8080}
+      args:
+        # Baked into the client bundle — must be the browser-visible origin.
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8080}
     ports:
       - "3000:3000"
     depends_on:
