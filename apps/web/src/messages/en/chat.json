@@ -1,3 +1,61 @@
 {
-  "title": "Characters Who Tell"
+  "meta": {
+    "title": "Characters Who Tell",
+    "description": "Talk with characters from Al Fahidi's past — a pearl diver, a textile merchant, a master builder, an Emirati grandmother, and a contemporary historian"
+  },
+  "header": {
+    "kicker": "The Neighbourhood Majlis",
+    "title": "Characters Who Tell",
+    "intro": "Five voices from the district's memory sit in the majlis, waiting for your questions. Pick whoever you like and ask about diving and pearls, the souq and its caravans, wind towers and coral-stone houses, or the tales of an Emirati home — each answers in their own voice and spirit."
+  },
+  "grid": {
+    "startChat": "Start talking",
+    "listLabel": "Character list",
+    "loading": "Summoning the characters…",
+    "empty": "Could not load the characters",
+    "emptyHint": "Check your connection, then try again."
+  },
+  "panel": {
+    "conversationWith": "Conversation with {name}",
+    "you": "You",
+    "suggestionsLabel": "Questions to open the talk",
+    "placeholder": "Type your question here…",
+    "inputLabel": "Your message to {name}",
+    "hint": "Enter to send — Shift+Enter for a new line",
+    "send": "Send",
+    "typing": "Recalling an answer…",
+    "offline": "Offline mode",
+    "offlineHint": "Answered from kept memory — the live guide is unreachable right now",
+    "error": "The message could not be sent. Check your connection and try again.",
+    "retry": "Try again",
+    "backToAll": "All characters",
+    "switchTo": "Talk with {name}"
+  },
+  "suggestions": {
+    "pearl-diver": {
+      "q1": "What was a pearl-diving voyage like?",
+      "q2": "What did you eat aboard the dhow?",
+      "q3": "Why did the age of pearls end?"
+    },
+    "textile-merchant": {
+      "q1": "What do you sell in your shop?",
+      "q2": "Where do the goods reaching Dubai come from?",
+      "q3": "What was the souq by the creek like?"
+    },
+    "master-builder": {
+      "q1": "How does a barjeel cool a house without electricity?",
+      "q2": "What did you build the walls with?",
+      "q3": "How long does a heritage house take to build?"
+    },
+    "umm-rashid": {
+      "q1": "What are your favourite Eid dishes?",
+      "q2": "Tell me about coffee and the duty of hospitality",
+      "q3": "What were the neighbourhood nights like back then?"
+    },
+    "historian-guide": {
+      "q1": "What is Al Fahidi's story, and when was it built?",
+      "q2": "What is the difference between Al Fahidi and Bastakiya?",
+      "q3": "What should I see if I only have one hour?"
+    }
+  }
 }
