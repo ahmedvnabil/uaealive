@@ -1,0 +1,81 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="hsSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <pattern id="hsCoral" width="16" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1" fill="#0B0E14" opacity=".09"/>
+      <circle cx="12" cy="9" r="0.8" fill="#0B0E14" opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#hsSky)"/>
+  <!-- narrow slot of starry sky above the passage -->
+  <g fill="#E8DCC8">
+    <circle cx="366" cy="40" r="1.8" opacity=".8"/><circle cx="420" cy="70" r="1.3" opacity=".6"/>
+    <circle cx="390" cy="110" r="1.2" opacity=".5"/><circle cx="440" cy="30" r="1.5" opacity=".65"/>
+  </g>
+  <!-- towering left wall, two arm-spans wide passage -->
+  <path d="M0,0 H330 L360,500 H0 Z" fill="#D8C9AC"/>
+  <path d="M0,0 H330 L360,500 H0 Z" fill="url(#hsCoral)"/>
+  <!-- towering right wall -->
+  <path d="M800,0 H470 L440,500 H800 Z" fill="#E8DCC8"/>
+  <path d="M800,0 H470 L440,500 H800 Z" fill="url(#hsCoral)"/>
+  <!-- deep shadow edges -->
+  <path d="M330,0 L360,500 H310 L282,0 Z" fill="#0B0E14" opacity=".28"/>
+  <path d="M470,0 L440,500 H488 L516,0 Z" fill="#0B0E14" opacity=".18"/>
+  <!-- passage floor -->
+  <path d="M360,500 L378,190 H422 L440,500 Z" fill="#131826"/>
+  <path d="M360,500 L378,190 H422 L440,500 Z" fill="#0E1220"/>
+  <!-- studded teak door at the far end -->
+  <path d="M378,266 v-56 a22,22 0 0 1 44,0 v56 z" fill="#B0603E"/>
+  <path d="M400,210 v56" stroke="#0B0E14" stroke-width="2.4" opacity=".5"/>
+  <g fill="#E6C15A">
+    <circle cx="390" cy="228" r="1.8"/><circle cx="410" cy="228" r="1.8"/>
+    <circle cx="390" cy="244" r="1.8"/><circle cx="410" cy="244" r="1.8"/>
+  </g>
+  <path d="M378,266 v-56 a22,22 0 0 1 44,0 v56" fill="none" stroke="#C9A227" stroke-width="3"/>
+  <!-- warm lamp above the far door -->
+  <circle cx="400" cy="180" r="26" fill="#E6C15A" opacity=".16"/>
+  <rect x="395" y="172" width="10" height="14" fill="#E6C15A"/>
+  <!-- chandal beam ends protruding from walls -->
+  <g fill="#8C6239">
+    <ellipse cx="320" cy="130" rx="12" ry="8"/>
+    <ellipse cx="316" cy="200" rx="11" ry="7"/>
+    <ellipse cx="480" cy="130" rx="12" ry="8"/>
+    <ellipse cx="484" cy="200" rx="11" ry="7"/>
+  </g>
+  <!-- carved gypsum vent on right wall -->
+  <g transform="translate(640,280)">
+    <rect x="-50" y="-40" width="100" height="80" fill="none" stroke="#B0603E" stroke-width="4"/>
+    <g fill="none" stroke="#0B0E14" stroke-width="2.4" opacity=".35">
+      <circle r="26"/><circle r="13"/>
+      <path d="M-38,0 h76 M0,-30 v60"/>
+    </g>
+  </g>
+  <!-- recessed doorway in left wall -->
+  <path d="M120,470 v-130 a46,50 0 0 1 92,0 v130 z" fill="#131826"/>
+  <path d="M120,470 v-130 a46,50 0 0 1 92,0 v130 z" fill="none" stroke="#B0603E" stroke-width="5"/>
+  <g fill="#C9A227">
+    <circle cx="152" cy="380" r="2.6"/><circle cx="180" cy="380" r="2.6"/>
+    <circle cx="152" cy="410" r="2.6"/><circle cx="180" cy="410" r="2.6"/>
+  </g>
+  <!-- bougainvillea spilling over the right wall high up -->
+  <path d="M540,60 c40,26 60,60 62,96" stroke="#2E6E5E" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M560,54 c26,20 40,44 44,70" stroke="#2E6E5E" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <g fill="#B0603E">
+    <circle cx="588" cy="118" r="8"/><circle cx="604" cy="140" r="7"/><circle cx="576" cy="140" r="6"/>
+    <circle cx="598" cy="158" r="6"/><circle cx="614" cy="120" r="5.4"/>
+  </g>
+  <g fill="#E6C15A">
+    <circle cx="592" cy="132" r="2.6"/><circle cx="606" cy="148" r="2.4"/>
+  </g>
+  <!-- ground -->
+  <path d="M0,470 h800 v30 h-800 z" fill="#0E1220"/>
+  <!-- cat silhouette in the lane -->
+  <g fill="#131826">
+    <path d="M508,470 c0,-16 10,-26 24,-26 c14,0 24,10 24,26 z"/>
+    <circle cx="556" cy="436" r="10"/>
+    <path d="M549,430 l-3,-9 l8,4 z M563,430 l3,-9 l-8,4 z"/>
+    <path d="M508,466 c-10,-4 -14,-14 -10,-24" stroke="#131826" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

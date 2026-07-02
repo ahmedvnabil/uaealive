@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="chSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <radialGradient id="chGlow" cx=".5" cy=".45" r=".6">
+      <stop offset="0" stop-color="#C9A227" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#C9A227" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#chSky)"/>
+  <!-- arch frame opening into a quiet room -->
+  <rect x="60" y="50" width="680" height="400" fill="#E8DCC8"/>
+  <path d="M120,450 v-260 a280,270 0 0 1 560,0 v260 z" fill="#131826"/>
+  <path d="M120,450 v-260 a280,270 0 0 1 560,0 v260 z" fill="none" stroke="#C9A227" stroke-width="6"/>
+  <rect x="60" y="50" width="680" height="400" fill="none" stroke="#0B0E14" stroke-width="4" opacity=".3"/>
+  <ellipse cx="400" cy="250" rx="300" ry="200" fill="url(#chGlow)"/>
+  <!-- abstract calligraphic sweeps (non-letter flourishes) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M190,330 C260,200 350,180 430,220 C520,266 560,220 610,160"
+          stroke="#E6C15A" stroke-width="26"/>
+    <path d="M230,370 C320,330 360,350 420,310 C480,270 540,300 596,270"
+          stroke="#C9A227" stroke-width="12"/>
+    <path d="M300,160 C340,190 330,230 300,250" stroke="#E8DCC8" stroke-width="8" opacity=".8"/>
+  </g>
+  <!-- diacritic-like accents -->
+  <g fill="#E6C15A">
+    <circle cx="470" cy="170" r="9"/>
+    <circle cx="250" cy="270" r="7"/>
+    <path d="M540,340 l14,-24 l14,24 z"/>
+  </g>
+  <!-- ink drop tapering off the main sweep -->
+  <path d="M610,160 c14,-16 20,-34 18,-52 c10,16 10,40 -6,58 z" fill="#E6C15A"/>
+  <!-- low writing desk with qalam and inkwell -->
+  <rect y="450" width="800" height="50" fill="#0E1220"/>
+  <rect x="240" y="420" width="320" height="16" fill="#B0603E"/>
+  <rect x="256" y="436" width="16" height="30" fill="#8C4C31"/>
+  <rect x="528" y="436" width="16" height="30" fill="#8C4C31"/>
+  <!-- scroll on desk -->
+  <rect x="290" y="400" width="150" height="20" rx="9" fill="#E8DCC8"/>
+  <circle cx="290" cy="410" r="10" fill="#D8C9AC"/>
+  <circle cx="440" cy="410" r="10" fill="#D8C9AC"/>
+  <!-- qalam reed pen -->
+  <path d="M470,408 l82,-18 l12,4 l-6,8 l-84,14 z" fill="#C9A227"/>
+  <path d="M552,390 l14,-6 l-2,10 l-10,4 z" fill="#E8DCC8"/>
+  <!-- inkwell -->
+  <path d="M244,404 a14,14 0 0 1 28,0 v16 h-28 z" fill="#131826"/>
+  <ellipse cx="258" cy="404" rx="14" ry="5" fill="#C9A227"/>
+</svg>

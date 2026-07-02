@@ -1,0 +1,80 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="mgSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <pattern id="mgCoral" width="18" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1" fill="#0B0E14" opacity=".08"/>
+      <circle cx="14" cy="11" r="0.8" fill="#0B0E14" opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#mgSky)"/>
+  <g fill="#E8DCC8">
+    <circle cx="90" cy="50" r="1.8" opacity=".75"/><circle cx="700" cy="40" r="1.6" opacity=".65"/>
+    <circle cx="560" cy="80" r="1.2" opacity=".5"/>
+  </g>
+  <!-- wind tower rising behind courtyard -->
+  <g fill="#D8C9AC">
+    <rect x="600" y="70" width="110" height="180"/>
+    <rect x="590" y="64" width="16" height="22"/><rect x="704" y="64" width="16" height="22"/>
+    <rect x="648" y="46" width="14" height="26"/>
+  </g>
+  <g fill="#131826">
+    <rect x="614" y="84" width="16" height="52"/><rect x="636" y="84" width="16" height="52"/>
+    <rect x="658" y="84" width="16" height="52"/><rect x="680" y="84" width="16" height="52"/>
+  </g>
+  <path d="M614,110 h82" stroke="#D8C9AC" stroke-width="4"/>
+  <!-- courtyard walls -->
+  <rect x="40" y="180" width="720" height="260" fill="#E8DCC8"/>
+  <rect x="40" y="180" width="720" height="260" fill="url(#mgCoral)"/>
+  <!-- small framed works around courtyard -->
+  <g>
+    <rect x="80" y="220" width="64" height="82" fill="#131826"/>
+    <path d="M86,290 l22,-34 l16,18 l14,-24 v46 z" fill="#B0603E"/>
+    <rect x="80" y="220" width="64" height="82" fill="none" stroke="#C9A227" stroke-width="3.4"/>
+    <rect x="170" y="240" width="52" height="64" fill="#131826"/>
+    <circle cx="196" cy="272" r="16" fill="#2E6E5E"/>
+    <rect x="170" y="240" width="52" height="64" fill="none" stroke="#C9A227" stroke-width="3.4"/>
+    <rect x="600" y="290" width="70" height="54" fill="#131826"/>
+    <path d="M606,336 q18,-30 32,-8 q14,-22 26,-4 v10 h-58 z" fill="#E6C15A"/>
+    <rect x="600" y="290" width="70" height="54" fill="none" stroke="#C9A227" stroke-width="3.4"/>
+    <rect x="688" y="264" width="46" height="58" fill="#131826"/>
+    <path d="M694,314 c12,-32 26,-32 34,-44" stroke="#E8DCC8" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <rect x="688" y="264" width="46" height="58" fill="none" stroke="#C9A227" stroke-width="3.4"/>
+  </g>
+  <!-- ceramics on a low shelf -->
+  <rect x="560" y="404" width="200" height="10" fill="#D8C9AC"/>
+  <g fill="#B0603E">
+    <path d="M586,404 c-8,-22 0,-36 10,-40 c10,4 18,18 10,40 z"/>
+    <path d="M636,404 c-10,-18 -4,-32 12,-36 c16,4 22,18 12,36 z"/>
+  </g>
+  <path d="M700,404 c-6,-26 4,-38 14,-42 c10,4 20,16 14,42 z" fill="#2E6E5E"/>
+  <!-- ground -->
+  <rect y="440" width="800" height="60" fill="#0E1220"/>
+  <!-- flowering henna tree at center -->
+  <g>
+    <path d="M382,440 c6,-60 -10,-90 -18,-130 M382,440 c2,-70 18,-96 30,-140" stroke="#B0603E" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <g fill="#2E6E5E">
+      <circle cx="340" cy="270" r="52"/><circle cx="420" cy="240" r="60"/>
+      <circle cx="480" cy="292" r="44"/><circle cx="380" cy="300" r="46"/>
+      <circle cx="300" cy="312" r="34"/>
+    </g>
+    <g fill="#E6C15A">
+      <circle cx="352" cy="252" r="6"/><circle cx="408" cy="222" r="6"/><circle cx="452" cy="262" r="5.4"/>
+      <circle cx="386" cy="288" r="5.4"/><circle cx="318" cy="298" r="5"/><circle cx="470" cy="312" r="5"/>
+      <circle cx="432" cy="286" r="4.6"/>
+    </g>
+  </g>
+  <!-- fallen blossoms -->
+  <g fill="#E6C15A" opacity=".8">
+    <circle cx="360" cy="462" r="3.4"/><circle cx="418" cy="470" r="3"/><circle cx="392" cy="482" r="2.6"/>
+  </g>
+  <!-- easel with canvas -->
+  <g stroke="#D8C9AC" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M150,482 l34,-116 l34,116"/>
+    <path d="M184,366 v116"/>
+  </g>
+  <rect x="140" y="360" width="90" height="70" fill="#E8DCC8"/>
+  <path d="M148,420 q20,-36 44,-10 q16,-20 30,-2" stroke="#2E6E5E" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect x="140" y="360" width="90" height="70" fill="none" stroke="#C9A227" stroke-width="3.4"/>
+</svg>

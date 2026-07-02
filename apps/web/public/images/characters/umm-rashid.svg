@@ -1,0 +1,51 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <linearGradient id="urBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <clipPath id="urClip"><circle cx="200" cy="200" r="172"/></clipPath>
+  </defs>
+  <circle cx="200" cy="200" r="172" fill="url(#urBg)"/>
+  <g clip-path="url(#urClip)">
+    <g fill="#E8DCC8">
+      <circle cx="100" cy="90" r="1.6" opacity=".65"/><circle cx="300" cy="76" r="1.4" opacity=".55"/>
+      <circle cx="330" cy="150" r="1.2" opacity=".45"/>
+    </g>
+    <!-- lantern glow behind, evening storytelling -->
+    <circle cx="200" cy="210" r="130" fill="#E6C15A" opacity=".07"/>
+    <!-- abaya: full rounded silhouette -->
+    <path d="M62,400 c0-84 60-124 138-124 c78,0 138,40 138,124 z" fill="#222B41"/>
+    <!-- talli embroidered trim on the abaya edge -->
+    <path d="M76,400 c0-74 54-110 124-110 c70,0 124,36 124,110" fill="none" stroke="#C9A227" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"/>
+    <!-- sheila: soft rounded head covering draping to the shoulders -->
+    <path d="M200,96 c-56,0 -92,44 -92,102 c0,44 12,76 30,96 h124 c18,-20 30,-52 30,-96 c0,-58 -36,-102 -92,-102 z" fill="#1B2233"/>
+    <!-- face opening -->
+    <ellipse cx="200" cy="204" rx="52" ry="60" fill="#C9996B"/>
+    <!-- gold talli edge framing the face -->
+    <path d="M200,144 a52,60 0 0 0 -52,60 c0,24 8,42 20,52 M200,144 a52,60 0 0 1 52,60 c0,24 -8,42 -20,52" fill="none" stroke="#E6C15A" stroke-width="3.4" opacity=".9"/>
+    <!-- dallah and cup she is always offering -->
+    <g transform="translate(200,346)">
+      <g fill="#C9A227">
+        <path d="M-48,28 c-4,-26 4,-40 2,-56 c-2,-12 -1,-19 6,-25 h26 c7,6 8,13 6,25 c-2,16 6,30 2,56 z"/>
+        <path d="M-40,-56 l13,-11 l13,11 z"/>
+        <path d="M-52,-40 c-14,3 -20,14 -16,26 l8,-3 c-3,-8 2,-15 10,-18 z"/>
+        <path d="M-6,-44 c12,-7 14,-19 7,-26 l-6,18 z"/>
+        <circle cx="-27" cy="-70" r="4" fill="#E6C15A"/>
+      </g>
+      <path d="M30,28 a11,11 0 0 0 22,0 v-14 h-22 z" fill="#E8DCC8"/>
+      <path d="M32,14 h18" stroke="#C9A227" stroke-width="2.6"/>
+      <path d="M41,2 c-4,-8 4,-12 0,-20" stroke="#E8DCC8" stroke-width="2.6" fill="none" opacity=".6" stroke-linecap="round"/>
+    </g>
+    <!-- henna dots pattern at lower rim -->
+    <g fill="#B0603E">
+      <circle cx="96" cy="330" r="3.4"/><circle cx="110" cy="344" r="2.6"/><circle cx="88" cy="348" r="2.2"/>
+      <circle cx="304" cy="330" r="3.4"/><circle cx="290" cy="344" r="2.6"/><circle cx="312" cy="348" r="2.2"/>
+    </g>
+  </g>
+  <circle cx="200" cy="200" r="172" fill="none" stroke="#C9A227" stroke-width="6"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#C9A227" stroke-width="2" opacity=".5"/>
+  <g fill="#E6C15A">
+    <circle cx="200" cy="16" r="4"/><circle cx="200" cy="384" r="4"/>
+    <circle cx="16" cy="200" r="4"/><circle cx="384" cy="200" r="4"/>
+  </g>
+</svg>

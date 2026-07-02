@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="coSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <radialGradient id="coGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#E6C15A" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#E6C15A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#coSky)"/>
+  <!-- interior wall of coral-stone house -->
+  <rect x="40" y="40" width="720" height="400" fill="#1B2233"/>
+  <rect x="40" y="40" width="720" height="400" fill="none" stroke="#E8DCC8" stroke-width="6" opacity=".5"/>
+  <!-- arched niches -->
+  <g fill="#131826" stroke="#E8DCC8" stroke-width="3" opacity=".9">
+    <path d="M90,210 v-80 a40,44 0 0 1 80,0 v80 z"/>
+    <path d="M250,210 v-80 a40,44 0 0 1 80,0 v80 z"/>
+    <path d="M470,210 v-80 a40,44 0 0 1 80,0 v80 z"/>
+    <path d="M630,210 v-80 a40,44 0 0 1 80,0 v80 z"/>
+  </g>
+  <!-- small coins inside niches -->
+  <g>
+    <circle cx="130" cy="160" r="22" fill="#C9A227"/>
+    <circle cx="130" cy="160" r="14" fill="none" stroke="#0B0E14" stroke-width="2.5" opacity=".55"/>
+    <circle cx="290" cy="160" r="22" fill="#E8DCC8"/>
+    <path d="M282,152 l16,16 M298,152 l-16,16" stroke="#0B0E14" stroke-width="2.5" opacity=".5"/>
+    <circle cx="510" cy="160" r="22" fill="#E8DCC8"/>
+    <circle cx="510" cy="160" r="9" fill="none" stroke="#0B0E14" stroke-width="2.5" opacity=".5"/>
+    <circle cx="670" cy="160" r="22" fill="#C9A227"/>
+    <path d="M670,146 v28 M656,160 h28" stroke="#0B0E14" stroke-width="2.5" opacity=".5"/>
+  </g>
+  <!-- great central coin under magnifier -->
+  <ellipse cx="400" cy="300" rx="220" ry="150" fill="url(#coGlow)"/>
+  <circle cx="400" cy="300" r="104" fill="#C9A227"/>
+  <circle cx="400" cy="300" r="104" fill="none" stroke="#E6C15A" stroke-width="6"/>
+  <circle cx="400" cy="300" r="82" fill="none" stroke="#0B0E14" stroke-width="3" opacity=".5"/>
+  <!-- abstract engraving: eight-point star and ring of dots -->
+  <g fill="#0B0E14" opacity=".55">
+    <path d="M400,244 l12,32 l32,-12 l-12,32 l32,12 l-32,12 l12,32 l-32,-12 l-12,32 l-12,-32 l-32,12 l12,-32 l-32,-12 l32,-12 l-12,-32 l32,12 z"/>
+  </g>
+  <circle cx="400" cy="300" r="20" fill="#E6C15A"/>
+  <g fill="#0B0E14" opacity=".5">
+    <circle cx="400" cy="210" r="3.4"/><circle cx="463" cy="237" r="3.4"/><circle cx="490" cy="300" r="3.4"/>
+    <circle cx="463" cy="363" r="3.4"/><circle cx="400" cy="390" r="3.4"/><circle cx="337" cy="363" r="3.4"/>
+    <circle cx="310" cy="300" r="3.4"/><circle cx="337" cy="237" r="3.4"/>
+  </g>
+  <!-- magnifier over coin edge -->
+  <circle cx="486" cy="352" r="58" fill="#131826" opacity=".25"/>
+  <circle cx="486" cy="352" r="58" fill="none" stroke="#E8DCC8" stroke-width="7"/>
+  <line x1="528" y1="394" x2="586" y2="452" stroke="#E8DCC8" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="486" cy="352" r="44" fill="none" stroke="#E6C15A" stroke-width="2.4" opacity=".6"/>
+  <!-- scattered small coins on ledge -->
+  <rect x="40" y="440" width="720" height="20" fill="#0E1220"/>
+  <g>
+    <ellipse cx="180" cy="440" rx="26" ry="8" fill="#C9A227"/>
+    <ellipse cx="228" cy="446" rx="22" ry="7" fill="#E8DCC8"/>
+    <ellipse cx="600" cy="442" rx="24" ry="8" fill="#E8DCC8"/>
+    <ellipse cx="648" cy="447" rx="20" ry="6" fill="#C9A227"/>
+  </g>
+</svg>

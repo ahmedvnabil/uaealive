@@ -1,0 +1,83 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="phSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#phSky)"/>
+  <!-- collector's desk surface -->
+  <rect x="0" y="80" width="800" height="420" fill="#1B2233"/>
+  <path d="M0,80 h800 v8 h-800 z" fill="#C9A227" opacity=".25"/>
+  <!-- album page corner -->
+  <rect x="470" y="130" width="290" height="330" fill="#131826" stroke="#C9A227" stroke-width="3"/>
+  <g stroke="#C9A227" stroke-width="2" opacity=".35">
+    <line x1="500" y1="180" x2="730" y2="180"/><line x1="500" y1="260" x2="730" y2="260"/>
+    <line x1="500" y1="340" x2="730" y2="340"/><line x1="500" y1="420" x2="730" y2="420"/>
+  </g>
+  <!-- stamp 1: fort motif, perforated edge -->
+  <g transform="translate(90,140) rotate(-6)">
+    <rect width="200" height="150" fill="#E8DCC8" stroke="#131826" stroke-width="3" stroke-dasharray="6 7" stroke-linecap="round"/>
+    <rect x="14" y="14" width="172" height="122" fill="#131826"/>
+    <g fill="#C9A227">
+      <path d="M40,116 v-46 h20 v-8 h8 v8 h20 v46 z"/>
+      <circle cx="120" cy="88" r="24"/>
+      <rect x="96" y="88" width="48" height="28"/>
+      <rect x="150" y="76" width="14" height="40"/>
+    </g>
+    <rect x="14" y="14" width="172" height="122" fill="none" stroke="#C9A227" stroke-width="3"/>
+  </g>
+  <!-- stamp 2: falcon motif -->
+  <g transform="translate(330,110) rotate(4)">
+    <rect width="150" height="190" fill="#E8DCC8" stroke="#131826" stroke-width="3" stroke-dasharray="6 7" stroke-linecap="round"/>
+    <rect x="12" y="12" width="126" height="166" fill="#2E6E5E"/>
+    <g fill="#E8DCC8">
+      <path d="M75,44 c-26,16 -36,48 -30,86 c8,-12 18,-18 30,-20 c12,2 22,8 30,20 c6,-38 -4,-70 -30,-86 z"/>
+      <circle cx="75" cy="42" r="12"/>
+      <path d="M84,38 l14,4 l-14,6 z"/>
+      <path d="M60,130 l10,22 h10 l10,-22 c-10,6 -20,6 -30,0 z"/>
+    </g>
+    <rect x="12" y="12" width="126" height="166" fill="none" stroke="#C9A227" stroke-width="3"/>
+  </g>
+  <!-- stamp 3: wind tower motif, on album page -->
+  <g transform="translate(520,200) rotate(-3)">
+    <rect width="140" height="170" fill="#E8DCC8" stroke="#131826" stroke-width="3" stroke-dasharray="6 7" stroke-linecap="round"/>
+    <rect x="12" y="12" width="116" height="146" fill="#B0603E"/>
+    <g fill="#E8DCC8">
+      <rect x="42" y="56" width="56" height="86"/>
+      <rect x="34" y="50" width="12" height="14"/><rect x="94" y="50" width="12" height="14"/>
+      <rect x="64" y="42" width="12" height="18"/>
+    </g>
+    <g fill="#B0603E">
+      <rect x="50" y="64" width="9" height="30"/><rect x="63" y="64" width="9" height="30"/>
+      <rect x="76" y="64" width="9" height="30"/><rect x="89" y="64" width="9" height="30"/>
+    </g>
+    <rect x="12" y="12" width="116" height="146" fill="none" stroke="#C9A227" stroke-width="3"/>
+  </g>
+  <!-- small stamp: dhow sail -->
+  <g transform="translate(150,330) rotate(8)">
+    <rect width="120" height="96" fill="#E8DCC8" stroke="#131826" stroke-width="3" stroke-dasharray="5 6" stroke-linecap="round"/>
+    <rect x="10" y="10" width="100" height="76" fill="#131826"/>
+    <path d="M56,72 c-4,-30 6,-46 18,-54 c10,18 12,40 4,54 z" fill="#E6C15A"/>
+    <path d="M34,72 q26,10 60,0 l-8,10 h-44 z" fill="#C9A227"/>
+    <rect x="10" y="10" width="100" height="76" fill="none" stroke="#C9A227" stroke-width="3"/>
+  </g>
+  <!-- postmark circles overlapping stamps -->
+  <g fill="none" stroke="#E8DCC8" stroke-width="3" opacity=".5">
+    <circle cx="320" cy="300" r="44"/>
+    <circle cx="320" cy="300" r="33"/>
+    <path d="M286,290 h68 M286,310 h68"/>
+    <circle cx="620" cy="150" r="36"/>
+    <circle cx="620" cy="150" r="27"/>
+  </g>
+  <!-- tweezers resting on desk -->
+  <g stroke="#C9A227" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M420,430 l110,-30"/>
+    <path d="M420,436 l112,-16"/>
+  </g>
+  <circle cx="416" cy="434" r="8" fill="#C9A227"/>
+  <!-- loose hinge squares -->
+  <g fill="#E8DCC8" opacity=".7">
+    <rect x="70" y="380" width="18" height="14" transform="rotate(12 79 387)"/>
+    <rect x="710" y="100" width="16" height="12" transform="rotate(-8 718 106)"/>
+  </g>
+</svg>

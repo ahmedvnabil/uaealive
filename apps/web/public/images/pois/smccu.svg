@@ -1,0 +1,72 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="smSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <linearGradient id="smWarm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E6C15A"/><stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <pattern id="smCoral" width="18" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1.1" fill="#0B0E14" opacity=".09"/>
+      <circle cx="14" cy="11" r="0.9" fill="#0B0E14" opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#smSky)"/>
+  <g fill="#E8DCC8">
+    <circle cx="70" cy="60" r="2" opacity=".8"/><circle cx="180" cy="110" r="1.3" opacity=".55"/>
+    <circle cx="640" cy="50" r="1.7" opacity=".7"/><circle cx="740" cy="120" r="1.3" opacity=".55"/>
+    <circle cx="540" cy="90" r="1.2" opacity=".5"/>
+  </g>
+  <circle cx="120" cy="105" r="26" fill="none" stroke="#E6C15A" stroke-width="4" opacity=".85" stroke-dasharray="70 60" transform="rotate(-40 120 105)"/>
+  <!-- wind tower -->
+  <g fill="#E8DCC8">
+    <rect x="560" y="90" width="120" height="180"/>
+    <rect x="548" y="84" width="18" height="24"/><rect x="674" y="84" width="18" height="24"/>
+    <rect x="546" y="70" width="14" height="14"/><rect x="680" y="70" width="14" height="14"/>
+    <rect x="612" y="62" width="16" height="28"/>
+  </g>
+  <rect x="560" y="90" width="120" height="180" fill="url(#smCoral)"/>
+  <g fill="#131826">
+    <rect x="574" y="104" width="18" height="58"/><rect x="598" y="104" width="18" height="58"/>
+    <rect x="622" y="104" width="18" height="58"/><rect x="646" y="104" width="18" height="58"/>
+  </g>
+  <path d="M574,133 h90" stroke="#E8DCC8" stroke-width="4"/>
+  <!-- house block -->
+  <rect x="80" y="200" width="640" height="240" fill="#E8DCC8"/>
+  <rect x="80" y="200" width="640" height="240" fill="url(#smCoral)"/>
+  <path d="M80,200 h640 v14 h-640 z" fill="#D8C9AC"/>
+  <g fill="#D8C9AC">
+    <rect x="96" y="186" width="20" height="16"/><rect x="150" y="186" width="20" height="16"/>
+    <rect x="204" y="186" width="20" height="16"/><rect x="258" y="186" width="20" height="16"/>
+    <rect x="312" y="186" width="20" height="16"/><rect x="470" y="186" width="20" height="16"/>
+    <rect x="524" y="186" width="20" height="16"/><rect x="700" y="186" width="20" height="16"/>
+  </g>
+  <!-- open double teak door, warm light spilling -->
+  <path d="M310,440 v-140 a90,96 0 0 1 180,0 v140 z" fill="url(#smWarm)"/>
+  <path d="M310,440 v-140 a90,96 0 0 1 180,0 v140 z" fill="none" stroke="#B0603E" stroke-width="6"/>
+  <!-- door leaves swung outward -->
+  <g fill="#B0603E">
+    <path d="M308,440 l-58,-18 v-136 l58,16 z"/>
+    <path d="M492,440 l58,-18 v-136 l-58,16 z"/>
+  </g>
+  <g fill="#E6C15A">
+    <circle cx="272" cy="330" r="3"/><circle cx="272" cy="360" r="3"/><circle cx="272" cy="390" r="3"/>
+    <circle cx="528" cy="330" r="3"/><circle cx="528" cy="360" r="3"/><circle cx="528" cy="390" r="3"/>
+  </g>
+  <!-- light pooling on ground -->
+  <rect y="440" width="800" height="60" fill="#0E1220"/>
+  <path d="M310,440 h180 l70,50 h-320 z" fill="#E6C15A" opacity=".22"/>
+  <!-- carved gypsum panels flanking door -->
+  <g fill="none" stroke="#0B0E14" stroke-width="2.4" opacity=".3">
+    <circle cx="180" cy="320" r="24"/><circle cx="180" cy="320" r="12"/>
+    <circle cx="620" cy="320" r="24"/><circle cx="620" cy="320" r="12"/>
+    <path d="M180,288 v64 M148,320 h64 M620,288 v64 M588,320 h64"/>
+  </g>
+  <rect x="140" y="280" width="80" height="80" fill="none" stroke="#B0603E" stroke-width="4"/>
+  <rect x="580" y="280" width="80" height="80" fill="none" stroke="#B0603E" stroke-width="4"/>
+  <!-- majlis cushions by the entrance -->
+  <g fill="#2E6E5E">
+    <rect x="210" y="416" width="52" height="18" rx="8"/>
+    <rect x="540" y="416" width="52" height="18" rx="8"/>
+  </g>
+</svg>

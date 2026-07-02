@@ -1,0 +1,88 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="bnSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <radialGradient id="bnLant" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#E6C15A" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#E6C15A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="bnCoral" width="18" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1" fill="#0B0E14" opacity=".08"/>
+      <circle cx="14" cy="11" r="0.8" fill="#0B0E14" opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bnSky)"/>
+  <g fill="#E8DCC8">
+    <circle cx="120" cy="46" r="1.8" opacity=".75"/><circle cx="300" cy="30" r="1.3" opacity=".55"/>
+    <circle cx="500" cy="50" r="1.5" opacity=".6"/><circle cx="690" cy="36" r="1.9" opacity=".8"/>
+  </g>
+  <!-- wind towers silhouetted against the glow of the modern city -->
+  <path d="M0,190 h800 v-6 h-800 z" fill="#C9A227" opacity=".12"/>
+  <g fill="#1B2233">
+    <path d="M70,240 v-120 h-12 v-14 h10 v-10 h12 v10 h10 v14 h-12 v120 z" transform="translate(30,-20)"/>
+    <rect x="90" y="96" width="84" height="144"/>
+    <rect x="80" y="90" width="14" height="18"/><rect x="170" y="90" width="14" height="18"/>
+    <rect x="126" y="78" width="12" height="20"/>
+    <rect x="620" y="86" width="90" height="154"/>
+    <rect x="610" y="80" width="14" height="18"/><rect x="702" y="80" width="14" height="18"/>
+    <rect x="658" y="68" width="12" height="20"/>
+  </g>
+  <g fill="#0B0E14">
+    <rect x="102" y="108" width="12" height="44"/><rect x="120" y="108" width="12" height="44"/>
+    <rect x="138" y="108" width="12" height="44"/><rect x="156" y="108" width="12" height="44"/>
+    <rect x="632" y="98" width="13" height="46"/><rect x="651" y="98" width="13" height="46"/>
+    <rect x="670" y="98" width="13" height="46"/><rect x="689" y="98" width="13" height="46"/>
+  </g>
+  <!-- courtyard walls -->
+  <rect x="40" y="240" width="720" height="200" fill="#E8DCC8"/>
+  <rect x="40" y="240" width="720" height="200" fill="url(#bnCoral)"/>
+  <!-- rooftop terrace parapet -->
+  <g fill="#D8C9AC">
+    <rect x="56" y="228" width="22" height="14"/><rect x="112" y="228" width="22" height="14"/>
+    <rect x="168" y="228" width="22" height="14"/><rect x="224" y="228" width="22" height="14"/>
+    <rect x="556" y="228" width="22" height="14"/><rect x="612" y="228" width="22" height="14"/>
+    <rect x="668" y="228" width="22" height="14"/><rect x="724" y="228" width="22" height="14"/>
+  </g>
+  <!-- arched dining alcoves -->
+  <path d="M120,440 v-90 a52,56 0 0 1 104,0 v90 z" fill="#131826"/>
+  <path d="M576,440 v-90 a52,56 0 0 1 104,0 v90 z" fill="#131826"/>
+  <g stroke="#B0603E" stroke-width="4" fill="none">
+    <path d="M120,440 v-90 a52,56 0 0 1 104,0 v90"/>
+    <path d="M576,440 v-90 a52,56 0 0 1 104,0 v90"/>
+  </g>
+  <!-- strung lanterns across courtyard -->
+  <path d="M60,262 C260,320 540,320 740,262" stroke="#131826" stroke-width="3" fill="none"/>
+  <g>
+    <ellipse cx="180" cy="322" rx="52" ry="46" fill="url(#bnLant)"/>
+    <ellipse cx="400" cy="346" rx="56" ry="50" fill="url(#bnLant)"/>
+    <ellipse cx="620" cy="322" rx="52" ry="46" fill="url(#bnLant)"/>
+    <g fill="#E6C15A">
+      <path d="M172,296 h16 l6,18 l-14,14 l-14,-14 z"/>
+      <path d="M391,318 h18 l7,20 l-16,16 l-16,-16 z"/>
+      <path d="M612,296 h16 l6,18 l-14,14 l-14,-14 z"/>
+    </g>
+    <g fill="#C9A227">
+      <rect x="176" y="290" width="8" height="6"/>
+      <rect x="396" y="312" width="8" height="6"/>
+      <rect x="616" y="290" width="8" height="6"/>
+    </g>
+  </g>
+  <!-- ground and dining setup -->
+  <rect y="440" width="800" height="60" fill="#0E1220"/>
+  <ellipse cx="400" cy="452" rx="150" ry="18" fill="#131826"/>
+  <ellipse cx="400" cy="444" rx="110" ry="13" fill="#B0603E"/>
+  <!-- serving dishes -->
+  <g>
+    <ellipse cx="356" cy="440" rx="22" ry="7" fill="#E8DCC8"/>
+    <path d="M340,440 a16,10 0 0 1 32,0" fill="#C9A227"/>
+    <ellipse cx="444" cy="440" rx="18" ry="6" fill="#E8DCC8"/>
+    <circle cx="444" cy="436" r="7" fill="#2E6E5E"/>
+  </g>
+  <!-- floor cushions -->
+  <rect x="212" y="452" width="60" height="20" rx="9" fill="#2E6E5E"/>
+  <rect x="528" y="452" width="60" height="20" rx="9" fill="#B0603E"/>
+  <!-- tea glasses -->
+  <path d="M310,438 a7,7 0 0 0 14,0 v-12 h-14 z" fill="#E6C15A"/>
+  <path d="M480,438 a7,7 0 0 0 14,0 v-12 h-14 z" fill="#E6C15A"/>
+</svg>

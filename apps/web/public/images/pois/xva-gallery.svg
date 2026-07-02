@@ -1,0 +1,73 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="xvSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <pattern id="xvCoral" width="18" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1" fill="#0B0E14" opacity=".08"/>
+      <circle cx="14" cy="11" r="0.8" fill="#0B0E14" opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#xvSky)"/>
+  <g fill="#E8DCC8">
+    <circle cx="110" cy="56" r="1.8" opacity=".75"/><circle cx="300" cy="40" r="1.3" opacity=".55"/>
+    <circle cx="500" cy="70" r="1.5" opacity=".6"/><circle cx="690" cy="46" r="2" opacity=".8"/>
+  </g>
+  <!-- courtyard: two gallery walls meeting in a corner -->
+  <path d="M60,120 L470,150 L470,440 L60,440 Z" fill="#E8DCC8"/>
+  <path d="M60,120 L470,150 L470,440 L60,440 Z" fill="url(#xvCoral)"/>
+  <path d="M470,150 L740,110 L740,440 L470,440 Z" fill="#D8C9AC"/>
+  <path d="M470,150 L740,110 L740,440 L470,440 Z" fill="url(#xvCoral)"/>
+  <path d="M470,150 v290" stroke="#0B0E14" stroke-width="3" opacity=".3"/>
+  <!-- artworks on the lit wall: abstract canvases -->
+  <g>
+    <rect x="110" y="190" width="90" height="120" fill="#131826"/>
+    <path d="M118,290 l30,-52 l22,26 l20,-38 v74 z" fill="#2E6E5E"/>
+    <circle cx="176" cy="216" r="11" fill="#E6C15A"/>
+    <rect x="110" y="190" width="90" height="120" fill="none" stroke="#C9A227" stroke-width="4"/>
+  </g>
+  <g>
+    <rect x="240" y="200" width="120" height="86" fill="#B0603E"/>
+    <circle cx="300" cy="243" r="26" fill="#E8DCC8"/>
+    <circle cx="300" cy="243" r="12" fill="#131826"/>
+    <rect x="240" y="200" width="120" height="86" fill="none" stroke="#C9A227" stroke-width="4"/>
+  </g>
+  <g>
+    <rect x="252" y="316" width="96" height="70" fill="#131826"/>
+    <path d="M252,386 q24,-44 48,0 q24,-44 48,0 z" fill="#2E6E5E"/>
+    <rect x="252" y="316" width="96" height="70" fill="none" stroke="#C9A227" stroke-width="4"/>
+  </g>
+  <!-- artwork on shaded wall -->
+  <g transform="translate(560,190) skewY(-4)">
+    <rect width="110" height="140" fill="#131826"/>
+    <path d="M14,126 c26,-70 56,-70 82,-96" stroke="#E6C15A" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="30" cy="34" r="10" fill="#B0603E"/>
+    <rect width="110" height="140" fill="none" stroke="#C9A227" stroke-width="4"/>
+  </g>
+  <!-- ground -->
+  <rect y="440" width="800" height="60" fill="#0E1220"/>
+  <!-- potted plant -->
+  <g>
+    <path d="M676,440 l-10,-44 h52 l-10,44 z" fill="#B0603E"/>
+    <g stroke="#2E6E5E" stroke-width="6" fill="none" stroke-linecap="round">
+      <path d="M692,396 c-16,-30 -40,-42 -62,-44"/>
+      <path d="M692,396 c-4,-36 -16,-58 -34,-70"/>
+      <path d="M692,396 c8,-34 26,-52 48,-60"/>
+      <path d="M692,396 c18,-24 40,-32 58,-32"/>
+    </g>
+  </g>
+  <!-- cafe table with mint lemonade hint -->
+  <g>
+    <ellipse cx="150" cy="416" rx="58" ry="12" fill="#131826"/>
+    <rect x="144" y="416" width="12" height="40" fill="#131826"/>
+    <rect x="128" y="392" width="14" height="22" fill="#2E6E5E"/>
+    <rect x="128" y="388" width="14" height="6" fill="#E6C15A"/>
+    <path d="M160,414 a10,10 0 0 0 20,0 v-16 h-20 z" fill="#E8DCC8"/>
+  </g>
+  <!-- bougainvillea over wall top -->
+  <g fill="#B0603E">
+    <circle cx="600" cy="120" r="7"/><circle cx="618" cy="112" r="8"/><circle cx="636" cy="120" r="6"/>
+    <circle cx="612" cy="128" r="6"/><circle cx="628" cy="130" r="5"/>
+  </g>
+  <path d="M596,128 q22,-20 46,-6" stroke="#2E6E5E" stroke-width="4" fill="none"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <linearGradient id="hgBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <clipPath id="hgClip"><circle cx="200" cy="200" r="172"/></clipPath>
+  </defs>
+  <circle cx="200" cy="200" r="172" fill="url(#hgBg)"/>
+  <g clip-path="url(#hgClip)">
+    <g fill="#E8DCC8">
+      <circle cx="96" cy="86" r="1.6" opacity=".65"/><circle cx="306" cy="80" r="1.4" opacity=".55"/>
+    </g>
+    <!-- faint district skyline she studies -->
+    <g fill="#1E2638">
+      <rect x="40" y="150" width="52" height="80"/>
+      <rect x="34" y="144" width="10" height="14"/><rect x="88" y="144" width="10" height="14"/>
+      <rect x="62" y="136" width="10" height="16"/>
+      <rect x="310" y="160" width="48" height="70"/>
+      <rect x="304" y="154" width="9" height="13"/><rect x="354" y="154" width="9" height="13"/>
+    </g>
+    <g fill="#0B0E14">
+      <rect x="48" y="160" width="8" height="26"/><rect x="60" y="160" width="8" height="26"/>
+      <rect x="72" y="160" width="8" height="26"/><rect x="318" y="168" width="8" height="24"/>
+      <rect x="330" y="168" width="8" height="24"/><rect x="342" y="168" width="8" height="24"/>
+    </g>
+    <!-- modern abaya shoulders with oasis accent stole -->
+    <path d="M74,400 c0-72 56-108 126-108 c70,0 126,36 126,108 z" fill="#1B2233"/>
+    <path d="M118,400 c0,-52 22,-84 58,-98 l12,20 c-30,14 -46,42 -46,78 z" fill="#2E6E5E"/>
+    <!-- neck -->
+    <rect x="180" y="248" width="40" height="48" fill="#C9996B"/>
+    <!-- contemporary sheila draping to the shoulders -->
+    <path d="M200,100 c-54,0 -88,42 -88,98 c0,42 12,72 29,92 h118 c17,-20 29,-50 29,-92 c0,-56 -34,-98 -88,-98 z" fill="#131826"/>
+    <!-- face opening -->
+    <ellipse cx="200" cy="200" rx="50" ry="58" fill="#C9996B"/>
+    <path d="M200,142 a50,58 0 0 0 -50,58 c0,22 7,40 19,50 M200,142 a50,58 0 0 1 50,58 c0,22 -7,40 -19,50" fill="none" stroke="#C9A227" stroke-width="3" opacity=".8"/>
+    <!-- round gold spectacles: her signature -->
+    <g fill="none" stroke="#E6C15A" stroke-width="4">
+      <circle cx="176" cy="196" r="19"/>
+      <circle cx="224" cy="196" r="19"/>
+      <path d="M195,196 h10"/>
+    </g>
+    <!-- open book held at the base -->
+    <g transform="translate(200,352)">
+      <path d="M0,-6 c-26,-16 -58,-18 -84,-8 v44 c26,-10 58,-8 84,8 z" fill="#E8DCC8"/>
+      <path d="M0,-6 c26,-16 58,-18 84,-8 v44 c-26,-10 -58,-8 -84,8 z" fill="#D8C9AC"/>
+      <path d="M0,-6 v50" stroke="#B0603E" stroke-width="4"/>
+      <g stroke="#C9A227" stroke-width="2.6" opacity=".7">
+        <path d="M-66,4 c18,-6 38,-6 54,0 M-66,18 c18,-6 38,-6 54,0"/>
+        <path d="M12,4 c18,-6 38,-6 54,0 M12,18 c18,-6 38,-6 54,0"/>
+      </g>
+    </g>
+  </g>
+  <circle cx="200" cy="200" r="172" fill="none" stroke="#C9A227" stroke-width="6"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#C9A227" stroke-width="2" opacity=".5"/>
+  <g fill="#E6C15A">
+    <circle cx="200" cy="16" r="4"/><circle cx="200" cy="384" r="4"/>
+    <circle cx="16" cy="200" r="4"/><circle cx="384" cy="200" r="4"/>
+  </g>
+</svg>

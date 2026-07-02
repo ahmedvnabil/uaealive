@@ -1,0 +1,66 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="atSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <pattern id="atCoral" width="18" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1" fill="#0B0E14" opacity=".08"/>
+      <circle cx="14" cy="11" r="0.8" fill="#0B0E14" opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#atSky)"/>
+  <g fill="#E8DCC8">
+    <circle cx="140" cy="46" r="1.8" opacity=".75"/><circle cx="420" cy="36" r="1.3" opacity=".55"/>
+    <circle cx="660" cy="56" r="1.6" opacity=".65"/>
+  </g>
+  <!-- courtyard back wall -->
+  <rect x="50" y="140" width="700" height="300" fill="#E8DCC8"/>
+  <rect x="50" y="140" width="700" height="300" fill="url(#atCoral)"/>
+  <path d="M330,440 v-120 a70,76 0 0 1 140,0 v120 z" fill="#131826"/>
+  <path d="M330,440 v-120 a70,76 0 0 1 140,0 v120 z" fill="none" stroke="#B0603E" stroke-width="5"/>
+  <!-- lace canopy scallops across courtyard -->
+  <path d="M50,140 h700" stroke="#E8DCC8" stroke-width="3"/>
+  <path d="M50,140 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0 q25,26 50,0" fill="none" stroke="#B0603E" stroke-width="3.4" opacity=".65"/>
+  <!-- string of hanging plants -->
+  <g stroke="#2E6E5E" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M150,140 c-4,30 -14,44 -28,54"/>
+    <path d="M150,140 c6,32 2,52 -6,66"/>
+    <path d="M650,140 c4,30 14,44 28,54"/>
+    <path d="M650,140 c-6,32 -2,52 6,66"/>
+  </g>
+  <!-- ground -->
+  <rect y="440" width="800" height="60" fill="#0E1220"/>
+  <!-- round tea table -->
+  <ellipse cx="400" cy="430" rx="120" ry="22" fill="#D8C9AC"/>
+  <rect x="388" y="436" width="24" height="46" fill="#B0603E"/>
+  <!-- teapot -->
+  <g fill="#C9A227">
+    <path d="M372,424 c-10,-30 4,-46 8,-58 h40 c4,12 18,28 8,58 z"/>
+    <path d="M366,384 c-16,4 -22,18 -18,30 l9,-3 c-2,-8 2,-16 12,-20 z"/>
+    <path d="M428,382 c14,-8 16,-22 8,-30 l-7,20 z"/>
+    <path d="M382,366 l18,-12 l18,12 z" />
+    <circle cx="400" cy="350" r="5" fill="#E6C15A"/>
+  </g>
+  <!-- tea glasses -->
+  <g>
+    <path d="M304,426 a9,9 0 0 0 18,0 v-20 h-18 z" fill="#E6C15A"/>
+    <path d="M478,426 a9,9 0 0 0 18,0 v-20 h-18 z" fill="#E6C15A"/>
+    <path d="M304,410 h18 M478,410 h18" stroke="#E8DCC8" stroke-width="2.4"/>
+  </g>
+  <!-- steam -->
+  <path d="M400,340 c-6,-12 6,-18 0,-32" stroke="#E8DCC8" stroke-width="3" fill="none" opacity=".5" stroke-linecap="round"/>
+  <!-- rattan chairs with oasis cushions -->
+  <g fill="none" stroke="#D8C9AC" stroke-width="7" stroke-linecap="round">
+    <path d="M170,482 v-70 a34,34 0 0 1 68,0 v70"/>
+    <path d="M562,482 v-70 a34,34 0 0 1 68,0 v70"/>
+  </g>
+  <rect x="176" y="430" width="56" height="18" rx="8" fill="#2E6E5E"/>
+  <rect x="568" y="430" width="56" height="18" rx="8" fill="#2E6E5E"/>
+  <!-- sparrow perched on the arch rim -->
+  <g fill="#131826">
+    <ellipse cx="452" cy="308" rx="11" ry="8"/>
+    <circle cx="461" cy="300" r="5"/>
+    <path d="M466,300 l7,2 l-7,3 z"/>
+    <path d="M441,308 l-10,-4 l8,8 z"/>
+  </g>
+</svg>

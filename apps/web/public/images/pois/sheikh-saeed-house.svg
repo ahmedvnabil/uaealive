@@ -1,0 +1,87 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="ssSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0E14"/><stop offset="1" stop-color="#131826"/>
+    </linearGradient>
+    <linearGradient id="ssWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#182033"/><stop offset="1" stop-color="#0B0E14"/>
+    </linearGradient>
+    <pattern id="ssCoral" width="18" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1" fill="#0B0E14" opacity=".08"/>
+      <circle cx="14" cy="11" r="0.8" fill="#0B0E14" opacity=".06"/>
+    </pattern>
+    <!-- lace-like lattice for carved gypsum screens -->
+    <pattern id="ssLattice" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#131826"/>
+      <circle cx="10" cy="10" r="6" fill="none" stroke="#E8DCC8" stroke-width="2.4"/>
+      <path d="M0,10 h4 M16,10 h4 M10,0 v4 M10,16 v4" stroke="#E8DCC8" stroke-width="2.4"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#ssSky)"/>
+  <g fill="#E8DCC8">
+    <circle cx="100" cy="50" r="1.9" opacity=".8"/><circle cx="260" cy="80" r="1.3" opacity=".55"/>
+    <circle cx="440" cy="40" r="1.6" opacity=".7"/><circle cx="620" cy="70" r="1.3" opacity=".55"/>
+    <circle cx="730" cy="40" r="1.8" opacity=".75"/>
+  </g>
+  <!-- grand residence with two wind towers -->
+  <g fill="#E8DCC8">
+    <rect x="120" y="180" width="560" height="200"/>
+    <rect x="150" y="90" width="96" height="96"/>
+    <rect x="140" y="84" width="15" height="20"/><rect x="241" y="84" width="15" height="20"/>
+    <rect x="190" y="72" width="14" height="22"/>
+    <rect x="550" y="90" width="96" height="96"/>
+    <rect x="540" y="84" width="15" height="20"/><rect x="641" y="84" width="15" height="20"/>
+    <rect x="590" y="72" width="14" height="22"/>
+  </g>
+  <rect x="120" y="180" width="560" height="200" fill="url(#ssCoral)"/>
+  <g fill="#131826">
+    <rect x="162" y="102" width="15" height="44"/><rect x="183" y="102" width="15" height="44"/>
+    <rect x="204" y="102" width="15" height="44"/><rect x="225" y="102" width="15" height="44"/>
+    <rect x="562" y="102" width="15" height="44"/><rect x="583" y="102" width="15" height="44"/>
+    <rect x="604" y="102" width="15" height="44"/><rect x="625" y="102" width="15" height="44"/>
+  </g>
+  <path d="M162,124 h78 M562,124 h78" stroke="#E8DCC8" stroke-width="3.4"/>
+  <!-- parapet crenellation -->
+  <g fill="#D8C9AC">
+    <rect x="130" y="168" width="20" height="14"/><rect x="180" y="168" width="20" height="14"/>
+    <rect x="280" y="168" width="20" height="14"/><rect x="330" y="168" width="20" height="14"/>
+    <rect x="380" y="168" width="20" height="14"/><rect x="430" y="168" width="20" height="14"/>
+    <rect x="480" y="168" width="20" height="14"/><rect x="600" y="168" width="20" height="14"/>
+    <rect x="650" y="168" width="20" height="14"/>
+  </g>
+  <!-- celebrated carved gypsum screens: arched windows filled with lattice -->
+  <g>
+    <path d="M160,340 v-70 a34,36 0 0 1 68,0 v70 z" fill="url(#ssLattice)"/>
+    <path d="M160,340 v-70 a34,36 0 0 1 68,0 v70 z" fill="none" stroke="#C9A227" stroke-width="4"/>
+    <path d="M300,340 v-70 a34,36 0 0 1 68,0 v70 z" fill="url(#ssLattice)"/>
+    <path d="M300,340 v-70 a34,36 0 0 1 68,0 v70 z" fill="none" stroke="#C9A227" stroke-width="4"/>
+    <path d="M440,340 v-70 a34,36 0 0 1 68,0 v70 z" fill="url(#ssLattice)"/>
+    <path d="M440,340 v-70 a34,36 0 0 1 68,0 v70 z" fill="none" stroke="#C9A227" stroke-width="4"/>
+    <path d="M580,340 v-70 a34,36 0 0 1 68,0 v70 z" fill="url(#ssLattice)"/>
+    <path d="M580,340 v-70 a34,36 0 0 1 68,0 v70 z" fill="none" stroke="#C9A227" stroke-width="4"/>
+  </g>
+  <!-- lace shadows cast on facade under each screen -->
+  <g fill="#0B0E14" opacity=".18">
+    <path d="M160,344 h68 l14,22 h-96 z"/>
+    <path d="M300,344 h68 l14,22 h-96 z"/>
+    <path d="M440,344 h68 l14,22 h-96 z"/>
+    <path d="M580,344 h68 l14,22 h-96 z"/>
+  </g>
+  <!-- creek waterfront in front of the house -->
+  <rect y="380" width="800" height="70" fill="url(#ssWater)"/>
+  <g stroke="#C9A227" stroke-linecap="round" opacity=".5">
+    <line x1="90" y1="402" x2="190" y2="402" stroke-width="2.6"/>
+    <line x1="300" y1="418" x2="420" y2="418" stroke-width="2.2"/>
+    <line x1="540" y1="404" x2="650" y2="404" stroke-width="2.6"/>
+    <line x1="180" y1="434" x2="300" y2="434" stroke-width="2"/>
+  </g>
+  <!-- small moored abra -->
+  <path d="M600,438 q46,18 110,0 l-14,14 h-84 z" fill="#1B2233"/>
+  <rect x="628" y="416" width="54" height="10" rx="5" fill="#B0603E"/>
+  <!-- quay edge -->
+  <rect y="450" width="800" height="50" fill="#0E1220"/>
+  <g fill="#B0603E">
+    <rect x="100" y="440" width="12" height="24" rx="3"/>
+    <rect x="420" y="440" width="12" height="24" rx="3"/>
+  </g>
+</svg>
