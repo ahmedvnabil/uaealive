@@ -1,3 +1,56 @@
 {
-  "title": "Living Map"
+  "meta": {
+    "title": "Living Map",
+    "description": "An interactive map of Dubai's Al Fahidi Historical District — wind-tower houses, sikkas and museums, each with its own story"
+  },
+  "header": {
+    "kicker": "Explore the district",
+    "title": "Living Map",
+    "subtitle": "128 heritage buildings and narrow sikkas on the creek's edge — tap any gold marker to open the story of the place"
+  },
+  "filters": {
+    "label": "Filter places by kind",
+    "all": "All",
+    "museums": "Museums",
+    "houses": "Houses",
+    "art": "Art",
+    "cafes": "Cafés",
+    "landmarks": "Landmarks"
+  },
+  "canvas": {
+    "regionLabel": "Interactive map of Al Fahidi Historical District",
+    "markerLabel": "Open details for {name}"
+  },
+  "legend": {
+    "title": "Map key",
+    "poi": "Heritage site",
+    "barjeel": "Wind-tower house (gold outline)",
+    "alley": "Sikka / alley",
+    "boundary": "District boundary",
+    "credit": "Map data © OpenStreetMap contributors"
+  },
+  "kinds": {
+    "museum": "Museum",
+    "house": "Heritage house",
+    "gallery": "Gallery",
+    "cafe": "Café",
+    "mosque": "Mosque",
+    "landmark": "Landmark",
+    "alley": "Sikka",
+    "viewpoint": "Viewpoint"
+  },
+  "drawer": {
+    "era": "Built {era}",
+    "wheelchair": "Wheelchair friendly",
+    "audio": "Audio guide",
+    "stories": "{count, plural, =0 {No documented stories yet} one {1 documented story} other {# documented stories}}",
+    "readStory": "Read the story",
+    "talkToCharacter": "Talk to a character",
+    "imageAlt": "Illustration of {name}"
+  },
+  "state": {
+    "loading": "Loading the map…",
+    "error": "Could not load map data. Check your connection and try again.",
+    "empty": "No places match this filter"
+  }
 }
