@@ -1,0 +1,66 @@
+[
+  {
+    "key": "1950",
+    "name": {
+      "ar": "زمن البحر واللؤلؤ",
+      "en": "The Age of Sea and Pearls"
+    },
+    "description": {
+      "ar": "في عام 1950 كان الفهيدي لا يزال يعيش على إيقاع المدّ والجزر. كانت المراكب القادمة من الهند وشرق إفريقيا تزدحم في الخور، والعبرات تُجذَّف باليد بين الضفتين، وتجارة اللؤلؤ التي كسرها اللؤلؤ المستزرَع لم يبقَ منها إلا ذكرياتها في صدور كبار الغاصة. كانت عائلات البستكية التجارية تنام صيفًا على الأسطح تلطّفها البراجيل، والماء يأتي من الآبار وعلى أكتاف السقّائين، والضوء من مصابيح الكيروسين في الأزقة الضيقة. كان سور المدينة القديم قد زال منذ عقود، لكن البلدة ظلت صغيرة متآلفة، تُقطَع سيرًا على الأقدام بين أذان الفجر وشروق الشمس، وتعرف كل بيت فيها جارَه باسمه.",
+      "en": "In 1950, Al Fahidi still lived by the tide. Dhows from India and East Africa crowded the creek, abras were rowed across by hand, and the pearl trade — broken years earlier by the cultured pearl — survived only in the memories of ageing divers. Bastakiya's merchant families slept on their roofs in summer, cooled by the barjeel towers; water came from wells and door-to-door carriers, and light came from kerosene lamps glowing in the narrow lanes. The old town wall was decades gone, but the town itself remained small and close-knit — you could cross it on foot between the dawn call to prayer and sunrise, and every house knew its neighbour by name."
+    },
+    "palette": {
+      "sky": "#2A1F14",
+      "ambient": "#5A4630",
+      "accent": "#C97B3C"
+    }
+  },
+  {
+    "key": "1970",
+    "name": {
+      "ar": "فجر النفط والاتحاد",
+      "en": "Oil and the Dawn of Union"
+    },
+    "description": {
+      "ar": "في عام 1970 كانت رائحة التغيير تملأ المكان. فقد اكتُشف النفط في حقل «فتح» عام 1966 وأبحرت أولى الشحنات عام 1969، فصار الخور — الذي جُرف قاعه قبل نحو عقد ليستقبل سفنًا أكبر — يحمل المستقبل كما حمل الماضي من قبل. وصلت الكهرباء وأولى المكيفات إلى البيوت القديمة، وهمست المذاييع في المجالس بأخبار اتحادٍ قادم يجمع الإمارات، وربط جسر آل مكتوم ضفتي المدينة للمرة الأولى. كانت عائلات كثيرة في البستكية تستعد للانتقال إلى فلل حديثة في أحياء جديدة، تاركة بيوت البراجيل للعمال الوافدين وللزمن. هدأ الحي شيئًا فشيئًا، فيما كانت المدينة من حوله تهدر كمحرك أُشعل للتو.",
+      "en": "Everything smelled of change in 1970. Oil had been struck at the Fateh field in 1966 and the first shipments sailed in 1969; suddenly the creek — dredged years earlier so larger vessels could enter — carried the future as well as the past. Electricity and the first air conditioners reached the old houses, radios in the majlis murmured news of a coming union of the emirates, and Al Maktoum Bridge had stitched the two banks together. Many Bastakiya families were preparing to move to modern villas in new districts, leaving the wind-tower houses to migrant workers and to time. The quarter grew quieter as the city around it began to roar like a freshly started engine."
+    },
+    "palette": {
+      "sky": "#38241A",
+      "ambient": "#7A5638",
+      "accent": "#E0A458"
+    }
+  },
+  {
+    "key": "1990",
+    "name": {
+      "ar": "الإنقاذ والترميم",
+      "en": "Rescue and Restoration"
+    },
+    "description": {
+      "ar": "بحلول عام 1990 كاد الحي أن يختفي من الوجود. فقد أُزيل جزء كبير من البستكية القديمة في الثمانينيات لإفساح المكان لمكاتب ومواقف سيارات، وبقي ما تبقى متصدّعًا شبه مهجور في ظل أفق عمراني يرتفع بلا توقف. ثم انقلبت الموجة: دافع المهتمون بالتراث والفنانون والمسؤولون عن قيمة المكان — وهي قضية اشتهر أن زيارة الأمير تشارلز لأزقته عام 1989 أسهمت في دعمها — وبدأت بلدية دبي توثيق البيوت وترميمها بيتًا بعد بيت بمواده الأصلية. كان «جاليري المجلس» قد فتح أبوابه لتوّه في بيت برجيل، ووصل أوائل الفنانين إلى الأزقة، وبدأ حيٌّ شُطب من الخرائط يتحول إلى حيٍّ تكتب عنه أدلة السفر.",
+      "en": "By 1990 the quarter had very nearly vanished. A large part of old Bastakiya had been cleared in the 1980s for offices and car parks, and what remained stood cracked and half-empty beneath a skyline that would not stop rising. Then the tide turned: conservationists, artists and officials argued for the district's worth — a cause famously helped when Prince Charles walked its lanes in 1989 — and Dubai Municipality began documenting and restoring the houses one by one, using their original materials. The Majlis Gallery had just opened inside a wind-tower house, the first artists were arriving in the alleys, and a district once written off the map was becoming a district written up in guidebooks."
+    },
+    "palette": {
+      "sky": "#1C2530",
+      "ambient": "#46586B",
+      "accent": "#8FB3D9"
+    }
+  },
+  {
+    "key": "today",
+    "name": {
+      "ar": "اليوم",
+      "en": "Today"
+    },
+    "description": {
+      "ar": "اليوم غدا الحي — باسمه الرسمي «حي الفهيدي التاريخي» — قلبَ دبي القديمة النابض بعد الترميم. تحتضن عشرات البيوت المبنية من الحجر المرجاني والجص متاحف وصالات فنون ومراسم خط ومقاهي أفنية؛ ويملأ مهرجان «سكة» الأزقة بفنٍّ جديد كل موسم، ويقدّم مركز الشيخ محمد بن راشد للتواصل الحضاري الأجوبة عن كل سؤال مع القهوة العربية والتمر. في الليل تتوهج البراجيل بهدوء تحت سماء زرقاء عميقة، فيما يتلألأ أفق المدينة الحديث عبر الخور؛ مدينتان تتأملان إحداهما الأخرى فوق الماء نفسه الذي بدأ منه كل شيء. الحي الذي كاد يُهدم قبل عقود صار اليوم هو المكان الذي يعلّم المدينة من أين أتت.",
+      "en": "Today the district — officially Al Fahidi Historical Neighbourhood — is the restored, beating heart of old Dubai. Dozens of coral-stone and gypsum houses now hold museums, galleries, calligraphy studios and courtyard cafés; the Sikka festival fills the lanes with new art every season, and the Sheikh Mohammed Centre for Cultural Understanding serves answers to every question alongside gahwa and dates. At night the wind towers glow softly under a deep blue sky while the modern skyline glitters across the creek — two Dubais regarding each other over the same water where everything began. The quarter that was nearly demolished a few decades ago is now the place that teaches the city where it came from."
+    },
+    "palette": {
+      "sky": "#0B0E14",
+      "ambient": "#1F2740",
+      "accent": "#E6C15A"
+    }
+  }
+]

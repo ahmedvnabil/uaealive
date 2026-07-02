@@ -1,0 +1,359 @@
+[
+  {
+    "slug": "coffee-museum",
+    "kind": "museum",
+    "name": {
+      "ar": "متحف القهوة",
+      "en": "Coffee Museum"
+    },
+    "summary": {
+      "ar": "في بيت عائلي مرمّم من طابقين في عمق أزقة الفهيدي، يروي متحف القهوة رحلة البُنّ الطويلة من مرتفعات إثيوبيا واليمن إلى مجالس الخليج. افتتحه الجامع الإماراتي خالد المُلّا عام 2014، ويضم محامص ومطاحن قديمة ودِلالًا ومخطوطات جُمعت من أنحاء العالم، فيما تفوح رائحة القهوة العربية وهي تُحمَّص على الجمر في الفناء، دعوة صادقة للجلوس والارتشاف والإصغاء إلى حكايات فنجانٍ صنع تاريخًا كاملًا من الضيافة.",
+      "en": "Inside a restored two-storey family house deep in Al Fahidi's lanes, the Coffee Museum traces the long journey of the bean from the highlands of Ethiopia and Yemen to the majlis of the Gulf. Opened in 2014 by Emirati collector Khalid Al Mulla, it gathers antique roasters, grinders, dallah pots and manuscripts from across the world, while the scent of gahwa roasting over coals drifts through the courtyard — an open invitation to sit, sip and listen."
+    },
+    "lat": 25.263708,
+    "lng": 55.300098,
+    "era_built": "late 1800s",
+    "accessibility": {
+      "wheelchair": false,
+      "audio": true
+    },
+    "hero_image": "/images/pois/coffee-museum.svg",
+    "order": 1
+  },
+  {
+    "slug": "smccu",
+    "kind": "museum",
+    "name": {
+      "ar": "مركز الشيخ محمد بن راشد للتواصل الحضاري",
+      "en": "Sheikh Mohammed Centre for Cultural Understanding"
+    },
+    "summary": {
+      "ar": "خلف أبواب من خشب الساج المنقوش، في بيت فسيح تعلوه براجيل، يستقبل مركز الشيخ محمد بن راشد للتواصل الحضاري ضيوفه منذ عام 1998 تحت شعار دافئ: «أبواب مفتوحة، عقول متفتحة». يتشارك الزوار مع مضيفين إماراتيين وجبات الإفطار والغداء على أرض المجلس، ويسألون بحرّية عن الدين واللباس والعادات المحلية، ثم يتجولون معهم في أزقة الحي. إنه أكثر صفوف دبي ودًّا، حيث يُقدَّم الدرس مع التمر والقهوة العربية وحديث لا يعرف العجلة.",
+      "en": "Behind carved teak doors in a grand wind-tower house, the Sheikh Mohammed Centre for Cultural Understanding has welcomed guests since 1998 under one warm motto: Open Doors, Open Minds. Visitors share Emirati breakfasts and lunches on the majlis floor, ask anything they like about local faith, dress and custom, and walk the district with Emirati hosts. It is the friendliest classroom in Dubai — one where the lesson is served with dates, gahwa and unhurried conversation."
+    },
+    "lat": 25.26417,
+    "lng": 55.300721,
+    "era_built": "early 1900s",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/smccu.svg",
+    "order": 2
+  },
+  {
+    "slug": "coins-museum",
+    "kind": "museum",
+    "name": {
+      "ar": "متحف النقود",
+      "en": "Coins Museum"
+    },
+    "summary": {
+      "ar": "ثماني غرف صغيرة في بيت من الحجر المرجاني تحتضن أكثر من 470 قطعة نقدية نادرة؛ دراهم ودنانير تداولتها الأسواق من دمشق إلى دلهي. افتتحت بلدية دبي هذا المتحف عام 2004 ليتتبع مسير النقود مع اللؤلؤ والتوابل والأقمشة عبر الخليج، وتتيح شاشات مكبِّرة تأمّل نقوش يعود أقدمها إلى القرن السابع الميلادي. الدخول مجاني، والسكون في داخله يشبه لحظة فتح صندوق تاجرٍ قديم ظل مغلقًا قرونًا.",
+      "en": "Eight small rooms in a coral-stone house hold more than 470 rare coins — dirhams and dinars that once changed hands in markets from Damascus to Delhi. Opened by Dubai Municipality in 2004, the Coins Museum follows money as it moved with pearls, spices and cloth through the Gulf, and magnifier touchscreens let you study a seventh-century inscription up close. Entry is free, and the hush inside feels like the moment a merchant's old strongbox creaks open."
+    },
+    "lat": 25.264582,
+    "lng": 55.299793,
+    "era_built": "early 1900s",
+    "accessibility": {
+      "wheelchair": false,
+      "audio": true
+    },
+    "hero_image": "/images/pois/coins-museum.svg",
+    "order": 3
+  },
+  {
+    "slug": "xva-gallery",
+    "kind": "gallery",
+    "name": {
+      "ar": "جاليري إكس ڤي إيه",
+      "en": "XVA Gallery"
+    },
+    "summary": {
+      "ar": "منذ عام 2003 حوّل جاليري إكس ڤي إيه بيتًا مرمّمًا ذا فناء إلى واحد من أهم فضاءات الفن المعاصر في الخليج، يعرض أعمالًا من العالم العربي وإيران وشبه القارة الهندية. تتوزع اللوحات والتجهيزات الفنية في غرف بيضاء تطل على الفناء، ويشغل الطابق العلوي فندق فني صغير، بينما يقدّم المقهى المظلَّل في الأسفل قائمة نباتية ذائعة الصيت. ادخل من السكة المجاورة، وقد تخرج وأنت تتابع فنانًا جديدًا، أو على الأقل بكوب ليمون بالنعناع.",
+      "en": "Since 2003, XVA has turned a restored courtyard house into one of the Gulf's most respected homes for contemporary art from the Arab world, Iran and the subcontinent. Paintings and installations hang in whitewashed rooms opening onto the courtyard, a small art hotel occupies the upper floor, and the shaded café below serves a famously good vegetarian menu. Wander in from the sikka and you may leave following a new artist — or at least carrying a mint lemonade."
+    },
+    "lat": 25.26411,
+    "lng": 55.299668,
+    "era_built": "early 1900s",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/xva-gallery.svg",
+    "order": 4
+  },
+  {
+    "slug": "arabian-tea-house",
+    "kind": "cafe",
+    "name": {
+      "ar": "بيت الشاي العربي",
+      "en": "Arabian Tea House"
+    },
+    "summary": {
+      "ar": "كراسٍ بيضاء من الخيزران، ووسائد فيروزية، وستائر من الدانتيل تملأ فناء هذا المقهى المحبوب، الذي افتُتح عام 1997 باسم «مقهى بستة للفنون» قبل أن يُعرف في المدينة كلها باسم بيت الشاي العربي. تنتقل قائمته من أطباق الفطور الإماراتي كالبلاليط والجباب إلى ما يزيد على مئة نوع من الشاي، تُقدَّم جميعها في ظل بيت تراثي عريق. هنا يتباطأ إيقاع الفهيدي: رنين أباريق الشاي، وعصافير تتنقل بخفة بين الطاولات، وظلال تطول على مهل.",
+      "en": "White rattan chairs, turquoise cushions and lace curtains fill the courtyard of this beloved café, opened in 1997 as the Basta Art Café and now known across the city as Arabian Tea House. The menu runs from Emirati breakfast trays of balaleet and chebab to well over a hundred teas, all served in the shade of an old heritage house. This is where Al Fahidi slows down — teapots clinking, sparrows hopping between tables, shadows lengthening at their own pace."
+    },
+    "lat": 25.263351,
+    "lng": 55.29972,
+    "era_built": "early 1900s",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/arabian-tea-house.svg",
+    "order": 5
+  },
+  {
+    "slug": "majlis-gallery",
+    "kind": "gallery",
+    "name": {
+      "ar": "جاليري المجلس",
+      "en": "The Majlis Gallery"
+    },
+    "summary": {
+      "ar": "في بيت تعلوه براجيل قرب دوار الفهيدي، أسست الفنانة البريطانية أليسون كولينز عام 1989 «جاليري المجلس»، أول صالة فنون جميلة في دبي؛ فناء تلتف فيه اللوحات والخزفيات والزجاجيات حول شجرة حنّاء مزهرة. على مدى ثلاثة عقود قدّم الجاليري للمدينة فنانين استلهموا روح المنطقة وصحراءها وخورها، وأسهمت قاعاته الصغيرة في صياغة علاقة دبي المبكرة بالفن. قصته منسوجة في حكاية إحياء الحي نفسه، وما زال اسمه يفتح الأحاديث هنا حتى اليوم.",
+      "en": "In a wind-tower house beside Al Fahidi Roundabout, British artist Alison Collins founded The Majlis Gallery in 1989 — Dubai's first fine-art gallery, a courtyard of paintings, ceramics and glass gathered around a flowering henna tree. For three decades it introduced the city to artists inspired by the region's desert, creek and light, and its small rooms helped shape Dubai's early love affair with art. Its story is woven into the district's own revival, and its name still opens conversations here."
+    },
+    "lat": 25.26215,
+    "lng": 55.30018,
+    "era_built": "early 1900s",
+    "accessibility": {
+      "wheelchair": false,
+      "audio": true
+    },
+    "hero_image": "/images/pois/majlis-gallery.svg",
+    "order": 6
+  },
+  {
+    "slug": "calligraphy-house",
+    "kind": "house",
+    "name": {
+      "ar": "بيت الخط العربي",
+      "en": "House of Arabic Calligraphy"
+    },
+    "summary": {
+      "ar": "يحتفي بيت الخط العربي بالحرف بوصفه فنًّا قائمًا بذاته. في غرف هادئة تطل على فناء مظلل، تُعرض أعمال بخطوط الكوفي والثلث والديواني والنسخ، تكشف كيف تحمل أبجدية واحدة ألف مزاج، من الجليل المهيب إلى المرح الرشيق. وتدعو المعارض وورش العمل الزوار إلى الإمساك بالقلم بأنفسهم ليلمسوا الانضباط الكامن خلف كل انحناءة، وليكتبوا أسماءهم كما تُكتب القصائد. بيت صغير وموضوعه شاسع: جمال الكلمة المكتوبة وسحرها الذي لا ينفد.",
+      "en": "The House of Arabic Calligraphy celebrates the letter as an art form in its own right. In quiet rooms off a shaded courtyard, works in Kufic, Thuluth, Diwani and Naskh scripts show how a single alphabet can carry a thousand moods, from monumental to playful. Exhibitions and workshops invite visitors to pick up the qalam themselves and feel the discipline behind every curve — and to write their own names the way poems are written. A small house with a vast subject: the beauty of the written word."
+    },
+    "lat": 25.264276,
+    "lng": 55.30086,
+    "era_built": "early 1900s",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/calligraphy-house.svg",
+    "order": 7
+  },
+  {
+    "slug": "wind-tower-house",
+    "kind": "house",
+    "name": {
+      "ar": "بيت البراجيل",
+      "en": "Wind-Tower House"
+    },
+    "summary": {
+      "ar": "يكشف هذا البيت التجاري المرمَّم عبقرية «البرجيل»: برج هواء بأربع فتحات يلتقط نسيم الخليج ويصبّه في الغرف تحته؛ تكييف للهواء قبل الكهرباء بقرون. بُنيت بيوت كهذا في أواخر القرن التاسع عشر على أيدي عائلات تجارية قدمت من بستك جنوب فارس، من الحجر المرجاني والجص وجذوع النخيل وخشب الساج، فحوّلت الجدران السميكة والأفنية المظللة إلى مناخ خاص. قف تحت عمود البرج مباشرة، واشعر بحرّ الصحراء وهو ينكسر فجأة إلى نسمة.",
+      "en": "This restored merchant house shows off the genius of the barjeel: a four-sided wind tower that catches the Gulf breeze and pours it down into the rooms below — air conditioning centuries before electricity. Houses like this one were built in the late 1800s by trading families from Bastak in southern Persia, using coral stone, gypsum, palm trunks and teak, turning thick walls and shaded courtyards into a private climate. Stand directly beneath the tower shaft and feel the desert heat suddenly break into a breeze."
+    },
+    "lat": 25.26386,
+    "lng": 55.3011,
+    "era_built": "1890s",
+    "accessibility": {
+      "wheelchair": false,
+      "audio": true
+    },
+    "hero_image": "/images/pois/wind-tower-house.svg",
+    "order": 8
+  },
+  {
+    "slug": "al-fahidi-mosque",
+    "kind": "mosque",
+    "name": {
+      "ar": "مسجد البستكية",
+      "en": "Al Fahidi (Bastakiya) Mosque"
+    },
+    "summary": {
+      "ar": "بين بيوت البراجيل يقوم هذا المسجد العامل المتواضع، الذي يرفع الأذان في الحي منذ أجيال. تتبع جدرانه البيضاء وقبته الصغيرة ومئذنته الرشيقة الهندسة الهادئة نفسها التي تحكم البيوت من حوله: جصّ وحجر مرجاني وظل وفير. ما زال المسجد بيت عبادة حيًّا لا معلمًا سياحيًا، لذا يتأمله الزوار باحترام من السكة، فيما تفتح الجولات الثقافية التي ينظمها مركز التواصل الحضاري المجاور بعض شعائره للضيوف بعناية ورحابة صدر.",
+      "en": "Tucked between the wind-tower houses, this modest working mosque has called the quarter to prayer for generations. Its whitewashed walls, small dome and slender minaret follow the same quiet geometry as the homes around it — gypsum, coral stone and generous shade. It remains a living place of worship rather than a monument, so visitors admire it respectfully from the sikka, while guided cultural tours run by the neighbouring SMCCU open some of its rituals to guests with care and warmth."
+    },
+    "lat": 25.264837,
+    "lng": 55.299554,
+    "era_built": "early 1900s",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/al-fahidi-mosque.svg",
+    "order": 9
+  },
+  {
+    "slug": "old-city-wall",
+    "kind": "landmark",
+    "name": {
+      "ar": "سور دبي القديم",
+      "en": "Old Dubai City Wall"
+    },
+    "summary": {
+      "ar": "أمتار قليلة من الحجر المرجاني والجص هي كل ما تبقى من السور الذي كان يطوّق بر دبي القديمة. شُيّد السور نحو عام 1800 بطول يقارب ستمئة متر وارتفاع مترين ونصف، وظل يحرس البلدة حتى ابتلعه التوسع العمراني في مطلع القرن العشرين. هذه البقية المحفوظة في مكانها الأصلي، بلوحتها التعريفية، هي دبي مصغّرة: مدينة تجاوزت أسوارها في أقل من قرن، ثم واصلت المسير نحو الأفق دون أن تلتفت.",
+      "en": "A few metres of coral stone and gypsum are all that remain of the wall that once ringed old Bur Dubai. Raised around 1800, it ran roughly six hundred metres and stood some two and a half metres high, guarding the town until urban growth swallowed it early in the twentieth century. The fragment preserved here in its original place, with its interpretive panel, is Dubai in miniature: a city that outgrew its own defences within a century — and simply kept going."
+    },
+    "lat": 25.264242,
+    "lng": 55.299369,
+    "era_built": "c. 1800",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/old-city-wall.svg",
+    "order": 10
+  },
+  {
+    "slug": "art-alley",
+    "kind": "alley",
+    "name": {
+      "ar": "سكة الفن",
+      "en": "Art Alley"
+    },
+    "summary": {
+      "ar": "في سكك الطرف الغربي من الحي تتحول الجدران الجصية إلى لوحات. جداريات وخط عربي معاصر وأعمال تركيبية، وُلد كثير منها خلال مهرجان «سكة» للفنون والتصميم الذي تحتضنه أزقة الفهيدي منذ عام 2011، تجعل من التمشية رحلة بحث ممتعة عن اللون. تفتح المراسم والصالات الصغيرة أبوابها على الأزقة، وتظهر أعمال جديدة كل موسم، فلا تتشابه زيارتان أبدًا. تعال ساعة الغروب حين يتوهج الطلاء مع الجدران الرملية معًا.",
+      "en": "In the sikkas at the district's western edge, plaster walls become canvases. Murals, contemporary calligraffiti and installations — many of them born during the Sikka Art & Design Festival that Al Fahidi's lanes have hosted since 2011 — turn a stroll into a scavenger hunt for colour. Studios and small galleries open onto the alleys, and new pieces appear each season, so no two visits are ever the same. Come at golden hour, when the paint and the sand-lime walls glow together."
+    },
+    "lat": 25.26455,
+    "lng": 55.2993,
+    "era_built": "1890s",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/art-alley.svg",
+    "order": 11
+  },
+  {
+    "slug": "creek-edge",
+    "kind": "viewpoint",
+    "name": {
+      "ar": "ضفة خور دبي",
+      "en": "Dubai Creek Edge"
+    },
+    "summary": {
+      "ar": "حيث يلتقي الحي بخور دبي تتضح حكاية المدينة كلها. تعبر العبرات الماء كما تفعل منذ قرن، وترسو المراكب الشراعية على المرفأ، ويحمل النسيم صوت النوارس ورائحة الملح. هذا «الخور»، المدخل المائي المحمي، هو سبب وجود دبي أصلًا: منه أبحر اللؤلؤ إلى العالم، وإليه وصلت الأقمشة والتوابل من الهند وشرق إفريقيا. قف عند السياج وقت الغروب، وراقب ديرة وهي تضيء خلف ماء بلون النحاس المطروق.",
+      "en": "Where the district meets Dubai Creek, the city's whole story comes into view. Abras shuttle across the water as they have for a century, dhows ride at anchor, and the breeze carries gulls and salt. This khor — the sheltered inlet — is the reason Dubai exists at all: pearls sailed out to the world from here, and cloth and spices sailed in from India and East Africa. Stand at the railing at sunset and watch Deira light up across water the colour of hammered brass."
+    },
+    "lat": 25.2658,
+    "lng": 55.3007,
+    "era_built": "1800s",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/creek-edge.svg",
+    "order": 12
+  },
+  {
+    "slug": "bastakiah-nights",
+    "kind": "cafe",
+    "name": {
+      "ar": "مطعم ليالي البستكية",
+      "en": "Bastakiah Nights Restaurant"
+    },
+    "summary": {
+      "ar": "في بيت مرمَّم ذي فناء تتدلى فيه الفوانيس، يقدّم مطعم ليالي البستكية أطباقًا إماراتية وشرقية على مهل: مجبوس اللحم، وخبز الصاج الطازج، وشاي النعناع في الختام. يجلس الضيوف في الغرف المطلة على الفناء أو على شرفة السطح، حيث ترتسم البراجيل ظلالًا أمام وهج المدينة الحديثة. هذه هي صورة الحي بعد الغروب: أزقة هادئة، وضوء دافئ على الجص القديم، وعشاء طويل يشعرك بأنك ضيف مُكرَّم في بيت عريق.",
+      "en": "In a restored courtyard house strung with lanterns, Bastakiah Nights serves Emirati and Middle Eastern dishes the slow way — lamb machboos, fresh saj bread, mint tea to finish. Diners sit in rooms opening onto the courtyard or up on the rooftop terrace, where the wind towers stand in silhouette against the modern city's glow. This is the district after dark: quiet lanes, warm light on old plaster, and a long dinner that feels like being an honoured guest in an old family home."
+    },
+    "lat": 25.26476,
+    "lng": 55.30047,
+    "era_built": "1890s",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/bastakiah-nights.svg",
+    "order": 13
+  },
+  {
+    "slug": "philately-house",
+    "kind": "house",
+    "name": {
+      "ar": "بيت الطوابع",
+      "en": "Philately House"
+    },
+    "summary": {
+      "ar": "يحتضن هذا البيت التراثي جمعية الإمارات لهواة الطوابع، حيث يُروى تاريخ الوطن بمقياس طابع بريد. تتتبع المعروضات بريد المنطقة من إصدارات عهد الساحل المتصالح إلى أولى طوابع دولة الاتحاد الفتية، إلى جانب الأختام والمظاريف وألبومات الهواة القديمة. قد يبدو الأمر تخصصيًا حتى تقترب من الواجهات: كل نقش صغير صورة لما أرادت البلاد أن يراه العالم؛ حصون وصقور ومنصات نفط وفضاء. هنا يتبادل الهواة قصصهم، ويكتفي الفضوليون بالدهشة.",
+      "en": "Home to the Emirates Philatelic Association, this heritage house tells national history at postage-stamp scale. Displays trace the region's mail from Trucial States-era issues to the first stamps of the young UAE, alongside postmarks, covers and collectors' albums. It sounds niche until you lean in close: every tiny engraving is a snapshot of what the country wanted the world to see — forts, falcons, oil rigs, space. Serious collectors trade stories here; the merely curious just marvel."
+    },
+    "lat": 25.2648,
+    "lng": 55.300107,
+    "era_built": "early 1900s",
+    "accessibility": {
+      "wheelchair": false,
+      "audio": true
+    },
+    "hero_image": "/images/pois/philately-house.svg",
+    "order": 14
+  },
+  {
+    "slug": "heritage-sikka",
+    "kind": "alley",
+    "name": {
+      "ar": "السكة التراثية",
+      "en": "Heritage Sikka"
+    },
+    "summary": {
+      "ar": "السكة هي العمارة الخفية للحي: ممرّ لا يكاد يتسع لباعين، يجري بين جدران جصية عالية بلون الرمل. صُممت هذه الأزقة للظل والنسيم؛ ضيقة بما يكفي لتبقى باردة في الظهيرة، ومتراصفة بحيث تسحب الهواء عبر الحي كله. سِر في هذه السكة بمحاذاة الأبواب الساجية المرصّعة والجهنمية المتدلية من فوق الجدران، ودَع الممر يقرر وجهتك؛ فالضياع اللطيف في أزقة الفهيدي هو الغاية بعينها.",
+      "en": "The sikka is the district's secret architecture: a passage barely two arm-spans wide, running between high plaster walls the colour of sand. These lanes were engineered for shade and breeze — narrow enough to stay cool at noon, aligned so they pull moving air through the whole quarter. Follow this one past studded teak doors and bougainvillea spilling over the walls, and let the passage decide your route; in Al Fahidi, getting gently lost is the whole point."
+    },
+    "lat": 25.2635,
+    "lng": 55.30035,
+    "era_built": "1890s",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/heritage-sikka.svg",
+    "order": 15
+  },
+  {
+    "slug": "dubai-museum-fort",
+    "kind": "landmark",
+    "name": {
+      "ar": "حصن الفهيدي (متحف دبي)",
+      "en": "Al Fahidi Fort – Dubai Museum"
+    },
+    "summary": {
+      "ar": "غربيّ الحي مباشرة يقوم حصن الفهيدي، وهو معلم مجاور للحي التاريخي لا جزء منه. شُيّد الحصن نحو عام 1787 ويُعدّ عمومًا أقدم بناء قائم في دبي؛ حرست أبراجه المرجانية البلدة، وكان مقرًا للحاكم ومخزنًا وسجنًا، قبل أن يفتتح الشيخ راشد بن سعيد متحف دبي بين جدرانه عام 1971. يرسو الحصن في بداية كل جولة في دبي القديمة، كجدٍّ صلب يرعى براجيل الفهيدي الرشيقة من بعيد.",
+      "en": "Just west of the district stands Al Fahidi Fort — an adjacent landmark rather than part of the historical quarter itself. Built around 1787 and generally considered the oldest surviving building in Dubai, its coral-stone towers guarded the town and served as the ruler's seat, a store and a jail before Sheikh Rashid bin Saeed opened Dubai Museum within its walls in 1971. The fort anchors every walk through old Dubai — a sturdy grandfather watching over Al Fahidi's slender wind towers."
+    },
+    "lat": 25.263545,
+    "lng": 55.297196,
+    "era_built": "1787",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/dubai-museum-fort.svg",
+    "order": 16
+  },
+  {
+    "slug": "sheikh-saeed-house",
+    "kind": "landmark",
+    "name": {
+      "ar": "بيت الشيخ سعيد آل مكتوم",
+      "en": "Sheikh Saeed Al Maktoum House"
+    },
+    "summary": {
+      "ar": "على مسافة قصيرة سيرًا بمحاذاة الخور في منطقة الشندغة — وهو معلم مجاور يقع خارج حدود الحي — يقوم هذا البيت المشيّد عام 1896، الذي كان مقرّ إقامة الشيخ سعيد آل مكتوم، حاكم دبي من 1912 إلى 1958، وفيه نشأ الشيخ راشد. تحتضن غرفه اليوم أرشيفًا نفيسًا من الصور والوثائق والنقود يُظهر مدينة الخور قبل النفط. مشربياته الجصية المنقوشة وحدها، بظلالها الشبيهة بالدانتيل عند الظهيرة، تستحق المسير.",
+      "en": "A short walk along the creek in Al Shindagha — an adjacent landmark outside the district proper — this 1896 house was the residence of Sheikh Saeed Al Maktoum, ruler of Dubai from 1912 to 1958, and the childhood home of Sheikh Rashid. Its rooms now hold a remarkable archive of photographs, documents and coins showing the creek city before oil. The carved gypsum screens alone, casting lace-like shadows at noon, are worth the walk."
+    },
+    "lat": 25.267941,
+    "lng": 55.290068,
+    "era_built": "1896",
+    "accessibility": {
+      "wheelchair": true,
+      "audio": true
+    },
+    "hero_image": "/images/pois/sheikh-saeed-house.svg",
+    "order": 17
+  }
+]

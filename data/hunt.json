@@ -1,0 +1,96 @@
+{
+  "stops": [
+    {
+      "slug": "secret-of-the-dallah",
+      "poi_slug": "coffee-museum",
+      "title": { "ar": "سر الدلة", "en": "The Secret of the Dallah" },
+      "hint": {
+        "ar": "في أزقة الفهيدي بيت تسبق رائحته بابه: حبوب تُحمَّص على الجمر، ودلال نحاسية تتهامس على الرفوف. اتبع أنفك حتى ركن التحميص — رمزك الأول ينتظرك هناك.",
+        "en": "Somewhere in these lanes stands a house whose scent arrives before its door: beans roasting over coals, brass pots whispering on the shelves. Follow your nose to the roasting corner — your first code waits there."
+      },
+      "code": "DALLAH",
+      "order": 1
+    },
+    {
+      "slug": "minarets-call",
+      "poi_slug": "al-fahidi-mosque",
+      "title": { "ar": "نداء المئذنة", "en": "The Minaret's Call" },
+      "hint": {
+        "ar": "بين البيوت العتيقة يقف بيت صلاة أبيض متواضع، مئذنته أقدم أصوات الحي، تناديه خمس مرات في اليوم. قف بهدوء واحترام عند مدخله — الرمز قريب من الباب.",
+        "en": "Among the old houses stands a modest white house of prayer, its minaret the quarter's oldest voice, calling five times a day. Pause quietly and respectfully at its entrance — the code is near the door."
+      },
+      "code": "MINARA",
+      "order": 2
+    },
+    {
+      "slug": "wind-catcher",
+      "poi_slug": "wind-tower-house",
+      "title": { "ar": "صائد الريح", "en": "The Wind Catcher" },
+      "hint": {
+        "ar": "أنا برج بلا جنود: أفتح صدري للجهات الأربع، أصطاد النسيم وأسكبه بارداً في البيت من غير كهرباء ولا آلة. قف في فناء البيت وارفع رأسك نحوي — رمزك حيث يهبط الهواء.",
+        "en": "I am a tower with no soldiers: I open my chest to all four directions, catch the breeze, and pour it down cool into the house with no machine at all. Stand in the courtyard and look up at me — your code is where the air comes down."
+      },
+      "code": "BARJIL",
+      "order": 3
+    },
+    {
+      "slug": "painted-sikka",
+      "poi_slug": "art-alley",
+      "title": { "ar": "السكة الملونة", "en": "The Painted Sikka" },
+      "hint": {
+        "ar": "سكة ضيقة بدّلت جدرانها الرملية بألوان الفنانين: صقور وأشرعة ووجوه من الماضي تطل عليك من الجص. امشِ حتى أكبر جدارية — الرمز يختبئ عند أطراف الألوان.",
+        "en": "A narrow lane traded its sand-colored walls for artists' colors: falcons, sails, and faces from the past look down at you from the gypsum. Walk to the largest mural — the code hides at the edge of the paint."
+      },
+      "code": "SIKKA7",
+      "order": 4
+    },
+    {
+      "slug": "first-guardian",
+      "poi_slug": "old-city-wall",
+      "title": { "ar": "حارس المدينة الأول", "en": "The City's First Guardian" },
+      "hint": {
+        "ar": "قبل الأبراج الزجاجية كنت وحدي أحرس دبي: جدار من الجص والمرجان لم يبقَ منه إلا شواهد قليلة. ابحث عن بقاياي المحفوظة عند أطراف الحي واقرأ اللوحة التعريفية — رمزك هناك.",
+        "en": "Long before the glass towers, I alone guarded Dubai: a wall of gypsum and coral of which only a few traces remain. Find my preserved remnants at the edge of the quarter and read the information plaque — your code is there."
+      },
+      "code": "SUR180",
+      "order": 5
+    },
+    {
+      "slug": "meeting-the-creek",
+      "poi_slug": "creek-edge",
+      "title": { "ar": "لقاء الخور", "en": "Meeting the Creek" },
+      "hint": {
+        "ar": "حيث تنتهي السكيك يبدأ الماء الذي صنع دبي. اتجه شمالاً حتى ترى المراكب الخشبية تعبر بين الضفتين، واجلس حيث كان اللؤلؤ والتوابل يُفرَّغان — الرمز الأخير عند حافة الماء.",
+        "en": "Where the sikkas end, the water that made Dubai begins. Walk north until you see the wooden boats crossing between the banks, and sit where pearls and spices once came ashore — the final code waits at the water's edge."
+      },
+      "code": "ABRA25",
+      "order": 6
+    }
+  ],
+  "badges": [
+    {
+      "slug": "first-steps",
+      "name": { "ar": "أول الخطى", "en": "First Steps" },
+      "icon": "compass",
+      "threshold": 1
+    },
+    {
+      "slug": "pearl-hunter",
+      "name": { "ar": "صائد اللؤلؤ", "en": "Pearl Hunter" },
+      "icon": "pearl",
+      "threshold": 3
+    },
+    {
+      "slug": "barjeel-keeper",
+      "name": { "ar": "حارس البراجيل", "en": "Keeper of the Wind Towers" },
+      "icon": "barjeel",
+      "threshold": 5
+    },
+    {
+      "slug": "falcon-of-fahidi",
+      "name": { "ar": "صقر الفهيدي", "en": "Falcon of Al Fahidi" },
+      "icon": "falcon",
+      "threshold": 6
+    }
+  ]
+}

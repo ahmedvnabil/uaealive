@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "calligraphy-season",
+    "kind": "exhibition",
+    "title": {
+      "ar": "موسم الخط: من الكوفي إلى الكاليغرافيتي",
+      "en": "Calligraphy Season: From Kufic to Calligraffiti"
+    },
+    "description": {
+      "ar": "معرض خريفي يمتد شهرين في بيت الخط العربي، يجمع أعمال أساتذة المدرسة الكلاسيكية إلى جانب فناني الخط المعاصر «الكاليغرافيتي» من الإمارات والمنطقة. تصاحب المعرضَ ورشٌ أسبوعية تعلّم مبادئ الكوفي والثلث والديواني للمبتدئين، مع توفير الحبر والقلم والورق لكل مشارك؛ ستغادر وقد كُتب اسمك كما تستحق الأسماء أن تُكتب.",
+      "en": "A two-month autumn exhibition at the House of Arabic Calligraphy pairing classical masters with contemporary calligraffiti artists from the UAE and the region. Weekly beginner workshops cover the foundations of Kufic, Thuluth and Diwani scripts, with ink, qalam and paper provided for every participant — you will leave with your own name written the way names deserve to be written."
+    },
+    "starts_on": "2026-09-20",
+    "ends_on": "2026-11-19",
+    "location": {
+      "ar": "بيت الخط العربي، حي الفهيدي التاريخي",
+      "en": "House of Arabic Calligraphy, Al Fahidi Historical Neighbourhood"
+    }
+  },
+  {
+    "slug": "creek-memories",
+    "kind": "exhibition",
+    "title": {
+      "ar": "ذاكرة الخور: دبي قبل النفط",
+      "en": "Creek Memories: Dubai Before Oil"
+    },
+    "description": {
+      "ar": "معرض فوتوغرافي في بيت الشيخ سعيد آل مكتوم يستند إلى الأرشيف التاريخي لدبي: أساطيل الغوص وهي تغادر الخور، والمدينة قبل تعميق مجراها، وحياة الأسواق القديمة، وصور عائلية من مطلع القرن العشرين، تُعرض إلى جانب شهادات صوتية مسجلة لأحفاد الغاصة والتجار. صورة هادئة ومؤثرة للمدينة قبل أن يغيّر النفط كل شيء.",
+      "en": "A photography exhibition at Sheikh Saeed Al Maktoum House drawing on Dubai's historical archives: pearling fleets leaving the creek, the city before its channel was deepened, old souk life and family portraits from the early twentieth century, shown alongside recorded testimonies from the descendants of divers and merchants. A quiet, moving portrait of the city before oil changed everything."
+    },
+    "starts_on": "2026-10-05",
+    "ends_on": "2027-01-10",
+    "location": {
+      "ar": "بيت الشيخ سعيد آل مكتوم، الشندغة (معلم مجاور)",
+      "en": "Sheikh Saeed Al Maktoum House, Al Shindagha (adjacent landmark)"
+    }
+  },
+  {
+    "slug": "eid-al-etihad",
+    "kind": "national-day",
+    "title": {
+      "ar": "عيد الاتحاد في الفهيدي",
+      "en": "Eid Al Etihad in Al Fahidi"
+    },
+    "description": {
+      "ar": "يرتدي الحي ألوان العلم احتفالًا بعيد الاتحاد. تنتظر الزوار عروض تراثية من العيالة والحربية، وأمسيات شعرية في الأفنية، وأركان للحرف اليدوية، إلى جانب مراسم رفع العلم وورش وطنية للأطفال وإضاءات مسائية على البراجيل، فيما تفترش العائلات أفنية البيوت القديمة حتى وقت متأخر من الليل في أجواء يختلط فيها الفخر بالحنين.",
+      "en": "The quarter dresses in the colours of the flag for the UAE's union celebrations. Expect heritage performances of ayala and harbiya, poetry evenings in the courtyards, craft corners and flag-raising ceremonies, alongside children's workshops and evening light displays on the wind towers, while families settle into the old courtyards late into the night in a mood where pride mixes with nostalgia."
+    },
+    "starts_on": "2026-12-01",
+    "ends_on": "2026-12-03",
+    "location": {
+      "ar": "أنحاء حي الفهيدي التاريخي",
+      "en": "Throughout Al Fahidi Historical Neighbourhood"
+    }
+  },
+  {
+    "slug": "winter-heritage-market",
+    "kind": "market",
+    "title": {
+      "ar": "سوق التراث الشتوي على ضفة الخور",
+      "en": "Winter Heritage Market on the Creek"
+    },
+    "description": {
+      "ar": "سوق شتوي على ضفة الخور بروح الزمن الأول: أكشاك للعود والتوابل والبخور، ومنسوجات السدو اليدوية، واللؤلؤ والفضة، والعسل والتمور، مع جولات مسائية بالعبرة، ومأكولات من مطابخ بيتية إماراتية، وعروض حرفية حيّة كل مساء. هواء الشتاء العليل، وأضواء دافئة على الماء، وأجمل فرص التفرج على الناس في الموسم كله.",
+      "en": "A creek-side winter market in the old style: stalls of oud, spices and incense, hand-woven sadu textiles, pearls and silver, honey and dates, with evening abra rides, street food from Emirati home kitchens and live craft demonstrations every night. Cool winter air, warm lights on the water, and the best people-watching of the entire season."
+    },
+    "starts_on": "2026-12-11",
+    "ends_on": "2027-01-03",
+    "location": {
+      "ar": "ضفة خور دبي عند حي الفهيدي",
+      "en": "Dubai Creek edge at Al Fahidi"
+    }
+  },
+  {
+    "slug": "ramadan-nights",
+    "kind": "ramadan",
+    "title": {
+      "ar": "ليالي رمضان في الفهيدي",
+      "en": "Ramadan Nights in Al Fahidi"
+    },
+    "description": {
+      "ar": "بعد الإفطار يصبح الفهيدي أرقّ مكان في المدينة. تقود السكك المضاءة بالفوانيس إلى مجالس مفتوحة للجميع، وحلويات رمضانية وقهوة عربية في الأفنية، وصدى مدفع الإفطار من جهة الخور، وجلسات سمر متأخرة عن تقاليد الضيافة والصيام في الإمارات تستضيفها بيوت الحي الثقافية طوال الشهر الفضيل.",
+      "en": "After iftar, Al Fahidi becomes the gentlest place in the city. Lantern-lit sikkas lead to majlis gatherings open to everyone, Ramadan sweets and gahwa served in the courtyards, the echo of the iftar cannon rolling in from the creek, and late-night conversations on Emirati traditions of hospitality and fasting, hosted by the district's cultural houses throughout the holy month."
+    },
+    "starts_on": "2027-02-08",
+    "ends_on": "2027-03-08",
+    "location": {
+      "ar": "أفنية وسكك حي الفهيدي التاريخي",
+      "en": "Courtyards and sikkas of Al Fahidi Historical Neighbourhood"
+    }
+  },
+  {
+    "slug": "sikka-art-festival",
+    "kind": "festival",
+    "title": {
+      "ar": "مهرجان سكة للفنون والتصميم",
+      "en": "Sikka Art & Design Festival"
+    },
+    "description": {
+      "ar": "يعود المهرجان السنوي للفنون الناشئة إلى الأزقة التي حمل اسمها. على مدى عشرة أيام تمتلئ بيوت الفهيدي وسككه بالجداريات والأعمال التركيبية وعروض الأفلام والخط الحي والموسيقى والجلسات الحوارية، ومعظمها لفنانين صاعدين من الإمارات ودول الخليج. الدخول مجاني للجميع، والتجوال بين البيوت هو البرنامج كله.",
+      "en": "The annual celebration of emerging art returns to the lanes it was named after. For ten days the heritage houses and sikkas of Al Fahidi fill with murals, installations, film screenings, live calligraphy, music and talks, most of it by rising artists from the UAE and the wider Gulf. Entry is free for everyone, and wandering from house to house is the entire programme."
+    },
+    "starts_on": "2027-03-19",
+    "ends_on": "2027-03-28",
+    "location": {
+      "ar": "بيوت وسكك حي الفهيدي التاريخي",
+      "en": "Houses and sikkas of Al Fahidi Historical Neighbourhood"
+    }
+  },
+  {
+    "slug": "dubai-heritage-week",
+    "kind": "festival",
+    "title": {
+      "ar": "أسبوع التراث في دبي",
+      "en": "Dubai Heritage Week"
+    },
+    "description": {
+      "ar": "بالتزامن مع اليوم العالمي للمواقع والمعالم الأثرية، أسبوع من الأبواب المفتوحة في أرجاء الحي: مهندسو ترميم يشرحون للزوار أسرار صون العمارة المرجانية والجصية، ومتاحف تمدّ ساعات عملها المسائية، وكبار السن يروون ذكريات الخور في مجالس موثَّقة، وأطفال يتعلمون بناء برجيل مصغّر يلتقط النسيم حقًا.",
+      "en": "Timed around the International Day for Monuments and Sites, a week of open doors across the district: restoration architects walk visitors through the craft of conserving coral-stone and gypsum buildings, museums extend their evening hours, elders share creek-side memories in recorded majlis sessions, and children learn to build a miniature barjeel that genuinely catches the wind."
+    },
+    "starts_on": "2027-04-18",
+    "ends_on": "2027-04-24",
+    "location": {
+      "ar": "حي الفهيدي التاريخي ومحيطه",
+      "en": "Al Fahidi Historical Neighbourhood and surroundings"
+    }
+  }
+]
