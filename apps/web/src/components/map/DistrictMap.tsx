@@ -252,6 +252,7 @@ export default function DistrictMap({
       isRtl(lang) ? "top-right" : "top-left",
     );
     mapRef.current = map;
+    const markers = markersRef.current;
 
     for (const poi of pois) {
       const hunt = variant === "hunt" ? huntRef.current?.[poi.slug] : undefined;
@@ -281,12 +282,12 @@ export default function DistrictMap({
       const marker = new maplibregl.Marker({ element: el })
         .setLngLat([poi.lng, poi.lat])
         .addTo(map);
-      markersRef.current.set(poi.slug, { marker, el });
+      markers.set(poi.slug, { marker, el });
     }
 
     return () => {
-      markersRef.current.forEach(({ marker }) => marker.remove());
-      markersRef.current.clear();
+      markers.forEach(({ marker }) => marker.remove());
+      markers.clear();
       map.remove();
       mapRef.current = null;
     };

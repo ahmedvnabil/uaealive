@@ -26,8 +26,12 @@ export function ARGate() {
   const [hasCamera, setHasCamera] = useState(true);
   const [pois, setPois] = useState<PoiOut[]>([]);
   const [poisError, setPoisError] = useState(false);
+  // Clicks before hydration are silently dropped — keep CTAs disabled until
+  // React has mounted so slow devices never hit a dead-click window.
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
+    setReady(true);
     setHasCamera(
       typeof navigator !== "undefined" &&
         typeof navigator.mediaDevices?.getUserMedia === "function",
@@ -96,7 +100,7 @@ export function ARGate() {
             <Button
               size="lg"
               variant={key === "sim" ? "primary" : "outline"}
-              disabled={!available}
+              disabled={!available || !ready}
               onClick={onStart}
               className="justify-self-start sm:justify-self-end"
             >
