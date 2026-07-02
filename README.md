@@ -21,6 +21,7 @@
 ## Stack
 
 - **Frontend:** Next.js 15 (App Router), TypeScript strict, Tailwind v4, React Three Fiber, MapLibre GL, next-intl (Arabic-first, RTL), Playwright E2E
+- **Typography:** [Dubai Font](https://dubaifont.com) — the emirate's official bilingual typeface, self-hosted (one family for Arabic + Latin, no runtime CDN)
 - **Backend:** FastAPI, SQLAlchemy 2, GeoAlchemy2, Alembic, Pydantic v2, slowapi rate limits — `/api/v1` with `{ok, data, error}` envelope, SSE streaming
 - **Data:** PostGIS (postgis/postgis:16-3.4), seed knowledge base in `data/*.json`, OSM-derived GeoJSON (`scripts/fetch_osm.py`)
 - **AI:** server-side only via LiteLLM proxy (chat + tour copilot), keyword-scored canned fallback when offline; hero art generated with SDXL, EN narration with Kokoro TTS — both on a local GPU

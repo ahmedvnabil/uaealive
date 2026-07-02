@@ -34,13 +34,13 @@
 }
 
 @theme inline {
-  /* Fonts wired from next/font/google variables set on <html> */
-  --font-arabic: var(--font-noto-kufi), var(--font-inter), ui-sans-serif,
-    system-ui, sans-serif;
-  --font-latin: var(--font-inter), var(--font-noto-kufi), ui-sans-serif,
-    system-ui, sans-serif;
-  --font-sans: var(--font-inter), var(--font-noto-kufi), ui-sans-serif,
-    system-ui, sans-serif;
+  /* Dubai Font (self-hosted, next/font/local) is bilingual — one family for
+     both scripts. Fallbacks cover Arabic- and Latin-capable system fonts. */
+  --font-dubai-stack: var(--font-dubai), ui-sans-serif, system-ui, "Segoe UI",
+    Tahoma, "Geeza Pro", "Noto Kufi Arabic", sans-serif;
+  --font-arabic: var(--font-dubai-stack);
+  --font-latin: var(--font-dubai-stack);
+  --font-sans: var(--font-dubai-stack);
 }
 
 /*

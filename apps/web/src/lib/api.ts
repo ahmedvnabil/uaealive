@@ -29,7 +29,15 @@ import type {
 } from "./types";
 import { getDeviceId } from "./device";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+// Server-side rendering (RSC/route handlers) inside Docker must reach the API
+// over the internal network (http://api:8000); the browser must use the public
+// origin baked into NEXT_PUBLIC_API_URL. API_INTERNAL_URL is a server-only
+// runtime var — undefined in the browser bundle, so the window branch always
+// falls through to the public URL.
+const SERVER_API_URL =
+  typeof window === "undefined" ? process.env.API_INTERNAL_URL : undefined;
+const API_URL =
+  SERVER_API_URL ?? process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 const BASE = `${API_URL}/api/v1`;
 
 export class ApiError extends Error {

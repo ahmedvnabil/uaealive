@@ -27,3 +27,7 @@ reviewers instructed to refute, not confirm). Findings and their resolutions:
 ## Phase 4 — hardening & packaging
 - E2E smoke: 6/6 green against the live stack (RTL/LTR shells, map deep link, narration + audience toggle, streamed chat round-trip, hunt wrong-code rejection).
 - Dockerfiles added (compose referenced them but they never existed — caught in packaging review); compose now mounts `data/` read-only and bakes `NEXT_PUBLIC_API_URL` at build; fresh `docker compose up --build` verified end-to-end through nginx.
+
+## Post-v1 polish — Dubai Font + SSR dual-URL fix
+- **Typography:** switched from Noto Kufi Arabic + Inter to the official **Dubai Font** (self-hosted woff2 via `next/font/local`, one bilingual family for Arabic + Latin). Verified 101 Arabic + 58 Latin glyphs per weight, all 4 weights serve 200 through nginx, both locales render correctly (screenshots).
+- **SSR dual-URL bug (found while testing the story page in Docker):** server-rendered `/stories/[slug]` fetched the API at `NEXT_PUBLIC_API_URL` (`localhost:8080`) from *inside* the web container, where that address is the web app itself → blank page. Static landing + client-fetched pages (map/twin/characters) were unaffected, which is why earlier smoke checks missed it. Fixed: `api.ts` uses a server-only `API_INTERNAL_URL` (`http://api:8000`) for RSC/SSR, public origin for the browser. All 6 E2E now pass against the Docker stack on :8080.
