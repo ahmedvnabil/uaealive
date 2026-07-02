@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/*
+ * UAE ALIVE design tokens — single source of truth mirrored in src/lib/theme.ts.
+ * Any change here MUST be reflected there (and vice versa).
+ */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Palette — deep desert night with gold/sand accents */
+  --color-night: #0b0e14;
+  --color-night-soft: #131826;
+  --color-sand: #e8dcc8;
+  --color-gold: #c9a227;
+  --color-gold-bright: #e6c15a;
+  --color-oasis: #2e6e5e;
+  --color-clay: #b0603e;
+  --color-mist: rgba(232, 220, 200, 0.08);
+  --color-line: rgba(232, 220, 200, 0.14);
+
+  /* Radii */
+  --radius-xs: 2px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
+
+  /* Type scale */
+  --text-display: clamp(2.5rem, 6vw, 4.5rem);
+  --text-display--line-height: 1.15;
+  --text-display--font-weight: 700;
+
+  /* Motion */
+  --ease-heritage: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  /* Fonts wired from next/font/google variables set on <html> */
+  --font-arabic: var(--font-noto-kufi), var(--font-inter), ui-sans-serif,
+    system-ui, sans-serif;
+  --font-latin: var(--font-inter), var(--font-noto-kufi), ui-sans-serif,
+    system-ui, sans-serif;
+  --font-sans: var(--font-inter), var(--font-noto-kufi), ui-sans-serif,
+    system-ui, sans-serif;
+}
+
+/*
+ * Dark-first: <html class="dark"> is the default; light mode is secondary.
+ * Adaptive aliases (--app-*, --surface, --line-soft) let components render
+ * correctly in both modes without hardcoding palette hex values.
+ */
+:root {
+  --app-bg: var(--color-sand);
+  --app-fg: var(--color-night);
+  --surface: rgba(11, 14, 20, 0.05);
+  --line-soft: rgba(11, 14, 20, 0.16);
+}
+
+.dark {
+  --app-bg: var(--color-night);
+  --app-fg: var(--color-sand);
+  --surface: var(--color-night-soft);
+  --line-soft: var(--color-line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--app-bg);
+  color: var(--app-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-night);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold-bright);
+  outline-offset: 2px;
+}
+
+/* Respect prefers-reduced-motion globally. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

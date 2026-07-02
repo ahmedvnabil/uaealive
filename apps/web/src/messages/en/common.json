@@ -1,0 +1,67 @@
+{
+  "app": {
+    "name": "UAE ALIVE",
+    "district": "Al Fahidi Historical District",
+    "tagline": "Al Fahidi, alive again",
+    "description": "An AI + WebAR interactive platform that brings Dubai's Al Fahidi Historical District back to life"
+  },
+  "nav": {
+    "home": "Home",
+    "map": "Map",
+    "twin": "Digital Twin",
+    "stories": "Stories",
+    "characters": "Characters",
+    "arx": "AR",
+    "hunt": "The Hunt",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "about": "An interactive platform reviving Dubai's Al Fahidi Historical District through AI and WebAR — living maps, sourced stories, and characters from the past who speak with you.",
+    "explore": "Explore",
+    "experience": "Experience",
+    "sources": "Sources & credits",
+    "rights": "Demo showcase project — 2026",
+    "madeFor": "Made in celebration of Emirati heritage"
+  },
+  "ui": {
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "close": "Close",
+    "open": "Open",
+    "back": "Back",
+    "next": "Next",
+    "prev": "Previous",
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "search": "Search",
+    "share": "Share",
+    "send": "Send",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "confirm": "Confirm",
+    "offline": "Offline mode",
+    "comingSoon": "Coming soon",
+    "startExperience": "Start the experience",
+    "tryAr": "Try AR",
+    "noResults": "No results"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "dark": "Dark mode",
+    "light": "Light mode"
+  },
+  "lang": {
+    "label": "Switch language",
+    "other": "العربية"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "footerNav": "Footer links"
+  }
+}
