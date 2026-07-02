@@ -1,3 +1,151 @@
 {
-  "title": "Admin Panel"
+  "title": "Admin Panel",
+  "kicker": "UAE ALIVE — Content Management",
+  "description": "Manage Al Fahidi POIs, stories and events, moderate community contributions, and follow analytics.",
+  "logout": "Log out",
+  "login": {
+    "title": "Admin sign-in",
+    "subtitle": "Enter the admin password to continue. This panel is for the content team.",
+    "password": "Password",
+    "submit": "Sign in",
+    "checking": "Verifying…",
+    "invalid": "Incorrect password",
+    "network": "Could not reach the server — make sure the backend is running",
+    "backHome": "Back to the site"
+  },
+  "tabs": {
+    "label": "Admin sections",
+    "pois": "POIs",
+    "stories": "Stories",
+    "events": "Events",
+    "moderation": "Moderation",
+    "analytics": "Analytics"
+  },
+  "list": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirmDelete": "Confirm delete?",
+    "actions": "Actions",
+    "empty": "No items yet",
+    "countLabel": "Items: {count}",
+    "loading": "Loading…",
+    "loadError": "Failed to load data",
+    "actionError": "Action failed — please try again",
+    "retry": "Retry"
+  },
+  "form": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "saving": "Saving…",
+    "arabicLabel": "العربية",
+    "englishLabel": "English",
+    "required": "Required field",
+    "invalidNumber": "Invalid numeric value",
+    "saveError": "Save failed — check the fields and try again",
+    "conflict": "This slug is already in use",
+    "optional": "optional"
+  },
+  "pois": {
+    "addTitle": "Add POI",
+    "editTitle": "Edit POI",
+    "columns": {
+      "slug": "Slug",
+      "kind": "Kind",
+      "name": "Name",
+      "coords": "Coordinates",
+      "order": "Order"
+    },
+    "fields": {
+      "slug": "Slug",
+      "kind": "Kind",
+      "kindHint": "e.g. museum, house, gallery, cafe",
+      "name": "Name",
+      "summary": "Summary",
+      "lat": "Latitude",
+      "lng": "Longitude",
+      "eraBuilt": "Era built",
+      "heroImage": "Hero image path",
+      "order": "Order",
+      "accessibility": "Accessibility",
+      "wheelchair": "Wheelchair accessible",
+      "audio": "Audio guide available"
+    }
+  },
+  "stories": {
+    "addTitle": "Add story",
+    "editTitle": "Edit story",
+    "columns": {
+      "poi": "POI",
+      "audience": "Audience",
+      "title": "Title"
+    },
+    "fields": {
+      "poi": "Linked POI",
+      "audience": "Audience",
+      "title": "Title",
+      "body": "Story body",
+      "sources": "Sources",
+      "sourcesHint": "One link or reference per line"
+    },
+    "audiences": {
+      "tourist": "Tourist",
+      "kids": "Kids",
+      "expert": "Expert"
+    }
+  },
+  "events": {
+    "addTitle": "Add event",
+    "editTitle": "Edit event",
+    "columns": {
+      "slug": "Slug",
+      "kind": "Kind",
+      "title": "Title",
+      "dates": "Dates"
+    },
+    "fields": {
+      "slug": "Slug",
+      "kind": "Kind",
+      "kindHint": "e.g. festival, exhibition, workshop",
+      "title": "Title",
+      "description": "Description",
+      "location": "Location",
+      "startsOn": "Start date",
+      "endsOn": "End date"
+    },
+    "errors": {
+      "datesOrder": "End date must not precede the start date"
+    }
+  },
+  "moderation": {
+    "filterLabel": "Filter by status",
+    "empty": "No submissions in this state",
+    "approve": "Approve",
+    "reject": "Reject",
+    "working": "Working…",
+    "contact": "Contact",
+    "submittedAt": "Submitted at",
+    "payload": "Submission content",
+    "statuses": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "types": {
+      "story": "Story",
+      "photo": "Photo",
+      "memory": "Memory",
+      "document": "Document"
+    }
+  },
+  "analytics": {
+    "refresh": "Refresh",
+    "totalEvents": "Total events",
+    "chatMessages": "Chat messages",
+    "byPage": "By page",
+    "topPois": "Most viewed POIs",
+    "byLang": "By language",
+    "empty": "No data yet",
+    "countLabel": "Count"
+  }
 }

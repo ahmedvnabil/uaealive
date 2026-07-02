@@ -1,3 +1,151 @@
 {
-  "title": "لوحة الإدارة"
+  "title": "لوحة الإدارة",
+  "kicker": "UAE ALIVE — إدارة المحتوى",
+  "description": "إدارة مواقع وقصص وفعاليات حي الفهيدي، ومراجعة مساهمات المجتمع، ومتابعة التحليلات.",
+  "logout": "تسجيل الخروج",
+  "login": {
+    "title": "دخول لوحة الإدارة",
+    "subtitle": "أدخل كلمة مرور الإدارة للمتابعة. هذه اللوحة مخصّصة لفريق المحتوى.",
+    "password": "كلمة المرور",
+    "submit": "دخول",
+    "checking": "جارٍ التحقق…",
+    "invalid": "كلمة المرور غير صحيحة",
+    "network": "تعذّر الاتصال بالخادم — تأكد أن الواجهة الخلفية تعمل",
+    "backHome": "عودة إلى الموقع"
+  },
+  "tabs": {
+    "label": "أقسام الإدارة",
+    "pois": "المواقع",
+    "stories": "القصص",
+    "events": "الفعاليات",
+    "moderation": "المراجعة",
+    "analytics": "التحليلات"
+  },
+  "list": {
+    "add": "إضافة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "confirmDelete": "تأكيد الحذف؟",
+    "actions": "إجراءات",
+    "empty": "لا توجد عناصر بعد",
+    "countLabel": "عدد العناصر: {count}",
+    "loading": "جارٍ التحميل…",
+    "loadError": "تعذّر تحميل البيانات",
+    "actionError": "تعذّر تنفيذ الإجراء — أعد المحاولة",
+    "retry": "أعد المحاولة"
+  },
+  "form": {
+    "save": "احفظ",
+    "cancel": "إلغاء",
+    "saving": "جارٍ الحفظ…",
+    "arabicLabel": "العربية",
+    "englishLabel": "English",
+    "required": "حقل مطلوب",
+    "invalidNumber": "قيمة رقمية غير صالحة",
+    "saveError": "تعذّر الحفظ — تحقق من الحقول ثم أعد المحاولة",
+    "conflict": "المعرّف (slug) مستخدم مسبقاً",
+    "optional": "اختياري"
+  },
+  "pois": {
+    "addTitle": "إضافة موقع",
+    "editTitle": "تعديل موقع",
+    "columns": {
+      "slug": "المعرّف",
+      "kind": "النوع",
+      "name": "الاسم",
+      "coords": "الإحداثيات",
+      "order": "الترتيب"
+    },
+    "fields": {
+      "slug": "المعرّف (slug)",
+      "kind": "النوع",
+      "kindHint": "مثال: museum ، house ، gallery ، cafe",
+      "name": "الاسم",
+      "summary": "الملخص",
+      "lat": "خط العرض",
+      "lng": "خط الطول",
+      "eraBuilt": "حقبة البناء",
+      "heroImage": "مسار الصورة الرئيسية",
+      "order": "الترتيب",
+      "accessibility": "إتاحة الوصول",
+      "wheelchair": "مناسب للكراسي المتحركة",
+      "audio": "شرح صوتي متاح"
+    }
+  },
+  "stories": {
+    "addTitle": "إضافة قصة",
+    "editTitle": "تعديل قصة",
+    "columns": {
+      "poi": "الموقع",
+      "audience": "الجمهور",
+      "title": "العنوان"
+    },
+    "fields": {
+      "poi": "الموقع المرتبط",
+      "audience": "الجمهور",
+      "title": "العنوان",
+      "body": "نص القصة",
+      "sources": "المصادر",
+      "sourcesHint": "رابط أو مرجع واحد في كل سطر"
+    },
+    "audiences": {
+      "tourist": "سائح",
+      "kids": "أطفال",
+      "expert": "خبير"
+    }
+  },
+  "events": {
+    "addTitle": "إضافة فعالية",
+    "editTitle": "تعديل فعالية",
+    "columns": {
+      "slug": "المعرّف",
+      "kind": "النوع",
+      "title": "العنوان",
+      "dates": "التواريخ"
+    },
+    "fields": {
+      "slug": "المعرّف (slug)",
+      "kind": "النوع",
+      "kindHint": "مثال: festival ، exhibition ، workshop",
+      "title": "العنوان",
+      "description": "الوصف",
+      "location": "المكان",
+      "startsOn": "تاريخ البداية",
+      "endsOn": "تاريخ النهاية"
+    },
+    "errors": {
+      "datesOrder": "تاريخ النهاية يجب ألا يسبق تاريخ البداية"
+    }
+  },
+  "moderation": {
+    "filterLabel": "تصفية حسب الحالة",
+    "empty": "لا توجد مساهمات في هذه الحالة",
+    "approve": "اعتماد",
+    "reject": "رفض",
+    "working": "جارٍ التنفيذ…",
+    "contact": "بيانات التواصل",
+    "submittedAt": "تاريخ الإرسال",
+    "payload": "محتوى المساهمة",
+    "statuses": {
+      "pending": "قيد المراجعة",
+      "approved": "معتمدة",
+      "rejected": "مرفوضة"
+    },
+    "types": {
+      "story": "قصة",
+      "photo": "صورة",
+      "memory": "ذكرى",
+      "document": "وثيقة"
+    }
+  },
+  "analytics": {
+    "refresh": "تحديث",
+    "totalEvents": "إجمالي الأحداث",
+    "chatMessages": "رسائل المحادثة",
+    "byPage": "حسب الصفحة",
+    "topPois": "أكثر المواقع مشاهدة",
+    "byLang": "حسب اللغة",
+    "empty": "لا توجد بيانات بعد",
+    "countLabel": "العدد"
+  }
 }
