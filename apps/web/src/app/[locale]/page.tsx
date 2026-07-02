@@ -1,10 +1,15 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/routing";
-import { buttonClasses } from "@/components/ui/Button";
+import { setRequestLocale } from "next-intl/server";
+import { Hero } from "@/components/landing/Hero";
+import { PillarsSection } from "@/components/landing/PillarsSection";
+import { StatsBand } from "@/components/landing/StatsBand";
+import { CharactersTeaser } from "@/components/landing/CharactersTeaser";
+import { MapTeaser } from "@/components/landing/MapTeaser";
+import { CTASection } from "@/components/landing/CTASection";
 
 /**
- * Placeholder home — replaced by the cinematic landing page in Task 9.
- * Exists so the RTL shell (nav, footer, theme, fonts) renders end-to-end.
+ * Cinematic landing page (Task 9): full-viewport hero with the animated
+ * barjeel skyline, the five experience pillars, district stats, character
+ * and map teasers, and a closing CTA.
  */
 export default async function HomePage({
   params,
@@ -13,23 +18,15 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "common" });
 
   return (
-    <section className="mx-auto flex min-h-[70vh] w-full max-w-5xl flex-col items-center justify-center gap-6 px-6 text-center">
-      <p className="text-sm font-medium tracking-widest text-gold">
-        {t("app.district")}
-      </p>
-      <h1 className="text-display">{t("app.tagline")}</h1>
-      <p className="max-w-2xl text-lg opacity-80">{t("app.description")}</p>
-      <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
-        <Link href="/map" className={buttonClasses("primary", "lg")}>
-          {t("ui.startExperience")}
-        </Link>
-        <Link href="/ar-experience" className={buttonClasses("outline", "lg")}>
-          {t("ui.tryAr")}
-        </Link>
-      </div>
-    </section>
+    <>
+      <Hero />
+      <PillarsSection />
+      <StatsBand />
+      <CharactersTeaser />
+      <MapTeaser />
+      <CTASection />
+    </>
   );
 }

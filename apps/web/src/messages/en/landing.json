@@ -1,3 +1,103 @@
 {
-  "title": "Al Fahidi, alive again"
+  "hero": {
+    "kicker": "Al Fahidi Historical District · Dubai",
+    "title": "Al Fahidi, alive again",
+    "subtitle": "In the alleys of old Bastakiya, beneath the wind towers, AI meets living memory: a living map, sourced stories, and characters from the past who answer you — all in your browser, no app required.",
+    "ctaPrimary": "Start the experience",
+    "ctaSecondary": "Try WebAR"
+  },
+  "pillars": {
+    "kicker": "Five gateways",
+    "title": "One experience, five journeys",
+    "description": "Each journey reveals a different layer of the district's memory — pick a gateway and step in.",
+    "items": {
+      "map": {
+        "title": "A living map",
+        "description": "Wander the district's real building footprints and open the story of every site with a single tap."
+      },
+      "twin": {
+        "title": "Travel through time",
+        "description": "A 3D digital twin rebuilds the district, with a time slider that carries you from 1950 to today."
+      },
+      "characters": {
+        "title": "Characters who speak",
+        "description": "A pearl diver, a textile merchant, Umm Rashid… voices from the past answering in Arabic and English."
+      },
+      "arx": {
+        "title": "AR in the browser",
+        "description": "Raise your camera and watch layers of the past float over the present — straight from the browser, nothing to install."
+      },
+      "hunt": {
+        "title": "Hidden treasures",
+        "description": "A hunt through the alleys: follow the hints, enter the codes, and collect explorer badges."
+      }
+    }
+  },
+  "stats": {
+    "title": "The district in numbers",
+    "items": {
+      "buildings": {
+        "value": "138",
+        "label": "buildings with real footprints"
+      },
+      "eras": {
+        "value": "4",
+        "label": "eras in the digital twin"
+      },
+      "stories": {
+        "value": "51",
+        "label": "sourced stories across three tellings"
+      },
+      "languages": {
+        "value": "2",
+        "label": "languages — Arabic & English"
+      }
+    }
+  },
+  "characters": {
+    "kicker": "Voices from the past",
+    "title": "Ask those who lived the story",
+    "description": "Five characters drawn from the district's history answer you directly — each with their own voice, craft, and tale.",
+    "cta": "Meet the characters",
+    "items": {
+      "pearlDiver": {
+        "name": "Salem the Pearl Diver",
+        "role": "Pearl diver from 1930s Dubai"
+      },
+      "textileMerchant": {
+        "name": "Abdulrahman the Merchant",
+        "role": "Textile and spice merchant of the Bur Dubai souq"
+      },
+      "masterBuilder": {
+        "name": "Usta Hassan",
+        "role": "Master builder of wind towers and heritage houses"
+      },
+      "ummRashid": {
+        "name": "Umm Rashid",
+        "role": "Emirati grandmother, keeper of hospitality traditions"
+      },
+      "historianGuide": {
+        "name": "Dr. Mariam",
+        "role": "Contemporary historian and heritage guide"
+      }
+    }
+  },
+  "map": {
+    "kicker": "The living map",
+    "title": "A district read from above",
+    "description": "Real building footprints from open data, drawn in a nocturnal heritage style: sand-toned houses, gold wind towers, and dashed alleys guiding your steps.",
+    "cta": "Explore the map",
+    "legend": {
+      "houses": "Heritage houses",
+      "alleys": "Alleys & paths",
+      "pois": "Points of interest"
+    },
+    "figureLabel": "A simplified snapshot of the district map: house footprints, alleys, and points of interest marked with gold dots"
+  },
+  "cta": {
+    "title": "The district awaits your steps",
+    "subtitle": "Start with the map, talk with the people of the district, and add your memory to its living archive.",
+    "primary": "Start the experience",
+    "secondary": "Share a memory"
+  }
 }
