@@ -1,3 +1,53 @@
 {
-  "title": "Stories of Al Fahidi"
+  "kicker": "Sourced tales",
+  "title": "Stories of Al Fahidi",
+  "intro": "Walk the alleys story by story: every stop in the district is told in three registers — tourist, kids, and expert — and every tale is grounded in cited sources.",
+  "loadError": "Stories could not be loaded right now — check your connection and try again.",
+  "empty": "No stories in this category yet.",
+  "filter": {
+    "label": "Filter stories by kind",
+    "all": "All"
+  },
+  "kinds": {
+    "museum": "Museums",
+    "gallery": "Art",
+    "cafe": "Cafés",
+    "house": "Houses",
+    "mosque": "Mosques",
+    "landmark": "Landmarks",
+    "alley": "Alleys",
+    "viewpoint": "Viewpoints"
+  },
+  "card": {
+    "readStory": "Read the story"
+  },
+  "audience": {
+    "label": "Choose the story register",
+    "tourist": "Tourist",
+    "kids": "Kids",
+    "expert": "Expert"
+  },
+  "narration": {
+    "label": "Voice narration",
+    "play": "Listen to the story",
+    "pause": "Pause",
+    "resume": "Resume",
+    "stop": "Stop",
+    "playing": "Narrating"
+  },
+  "sources": {
+    "title": "Sources"
+  },
+  "access": {
+    "wheelchair": "Wheelchair accessible",
+    "audio": "Audio narration available"
+  },
+  "detail": {
+    "back": "All stories",
+    "era": "Era",
+    "viewOnMap": "View on the map",
+    "prev": "Previous story",
+    "next": "Next story",
+    "pagination": "Story navigation"
+  }
 }
