@@ -1,3 +1,92 @@
 {
-  "title": "Share Your Memory"
+  "meta": {
+    "title": "Share Your Memory",
+    "description": "Share your stories, photos, and memories of Al Fahidi Historical District — every contribution is reviewed and joins the living archive"
+  },
+  "hero": {
+    "kicker": "Community",
+    "title": "Share Your Memory",
+    "lede": "A district is kept alive not by its walls alone, but by the people who lived in it and passed through it. If you hold a story, a photo, a memory, or a document of Al Fahidi, share it here and let it become part of the living archive."
+  },
+  "aside": {
+    "title": "How contributions work",
+    "steps": {
+      "one": {
+        "title": "Send",
+        "body": "Fill in the form with your story, or a link to your photo or document."
+      },
+      "two": {
+        "title": "We review",
+        "body": "The editorial team reviews every contribution for accuracy and fit."
+      },
+      "three": {
+        "title": "It's published",
+        "body": "Approved contributions join the district's stories, credited to their owners."
+      }
+    },
+    "note": "No account needed — contact details are optional and never shown publicly."
+  },
+  "form": {
+    "legendType": "Contribution type",
+    "types": {
+      "story": {
+        "label": "Story",
+        "hint": "A tale you heard or lived in the district"
+      },
+      "photo": {
+        "label": "Photo",
+        "hint": "An old or recent photo documenting a place or a moment"
+      },
+      "memory": {
+        "label": "Memory",
+        "hint": "A personal glimpse — a scent, a sound, an unforgettable scene"
+      },
+      "document": {
+        "label": "Document",
+        "hint": "A record, a map, or a newspaper clipping"
+      }
+    },
+    "title": {
+      "label": "Title",
+      "placeholder": "e.g. Summer of 1978 in the Bastakiya alleys"
+    },
+    "body": {
+      "label": "Text",
+      "placeholder": "Write what you remember — places, people, and the small details all matter"
+    },
+    "url": {
+      "label": "Link to the photo or document",
+      "placeholder": "https://…",
+      "hint": "In this version we accept links only — direct upload is coming later"
+    },
+    "note": {
+      "label": "Note (optional)",
+      "placeholder": "When and where was it taken? Who appears in it?"
+    },
+    "contact": {
+      "label": "Contact details (optional)",
+      "placeholder": "Email or phone number",
+      "hint": "Used only to reach you about your contribution — never shown publicly"
+    },
+    "charsLeft": "Remaining: {count}",
+    "submit": "Send contribution",
+    "submitting": "Sending…",
+    "moderationNote": "By sending, you agree that your contribution is reviewed before publishing.",
+    "errors": {
+      "title": "Enter a title for your contribution",
+      "titleMax": "Title is too long (max {max} characters)",
+      "body": "Write the text of your contribution",
+      "bodyMax": "Text is too long (max {max} characters)",
+      "url": "Enter a valid link starting with http or https",
+      "contactMax": "Contact details are too long (max {max} characters)",
+      "rateLimited": "Too many attempts in a short time — wait a minute and try again",
+      "generic": "Could not send your contribution — check your connection and try again"
+    }
+  },
+  "success": {
+    "title": "Thank you — under review",
+    "body": "Your contribution has arrived and will appear on the platform once approved by the editorial team.",
+    "reference": "Reference number: {id}",
+    "again": "Send another contribution"
+  }
 }
