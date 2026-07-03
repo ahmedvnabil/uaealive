@@ -11,6 +11,8 @@
     "twin": "Digital Twin",
     "stories": "Stories",
     "characters": "Characters",
+    "copilot": "Copilot",
+    "events": "Events",
     "arx": "AR",
     "hunt": "The Hunt",
     "menu": "Menu",
@@ -63,5 +65,10 @@
     "skipToContent": "Skip to content",
     "mainNav": "Main navigation",
     "footerNav": "Footer links"
+  },
+  "notFound": {
+    "title": "Lost in the alleys",
+    "body": "This path doesn't lead anywhere in the district. Let's get you back.",
+    "home": "Back to the district"
   }
 }

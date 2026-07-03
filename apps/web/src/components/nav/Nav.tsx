@@ -13,6 +13,8 @@ const LINKS = [
   { href: "/twin", key: "twin" },
   { href: "/stories", key: "stories" },
   { href: "/characters", key: "characters" },
+  { href: "/copilot", key: "copilot" },
+  { href: "/events", key: "events" },
   { href: "/ar-experience", key: "arx" },
   { href: "/hunt", key: "hunt" },
 ] as const;

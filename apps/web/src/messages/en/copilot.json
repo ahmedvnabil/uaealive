@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "AI Tour Copilot",
+    "description": "Tell the copilot what you love and how long you have — it plans a personalized walk through Al Fahidi over the real district."
+  },
+  "hero": {
+    "kicker": "AI Copilot",
+    "title": "Your tour, made to measure",
+    "lede": "Pick what draws you and how long you have. The copilot writes a walking route through Al Fahidi's real museums, houses, and alleys — in your language."
+  },
+  "form": {
+    "interestsLabel": "What are you into?",
+    "interestsHint": "Choose one or more",
+    "interests": {
+      "history": "History",
+      "architecture": "Architecture",
+      "art": "Art & galleries",
+      "coffee": "Coffee",
+      "food": "Food",
+      "culture": "Culture"
+    },
+    "durationLabel": "How long do you have?",
+    "duration": {
+      "30": "30 min",
+      "60": "1 hour",
+      "90": "1½ hours",
+      "120": "2 hours"
+    },
+    "audienceLabel": "Who's it for?",
+    "audience": {
+      "tourist": "Traveler",
+      "family": "Family",
+      "kids": "Kids",
+      "expert": "Enthusiast"
+    },
+    "submit": "Plan my tour",
+    "planning": "Planning your walk…",
+    "again": "Plan another",
+    "needInterest": "Pick at least one interest."
+  },
+  "result": {
+    "title": "Your walking tour",
+    "live": "Generated live",
+    "fallback": "Offline plan",
+    "error": "Couldn't reach the copilot. Check the connection and try again.",
+    "openMap": "Open the map",
+    "openStories": "Read the stories"
+  }
+}

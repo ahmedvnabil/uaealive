@@ -43,14 +43,29 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "common" });
+  const title = `${t("app.name")} — ${t("app.district")}`;
   return {
     title: {
-      default: `${t("app.name")} — ${t("app.district")}`,
+      default: title,
       template: `%s — ${t("app.name")}`,
     },
     description: t("app.description"),
+    applicationName: t("app.name"),
+    manifest: "/manifest.webmanifest",
+    appleWebApp: { capable: true, title: t("app.name"), statusBarStyle: "black-translucent" },
+    openGraph: {
+      title,
+      description: t("app.description"),
+      siteName: t("app.name"),
+      locale: locale === "ar" ? "ar_AE" : "en_US",
+      type: "website",
+    },
   };
 }
+
+export const viewport = {
+  themeColor: "#0B0E14",
+};
 
 export default async function LocaleLayout({
   children,

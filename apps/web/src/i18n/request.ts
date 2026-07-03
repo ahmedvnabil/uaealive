@@ -18,6 +18,8 @@ const NAMESPACES = [
   "hunt",
   "community",
   "admin",
+  "copilot",
+  "events",
 ] as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {

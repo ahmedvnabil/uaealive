@@ -73,4 +73,22 @@ test.describe("UAE ALIVE smoke", () => {
       { timeout: 15_000 },
     );
   });
+
+  test("events page lists seeded events", async ({ page }) => {
+    await page.goto("/en/events");
+    await expect(page.locator("main h1")).toBeVisible();
+    await expect(page.locator("main ol > li")).toHaveCount(7);
+    await expect(page.getByText("Calligraphy Season", { exact: false })).toBeVisible();
+  });
+
+  test("copilot streams a personalized tour", async ({ page }) => {
+    await page.goto("/en/copilot");
+    await page.getByRole("button", { name: "Architecture" }).click();
+    await page.getByRole("button", { name: "Plan my tour" }).click();
+    // A multi-stop itinerary appears (live LLM or offline fallback, both fine).
+    await expect(page.locator("main article ol > li").first()).toBeVisible({
+      timeout: 45_000,
+    });
+    await expect(page.getByText("Couldn't reach the copilot")).toHaveCount(0);
+  });
 });

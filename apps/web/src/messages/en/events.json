@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Events & Seasons",
+    "description": "Festivals, exhibitions, markets, and cultural seasons across Al Fahidi Historical District."
+  },
+  "hero": {
+    "kicker": "What's on",
+    "title": "Seasons of the district",
+    "lede": "From the Sikka art festival to Ramadan nights and National Day — the living calendar of Al Fahidi."
+  },
+  "kinds": {
+    "exhibition": "Exhibition",
+    "festival": "Festival",
+    "market": "Market",
+    "national-day": "National Day",
+    "ramadan": "Ramadan"
+  },
+  "status": {
+    "live": "On now",
+    "upcoming": "Upcoming",
+    "past": "Past"
+  },
+  "empty": "No events are scheduled right now — check back soon.",
+  "error": "Couldn't load events. Make sure the server is running and try again."
+}
