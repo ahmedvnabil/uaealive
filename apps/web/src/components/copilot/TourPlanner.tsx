@@ -22,10 +22,29 @@ const AUDIENCES = ["tourist", "family", "kids", "expert"] as const;
 
 type Status = "idle" | "streaming" | "done" | "error";
 
-/** Split a numbered "1. Name — text" line into its parts for styled rendering. */
+/** Strip light markdown (**bold**, *italic*, `code`, leading #/-) the model
+ *  may emit despite the plain-text instruction. */
+function cleanLine(line: string): string {
+  return line
+    .replace(/\*\*|__|`/g, "")
+    .replace(/^\s*#{1,6}\s*/, "")
+    .replace(/(^|\s)\*(\S)/g, "$1$2")
+    .replace(/(\S)\*(\s|$)/g, "$1$2")
+    .trim();
+}
+
+/** True for markdown horizontal rules / empty separators. */
+function isSeparator(line: string): boolean {
+  return /^[-*_\s]{3,}$/.test(line.trim());
+}
+
+/** Split a numbered "1. Name — text" (or "Stop 1 — …") line for styled rendering. */
 function parseStop(line: string): { n?: string; rest: string } {
-  const match = line.match(/^\s*(\d+)[.)]\s*(.*)$/);
-  return match ? { n: match[1], rest: match[2] } : { rest: line };
+  const numbered = line.match(/^\s*(\d+)[.)]\s*(.*)$/);
+  if (numbered) return { n: numbered[1], rest: numbered[2] };
+  const stop = line.match(/^\s*Stop\s+(\d+)\s*[—:-]?\s*(.*)$/i);
+  if (stop) return { n: stop[1], rest: stop[2] };
+  return { rest: line };
 }
 
 export function TourPlanner() {
@@ -84,7 +103,10 @@ export function TourPlanner() {
   };
 
   const busy = status === "streaming";
-  const lines = text.split("\n").filter((line) => line.trim().length > 0);
+  const lines = text
+    .split("\n")
+    .map(cleanLine)
+    .filter((line) => line.length > 0 && !isSeparator(line));
 
   return (
     <div className="grid gap-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-16">

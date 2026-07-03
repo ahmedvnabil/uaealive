@@ -96,7 +96,10 @@ def build_live_tour_prompt(
         "Craft a realistic walking itinerary using ONLY the real places listed below, keeping "
         "a sensible walking order (lower walk order = earlier in the district walk). Give a "
         f"short time estimate per stop, reply in {language}, stay warm and concise, and never "
-        "invent places, prices, or opening hours.\n\n"
+        "invent places, prices, or opening hours.\n"
+        "FORMAT: plain text only — NO markdown, asterisks, hashes, or horizontal rules. "
+        "Optionally open with one short intro line, then one numbered stop per line as "
+        "'1. Place name (~N min) — what to see there.', then one short closing line.\n\n"
         f"Places:\n{catalog_lines}"
     )
     user = (
