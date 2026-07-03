@@ -45,6 +45,7 @@ services:
       args:
         # Baked into the client bundle — must be the browser-visible origin.
         NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8080}
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:8080}
     environment:
       # Server-side rendering reaches the API over the internal Docker network
       # (localhost:8080 inside this container would point at the web app itself).

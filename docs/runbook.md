@@ -52,7 +52,7 @@ E2E starts (or reuses) the dev server on :3000; `CORS_ORIGINS` already allows it
 
 1. Push the repo to a Git remote Coolify can reach.
 2. Create a Docker Compose resource pointing at `infra/docker-compose.yml`.
-3. Set env vars in Coolify UI: `LITELLM_BASE_URL`, `LITELLM_API_KEY`, `AI_MODEL_CHAT`, `AI_MODEL_COPILOT`, `ADMIN_PASSWORD`, `CORS_ORIGINS` (the public origin), `NEXT_PUBLIC_API_URL` (the public origin — baked at web build). `API_INTERNAL_URL` (default `http://api:8000`) is what the web container uses for **server-side** rendering — keep it pointed at the API service over the internal network, never at the public origin (that would loop back to the web container itself and blank out server-rendered pages like `/stories/[slug]`).
+3. Set env vars in Coolify UI: `LITELLM_BASE_URL`, `LITELLM_API_KEY`, `AI_MODEL_CHAT`, `AI_MODEL_COPILOT`, `ADMIN_PASSWORD`, `CORS_ORIGINS` (the public origin), `NEXT_PUBLIC_API_URL` and `NEXT_PUBLIC_SITE_URL` (the public origin — both baked at web build; `SITE_URL` drives `robots.txt`/`sitemap.xml`). `API_INTERNAL_URL` (default `http://api:8000`) is what the web container uses for **server-side** rendering — keep it pointed at the API service over the internal network, never at the public origin (that would loop back to the web container itself and blank out server-rendered pages like `/stories/[slug]`).
 4. Map the domain to the nginx service (port 80 in-container / 8080 mapping locally).
 5. **HTTPS is required** for camera AR on mobile (localhost is exempt during development).
 
