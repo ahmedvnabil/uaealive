@@ -7,8 +7,8 @@
     "ctaSecondary": "Try WebAR"
   },
   "pillars": {
-    "kicker": "Five gateways",
-    "title": "One experience, five journeys",
+    "kicker": "Six gateways",
+    "title": "One experience, six journeys",
     "description": "Each journey reveals a different layer of the district's memory — pick a gateway and step in.",
     "items": {
       "map": {
@@ -22,6 +22,10 @@
       "characters": {
         "title": "Characters who speak",
         "description": "A pearl diver, a textile merchant, Umm Rashid… voices from the past answering in Arabic and English."
+      },
+      "copilot": {
+        "title": "A copilot that plans for you",
+        "description": "Tell the AI what you love and how long you have — it writes a personalized walking route through the district's real places."
       },
       "arx": {
         "title": "AR in the browser",
@@ -37,7 +41,7 @@
     "title": "The district in numbers",
     "items": {
       "buildings": {
-        "value": "138",
+        "value": "128",
         "label": "buildings with real footprints"
       },
       "eras": {

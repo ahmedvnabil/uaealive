@@ -9,7 +9,7 @@ import { SectionIntro } from "./SectionIntro";
 import { HERITAGE_EASE, REVEAL_VIEWPORT } from "./reveal";
 
 /**
- * The five experience pillars as an editorial index — numbered rows with
+ * The experience pillars as an editorial index — numbered rows with
  * hairline rules and gold accents, not an icon-card grid.
  */
 
@@ -17,6 +17,7 @@ const PILLARS = [
   { key: "map", href: "/map" },
   { key: "twin", href: "/twin" },
   { key: "characters", href: "/characters" },
+  { key: "copilot", href: "/copilot" },
   { key: "arx", href: "/ar-experience" },
   { key: "hunt", href: "/hunt" },
 ] as const;
