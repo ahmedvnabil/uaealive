@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAE ALIVE — توثيق المشروع | الإمارات حيّة</title>
+<meta name="description" content="التوثيق الكامل لمنصة الإمارات حيّة: منصة تراثية تفاعلية بالذكاء الاصطناعي والواقع المعزز لإحياء حي الفهيدي التاريخي في دبي.">
+<link rel="stylesheet" href="/fahidi/fonts/fonts.css">
+<style>
+  :root {
+    --night: #10131f; --deep: #171b2e; --dusk: #2a2340;
+    --ember: #e8a15c; --ember-dim: rgba(232,161,92,.55);
+    --sand: #d9c39a; --pearl: #f3ead8; --mist: #9aa0bd;
+    --line: rgba(154,160,189,.18);
+    --amiri: 'Amiri', serif; --readex: 'Readex Pro', system-ui, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--night); color: var(--pearl);
+    font-family: var(--readex); font-weight: 300;
+    line-height: 1.9; text-rendering: optimizeLegibility;
+  }
+  a { color: var(--ember); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* ══ الترويسة ══ */
+  header {
+    padding: 5.5rem 0 4rem;
+    background: linear-gradient(to bottom, var(--night), var(--deep) 70%, var(--dusk));
+    border-bottom: 1px solid var(--line);
+  }
+  .kicker { font-size: .72rem; letter-spacing: .5em; color: var(--ember); margin-bottom: 1rem; }
+  h1 { font-family: var(--amiri); font-weight: 700; font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 1.3; }
+  h1 .latin { color: var(--mist); font-size: .45em; font-family: var(--readex); font-weight: 200; letter-spacing: .25em; display: block; margin-top: .4rem; }
+  .lede { max-width: 44rem; margin-top: 1.5rem; font-size: 1.1rem; color: var(--sand); }
+  .badges { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .6rem; }
+  .badge { font-size: .72rem; color: var(--mist); border: 1px solid var(--line); padding: .35rem .85rem; }
+  .badge b { color: var(--ember); font-weight: 400; }
+  .cta { margin-top: 2.2rem; display: flex; flex-wrap: wrap; gap: .8rem; }
+  .btn { display: inline-block; padding: .7rem 1.8rem; border: 1px solid var(--ember-dim); color: var(--ember); font-size: .9rem; transition: all .4s; }
+  .btn:hover { background: var(--ember); color: var(--night); text-decoration: none; }
+  .btn.ghost { border-color: var(--line); color: var(--mist); }
+
+  /* ══ الأقسام ══ */
+  section { padding: 4rem 0; border-bottom: 1px solid var(--line); }
+  .sec-head { display: flex; align-items: baseline; gap: 1.2rem; margin-bottom: 2.2rem; }
+  .sec-num { font-size: .8rem; color: var(--ember); letter-spacing: .2em; }
+  h2 { font-family: var(--amiri); font-weight: 700; font-size: clamp(1.7rem, 3.5vw, 2.4rem); }
+  h3 { font-family: var(--amiri); font-size: 1.35rem; color: var(--sand); margin-bottom: .6rem; }
+  p + p { margin-top: 1rem; }
+  .muted { color: var(--mist); }
+  .note { font-size: .85rem; color: var(--mist); border-inline-start: 2px solid var(--ember-dim); padding-inline-start: 1rem; margin-top: 1.5rem; }
+
+  /* التجارب — صفوف تحريرية مرقّمة */
+  .exp { border-top: 1px solid var(--line); padding: 1.5rem 0; display: grid; grid-template-columns: 3.2rem 1fr auto; gap: .4rem 1.2rem; align-items: baseline; }
+  .exp:last-child { border-bottom: 1px solid var(--line); }
+  .exp .n { color: var(--ember); font-size: .85rem; }
+  .exp h3 { margin: 0; }
+  .exp .route { font-size: .78rem; color: var(--mist); direction: ltr; }
+  .exp p { grid-column: 2 / -1; font-size: .95rem; color: var(--mist); margin: 0; }
+
+  /* بطاقة خور النجوم */
+  .khor-card { margin-top: 3rem; border: 1px solid var(--ember-dim); background: linear-gradient(160deg, var(--deep), var(--night)); padding: 2.2rem; }
+  .khor-card .tag { font-size: .7rem; letter-spacing: .4em; color: var(--ember); }
+  .khor-card h3 { font-size: 1.9rem; margin: .6rem 0 1rem; color: var(--pearl); }
+  .letters { margin-top: 1.4rem; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+  .letter { border: 1px solid var(--line); padding: .9rem 1.1rem; font-size: .85rem; }
+  .letter b { display: block; color: var(--sand); font-family: var(--amiri); font-size: 1.05rem; font-weight: 400; }
+  .letter span { color: var(--mist); }
+
+  /* المعمارية */
+  .arch { margin-top: 1rem; display: grid; gap: .7rem; }
+  .arch-row { display: flex; flex-wrap: wrap; gap: .7rem; align-items: stretch; }
+  .arch-box { flex: 1 1 10rem; border: 1px solid var(--line); padding: .9rem 1rem; font-size: .82rem; color: var(--mist); text-align: center; }
+  .arch-box b { display: block; color: var(--pearl); font-weight: 400; font-size: .92rem; margin-bottom: .15rem; }
+  .arch-box.gold { border-color: var(--ember-dim); }
+  .arch-arrow { text-align: center; color: var(--ember-dim); font-size: .9rem; }
+
+  /* جداول وقوائم */
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: 1rem; }
+  th, td { text-align: right; padding: .7rem .9rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--sand); font-weight: 400; font-family: var(--amiri); font-size: 1.05rem; }
+  td:first-child { white-space: nowrap; color: var(--ember); direction: ltr; text-align: right; }
+  ul.clean { list-style: none; }
+  ul.clean li { padding: .45rem 0; border-bottom: 1px dashed var(--line); font-size: .92rem; }
+  ul.clean li::before { content: '✦'; color: var(--ember-dim); margin-inline-end: .7rem; font-size: .7rem; }
+  code { font-family: ui-monospace, monospace; font-size: .85em; color: var(--sand); background: var(--deep); padding: .1em .45em; direction: ltr; unicode-bidi: embed; }
+
+  /* الديمو */
+  ol.demo { counter-reset: d; list-style: none; margin-top: 1rem; }
+  ol.demo li { counter-increment: d; padding: .9rem 0; border-bottom: 1px solid var(--line); display: flex; gap: 1rem; font-size: .93rem; }
+  ol.demo li::before { content: counter(d, arabic-indic); color: var(--ember); font-family: var(--amiri); font-size: 1.2rem; min-width: 1.6rem; }
+
+  footer { padding: 3.5rem 0 4.5rem; text-align: center; font-size: .8rem; color: var(--mist); }
+  footer .mark { color: var(--ember-dim); margin-bottom: 1rem; }
+
+  @media print {
+    body { background: #fff; color: #1a1a1a; }
+    :root { --pearl: #1a1a1a; --sand: #6b5232; --mist: #555; --line: #ddd; --deep: #f6f2ea; --night: #fff; --dusk: #fff; }
+    header { background: #fff; }
+    .btn, .cta { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">توثيق المشروع — لِلَّجنة الكريمة</p>
+    <h1>الإمارات حيّة<span class="latin">UAE ALIVE</span></h1>
+    <p class="lede">منصة تراثية تفاعلية تجمع الذكاء الاصطناعي والواقع المعزز والرسوميات ثلاثية الأبعاد — من المتصفح مباشرة ودون أي تطبيق — لإحياء <strong>حي الفهيدي التاريخي</strong> في دبي: أزقّته وبراجيله وخوره وأهله وحكاياتهم.</p>
+    <div class="badges">
+      <span class="badge">حيّ الآن على <b>uaelive.zad.tools</b></span>
+      <span class="badge"><b>١١</b> تجربة متكاملة</span>
+      <span class="badge"><b>٢٥٤</b> معلمًا حقيقيًا من OSM</span>
+      <span class="badge"><b>٥١</b> قصة موثّقة</span>
+      <span class="badge"><b>٥</b> شخصيات ذكاء اصطناعي</span>
+      <span class="badge">عربي أولًا · RTL · ثنائي اللغة</span>
+    </div>
+    <div class="cta">
+      <a class="btn" href="https://uaelive.zad.tools/ar">افتح المنصة</a>
+      <a class="btn" href="https://uaelive.zad.tools/fahidi">جرّب «خور النجوم»</a>
+      <a class="btn ghost" href="#demo">سكريبت العرض (٨ محطات)</a>
+    </div>
+  </div>
+</header>
+
+<section id="vision">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">٠١</span><h2>الفكرة والرؤية</h2></div>
+    <p>حي الفهيدي هو أقدم أحياء دبي الباقية — بيوت المرجان والجص، أبراج الهواء (البراجيل)، والسِّكك الضيّقة التي صُمِّمت ليمرّ الظلُّ قبل الناس. لكن قصص الحي — الغوص على اللؤلؤ، تجارة الخور، حكمة البنّائين — تبقى غالبًا حبيسة اللوحات التعريفية.</p>
+    <p><strong>«الإمارات حيّة»</strong> تعيد سرد الحي بلغة هذا الجيل: خريطة تفاعلية مبنية من بياناته الحقيقية، توأم رقمي يسافر عبر الحقب، شخصيات تاريخية تحاورك وتجيبك بالبث الحي، واقع معزّز يفتح من كاميرا المتصفح، رحلة كنوز بين المحطات، وتجربة تأمّلية ثلاثية الأبعاد تمشي فيها بين البراجيل تحت النجوم — كل ذلك يعمل من رابط واحد، على أي هاتف أو حاسوب، دون تنزيل أي تطبيق.</p>
+  </div>
+</section>
+
+<section id="experiences">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">٠٢</span><h2>التجارب الإحدى عشرة</h2></div>
+
+    <div class="exp"><span class="n">٠١</span><h3>الصفحة السينمائية</h3><span class="route">/ar · /en</span><p>هبوط ثنائي اللغة بأفق براجيل متحرّك وخط دبي الرسمي — عربي أولًا بتصميم RTL كامل.</p></div>
+    <div class="exp"><span class="n">٠٢</span><h3>الخريطة التفاعلية</h3><span class="route">/ar/map</span><p>خريطة MapLibre بـ ٢٥٤ معلمًا حقيقيًا من OpenStreetMap، مبانٍ مجسّمة، ١٧ نقطة اهتمام بدُرج معلومات وروابط عميقة <code>?poi=</code>.</p></div>
+    <div class="exp"><span class="n">٠٣</span><h3>التوأم الرقمي</h3><span class="route">/ar/twin</span><p>نموذج ثلاثي الأبعاد للحي مبني من نفس بيانات GeoJSON، مع شريط حقب (١٩٥٠ / ١٩٧٠ / ١٩٩٠ / اليوم) يغيّر السماء والمشهد.</p></div>
+    <div class="exp"><span class="n">٠٤</span><h3>القصص الموثّقة</h3><span class="route">/ar/stories</span><p>٥١ قصة مكتوبة بثلاث نبرات (سائح / أطفال / خبير) لكل معلم، بسرد صوتي وذكر للمصادر.</p></div>
+    <div class="exp"><span class="n">٠٥</span><h3>الشخصيات الحيّة</h3><span class="route">/ar/characters</span><p>خمس شخصيات تاريخية (سالم الغوّاص، عبدالرحمن التاجر، أسطى حسن، أم راشد، د. مريم) تجيب بالبث الحي وبأسلوب شخصيتها — مع ردود احتياطية تعمل دون اتصال.</p></div>
+    <div class="exp"><span class="n">٠٦</span><h3>المرشد الذكي</h3><span class="route">/ar/copilot</span><p>اختر اهتماماتك ومدّتك وجمهورك، واحصل على مسار مشي مخصّص فوق المعالم الحقيقية — يتدفق مباشرة من الذكاء الاصطناعي.</p></div>
+    <div class="exp"><span class="n">٠٧</span><h3>تقويم المواسم</h3><span class="route">/ar/events</span><p>الفعاليات والمهرجانات والمعارض والأسواق بحالات حيّة (جارٍ / قادم / انتهى).</p></div>
+    <div class="exp"><span class="n">٠٨</span><h3>الواقع المعزّز</h3><span class="route">/ar/ar-experience</span><p>نافذة سحرية بالكاميرا وتتبّع علامات MindAR، مع محاكٍ مكتبي يعمل دائمًا لأي شاشة عرض.</p></div>
+    <div class="exp"><span class="n">٠٩</span><h3>رحلة الكنوز</h3><span class="route">/ar/hunt</span><p>ست محطات بأكواد سرّية وأوسمة، وتقدّم يُحفظ لكل جهاز على الخادم.</p></div>
+    <div class="exp"><span class="n">١٠</span><h3>مشاركات المجتمع</h3><span class="route">/ar/community</span><p>ذكريات وصور ووثائق من الناس، بطابور مراجعة قبل النشر.</p></div>
+    <div class="exp"><span class="n">١١</span><h3>لوحة الإدارة</h3><span class="route">/ar/admin</span><p>نظام إدارة محتوى ثنائي اللغة للمعالم والقصص والفعاليات، مع الإشراف والتحليلات.</p></div>
+
+    <div class="khor-card">
+      <p class="tag">التجربة الختامية</p>
+      <h3>خَوْرُ النُّجوم — <span style="color:var(--ember)">/fahidi</span></h3>
+      <p class="muted">رحلة ليلية تأمّلية ثلاثية الأبعاد في نسخة حالمة من الحي وقت الغسق: تمشي في السكة الرئيسية بين بيوت الجبس والبراجيل حتى ضفة الخور، وتجمع أربع رسائل تركها الأجداد في أماكن حقيقية من الحي — كلُّ رسالة تفتح لك حكاية المكان نفسه على خريطة المنصة. العالم والموسيقى والنصوص وُلدت كلها بالكود: <strong>بلا مكتبات من الإنترنت، بلا صور، تعمل دون اتصال</strong>.</p>
+      <div class="letters">
+        <div class="letter"><b>بيت البراجيل</b><span>رسالة أم راشد — عن هواء البرجيل وليالي السطح</span></div>
+        <div class="letter"><b>السكة التراثية</b><span>رسالة عبدالرحمن التاجر — عن الحرير والهيل والضيافة</span></div>
+        <div class="letter"><b>ضفة الخور</b><span>رسالة سالم الغوّاص — عن اللؤلؤ والنَّفَس الطويل</span></div>
+        <div class="letter"><b>مجلس بيت الشاي</b><span>رسالة أسطى حسن البنّاء — عن حكمة السكك الضيقة</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="architecture">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">٠٣</span><h2>المعمارية</h2></div>
+    <div class="arch">
+      <div class="arch-row"><div class="arch-box gold"><b>المتصفح</b>هاتف أو حاسوب — دون أي تطبيق</div></div>
+      <p class="arch-arrow">↓ HTTPS — شهادة Let's Encrypt</p>
+      <div class="arch-row"><div class="arch-box"><b>CloudPanel nginx</b>بوابة الخادم والتشفير</div></div>
+      <p class="arch-arrow">↓ 127.0.0.1:8080 (لا منافذ أخرى مكشوفة)</p>
+      <div class="arch-row">
+        <div class="arch-box"><b>nginx (حاوية)</b>توجيه داخلي</div>
+      </div>
+      <p class="arch-arrow">↓</p>
+      <div class="arch-row">
+        <div class="arch-box gold"><b>Next.js 15</b>الواجهة — SSR + RTL<br>ومعها «خور النجوم» كملفات ثابتة</div>
+        <div class="arch-box gold"><b>FastAPI</b>واجهة برمجية <code>/api/v1</code><br>بث SSE + حدود معدّل</div>
+      </div>
+      <p class="arch-arrow">↓</p>
+      <div class="arch-row">
+        <div class="arch-box"><b>PostGIS</b>قاعدة بيانات جغرافية — هجرات وبذر تلقائي</div>
+        <div class="arch-box"><b>LiteLLM Proxy</b>الذكاء الاصطناعي من جهة الخادم فقط<br>مع ردود احتياطية دون اتصال</div>
+      </div>
+    </div>
+    <p class="note">كل خدمة في حاوية Docker مستقلة بسياسة إعادة تشغيل تلقائية. المفاتيح السرّية في <code>.env</code> على الخادم بصلاحيات مقيّدة، ولا يصل المتصفح لأي مزوّد ذكاء اصطناعي مباشرة.</p>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">٠٤</span><h2>التقنيات</h2></div>
+    <table>
+      <tr><th style="width:11rem">الطبقة</th><th>الاختيار</th></tr>
+      <tr><td>الواجهة</td><td>Next.js 15 (App Router) · TypeScript strict · Tailwind v4 · React Three Fiber · MapLibre GL · next-intl (عربي أولًا)</td></tr>
+      <tr><td>الخط</td><td>خط دبي الرسمي ثنائي اللغة، مستضاف ذاتيًا — وخطا Amiri وReadex Pro في «خور النجوم»، مستضافان ذاتيًا كذلك</td></tr>
+      <tr><td>الخلفية</td><td>FastAPI · SQLAlchemy 2 · GeoAlchemy2 · Alembic · Pydantic v2 · slowapi</td></tr>
+      <tr><td>البيانات</td><td>PostGIS 16 · بيانات OpenStreetMap حقيقية للحي · قاعدة معرفة مُراجعة في JSON</td></tr>
+      <tr><td>الذكاء الاصطناعي</td><td>LiteLLM proxy (محادثة + مرشد) · فن البطل بـ SDXL · السرد الإنجليزي بـ Kokoro TTS — على GPU محلي</td></tr>
+      <tr><td>خور النجوم</td><td>Three.js خام (بلا أطر) · عالم procedural بالكامل · صوت مُولَّد بـ Web Audio · صفر CDN</td></tr>
+      <tr><td>الاختبار</td><td>pytest ضد PostGIS · Playwright E2E · سيناريو ديمو آلي يتحقق من المحطات الثماني على البيئة الحيّة</td></tr>
+      <tr><td>التشغيل</td><td>Docker Compose · nginx · CloudPanel + Let's Encrypt · سكريبت نشر بفحوصات صحة</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="authenticity">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">٠٥</span><h2>المصداقية التراثية</h2></div>
+    <ul class="clean">
+      <li>هندسة الحي مأخوذة من ٢٥٤ معلمًا حقيقيًا في OpenStreetMap — الخريطة والتوأم الرقمي مبنيان من نفس الملف الجغرافي.</li>
+      <li>القصص الـ٥١ مكتوبة عن معالم قائمة فعلًا (متحف القهوة، مسجد البستكية، بيت الخط العربي…) وتذكر مصادرها.</li>
+      <li>الشخصيات الخمس تمثل مهن الحي التاريخية: الغوص على اللؤلؤ، تجارة الأقمشة، البناء بالمرجان والجص.</li>
+      <li>رسومات المسجد وبيت البراجيل والسور القديم رُسمت يدويًا بـ SVG عمدًا — حين لم يبلغ الفن المولَّد دقة العمارة الحقيقية، انتصرت الدقة التاريخية.</li>
+      <li>«خور النجوم» يستخدم مفردات الحي الأصيلة: البرجيل، السكّة، الفريج، العبرة، النوخذة، الدلّة.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">٠٦</span><h2>سكريبت العرض — ٨ محطات في ~٦ دقائق</h2></div>
+    <p class="muted">هذا هو مسار العرض الرسمي أمام اللجنة، وكل محطة منه مُختبَرة آليًا على البيئة الحيّة (٨/٨ ناجحة):</p>
+    <ol class="demo">
+      <li><span><a href="https://uaelive.zad.tools/ar">/ar</a> — مرّر عبر الصفحة السينمائية ولاحظ أفق البراجيل والطباعة العربية.</span></li>
+      <li><span><a href="https://uaelive.zad.tools/ar/map">/ar/map</a> — انقر علامة ذهبية على الخريطة وافتح «اقرأ القصة» من الدُّرج.</span></li>
+      <li><span>صفحة القصة — بدّل الجمهور من «سائح» إلى «أطفال»، وجرّب «استمع للقصة».</span></li>
+      <li><span><a href="https://uaelive.zad.tools/ar/twin">/ar/twin</a> — سافر بشريط الحقب من ١٩٥٠ إلى اليوم وشاهد الحي يتغيّر.</span></li>
+      <li><span><a href="https://uaelive.zad.tools/ar/characters">/ar/characters</a> — اسأل سالم الغوّاص: «كيف كان الغوص على اللؤلؤ؟» وشاهد الرد يتدفق حيًّا.</span></li>
+      <li><span><a href="https://uaelive.zad.tools/ar/ar-experience">/ar/ar-experience</a> — افتح المحاكي (يعمل على أي شاشة عرض) أو وجّه كاميرا الهاتف.</span></li>
+      <li><span><a href="https://uaelive.zad.tools/ar/hunt">/ar/hunt</a> — أدخل الرمز <code>DALLAH</code> في محطة «سر الدلة» وشاهد أول وسام.</span></li>
+      <li><span><a href="https://uaelive.zad.tools/fahidi">/fahidi</a> — بالسماعات: ابدأ «خور النجوم»، امشِ السكة حتى فوانيس السوق، واقرأ رسالة عبدالرحمن التاجر — ثم اضغط «حكاية المكان في الخريطة» لتعود للمنصة نفسها.</span></li>
+    </ol>
+    <p class="note">التجربة الثامنة تعمل دون إنترنت بالكامل — احتياطًا لأي انقطاع في قاعة العرض.</p>
+  </div>
+</section>
+
+<section id="links">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">٠٧</span><h2>الروابط</h2></div>
+    <table>
+      <tr><td>uaelive.zad.tools/ar</td><td>المنصة كاملة (عربي)</td></tr>
+      <tr><td>uaelive.zad.tools/en</td><td>النسخة الإنجليزية</td></tr>
+      <tr><td>uaelive.zad.tools/fahidi</td><td>«خور النجوم» — رحلة الفهيدي الليلية</td></tr>
+      <tr><td>uaelive.zad.tools/docs</td><td>هذه الوثيقة</td></tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <p class="mark">✦</p>
+  <p>الإمارات حيّة — UAE ALIVE · حي الفهيدي التاريخي، دبي</p>
+  <p>وثيقة ذاتية الاستضافة — تعمل دون اتصال، مثل التجربة نفسها</p>
+</footer>
+
+</body>
+</html>

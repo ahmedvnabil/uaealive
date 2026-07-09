@@ -7,8 +7,12 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig: NextConfig = {
   distDir: process.env.NEXT_DIST_DIR || ".next",
   async rewrites() {
-    // «خور النجوم» — static 3D experience living in public/fahidi
-    return [{ source: "/fahidi", destination: "/fahidi/index.html" }];
+    return [
+      // «خور النجوم» — static 3D experience living in public/fahidi
+      { source: "/fahidi", destination: "/fahidi/index.html" },
+      // وثيقة المشروع للجنة — static page living in public/docs
+      { source: "/docs", destination: "/docs/index.html" },
+    ];
   },
   async redirects() {
     // الرابط القديم — أي مادة قديمة تشير إلى /khor تصل للتجربة
