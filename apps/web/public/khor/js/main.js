@@ -52,15 +52,18 @@ ui.on('endingClosed', () => { player.state.enabled = true; });
 player.state.onInteract = () => tryRead();
 
 function tryRead() {
-  if (!nearInfo.canRead || !nearInfo.marker || paused) return;
-  currentMarker = nearInfo.marker;
+  if (paused) return;
+  // حساب طازج وقت الضغط — لا نعتمد على آخر إطار من الحلقة
+  const info = places.nearest(player.state.pos);
+  if (!info.canRead || !info.marker) return;
+  currentMarker = info.marker;
   places.collect(currentMarker);
   player.state.enabled = false;
   ui.showMessage(currentMarker.place);
 }
 
 // ── حلقة الرسم ──
-window.__debug = { camera, player, world };
+window.__debug = { camera, player, world, places, nearInfo: () => nearInfo };
 
 const clock = new THREE.Clock();
 function loop() {

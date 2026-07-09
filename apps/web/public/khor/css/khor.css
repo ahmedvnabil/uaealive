@@ -1,0 +1,280 @@
+/* khor.css — أنماط «خور النجوم» (self-hosted، بلا أي CDN) */
+
+:root {
+  --night: #10131f;
+  --deep: #171b2e;
+  --dusk: #3a2b4d;
+  --ember: #e8a15c;
+  --sand: #d9c39a;
+  --pearl: #f3ead8;
+  --mist: #9aa0bd;
+  --font-amiri: 'Amiri', serif;
+  --font-readex: 'Readex Pro', system-ui, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  background: var(--night);
+  color: var(--pearl);
+  font-family: var(--font-readex);
+  font-weight: 300;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+
+/* ══ أدوات يستخدمها الجافاسكريبت ══ */
+.hidden { display: none !important; }
+.flex { display: flex; }
+.opacity-0 { opacity: 0 !important; }
+.pointer-events-none { pointer-events: none !important; }
+.transition-opacity { transition: opacity 1s ease; }
+.duration-1000 { transition-duration: 1s; }
+
+/* ══ حركات ══ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes twinkle { 0%, 100% { opacity: .15; } 50% { opacity: .9; } }
+@keyframes breathe { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+
+.fade-up { animation: fadeUp 1.4s cubic-bezier(.16, 1, .3, 1) both; }
+.fade-in { animation: fadeIn 1.8s ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up, .fade-in { animation-duration: .01s; }
+}
+
+/* ══ لوحة الرسم ══ */
+#scene { position: fixed; inset: 0; width: 100%; height: 100%; touch-action: none; }
+
+/* ══ الطبقات الكاملة ══ */
+.overlay {
+  position: fixed; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+/* ══ شاشة البداية ══ */
+#intro {
+  z-index: 40;
+  background: linear-gradient(to bottom, var(--night), var(--deep) 55%, var(--dusk));
+}
+.intro-deco { pointer-events: none; position: absolute; inset: 0; overflow: hidden; }
+.star {
+  position: absolute; border-radius: 50%;
+  background: var(--pearl);
+  width: 3px; height: 3px;
+  animation: twinkle 3.4s ease-in-out infinite;
+}
+.star.dim { width: 2px; height: 2px; background: var(--mist); }
+.crescent {
+  position: absolute; left: 10%; top: 12%;
+  width: 4rem; height: 4rem; color: rgba(217, 195, 154, .8);
+}
+.platform-link {
+  position: absolute; top: 1.25rem; inset-inline-start: 1.25rem;
+  font-size: .75rem; letter-spacing: .1em; color: var(--mist);
+  border: 1px solid rgba(154, 160, 189, .3);
+  padding: .5rem .9rem;
+  transition: color .3s, border-color .3s;
+}
+.platform-link:hover { color: var(--ember); border-color: var(--ember); }
+
+.kicker {
+  margin-bottom: .8rem;
+  font-size: .7rem; font-weight: 200;
+  letter-spacing: .5em; color: var(--ember);
+}
+.subtitle {
+  margin-bottom: 1rem;
+  font-size: .75rem; font-weight: 200;
+  letter-spacing: .45em; color: var(--mist);
+}
+.title {
+  padding-top: 2rem;
+  font-family: var(--font-amiri);
+  font-weight: 700;
+  font-size: clamp(3.5rem, 10vw, 6.5rem);
+  color: var(--pearl);
+}
+.divider {
+  margin: 1.75rem 0;
+  display: flex; align-items: center; gap: 1rem;
+  color: var(--ember);
+}
+.divider .line { height: 1px; width: 4rem; }
+.divider .line.start { background: linear-gradient(to left, rgba(232, 161, 92, .6), transparent); }
+.divider .line.end { background: linear-gradient(to right, rgba(232, 161, 92, .6), transparent); }
+.poem {
+  max-width: 36rem;
+  font-family: var(--font-amiri);
+  font-size: clamp(1.25rem, 2.6vw, 1.5rem);
+  line-height: 2.1;
+  color: var(--sand);
+}
+
+.btn {
+  display: inline-block;
+  padding: .8rem 2.5rem;
+  font-size: 1rem; letter-spacing: .02em;
+  border: 1px solid;
+  transition: all .5s ease;
+}
+.btn-ember { color: var(--ember); border-color: rgba(232, 161, 92, .7); }
+.btn-ember:hover { background: var(--ember); color: var(--night); letter-spacing: .2em; }
+.btn-mist { color: var(--mist); border-color: rgba(154, 160, 189, .4); }
+.btn-mist:hover { color: var(--ember); border-color: var(--ember); }
+
+#startBtn { margin-top: 2.5rem; padding: .9rem 3rem; font-size: 1.1rem; }
+
+.controls-hint {
+  margin-top: 2rem;
+  font-size: .72rem; font-weight: 200;
+  line-height: 1.9; color: rgba(154, 160, 189, .8);
+}
+.controls-hint bdi { font-weight: 400; color: var(--pearl); }
+.controls-hint .ember-line { color: rgba(232, 161, 92, .8); }
+
+/* ══ رسالة عدم دعم WebGL ══ */
+#noWebgl { z-index: 50; background: var(--night); }
+#noWebgl h2 { font-family: var(--font-amiri); font-size: 1.9rem; color: var(--sand); }
+#noWebgl p { margin-top: 1rem; max-width: 28rem; font-size: .85rem; color: var(--mist); }
+
+/* ══ واجهة اللعب (HUD) ══ */
+#hud { pointer-events: none; position: fixed; inset: 0; z-index: 20; }
+.hud-counter {
+  position: absolute; top: 1.25rem; inset-inline-start: 1.25rem;
+  display: flex; align-items: center; gap: .75rem;
+  color: var(--sand);
+}
+.hud-counter .icon { color: var(--ember); }
+.hud-counter .label { font-size: .8rem; font-weight: 200; letter-spacing: .2em; }
+.hud-counter .nums { font-family: var(--font-amiri); font-size: 1.25rem; color: var(--pearl); }
+.hud-buttons {
+  pointer-events: auto;
+  position: absolute; top: 1.25rem; inset-inline-end: 1.25rem;
+  display: flex; gap: .5rem;
+}
+.hud-buttons button {
+  border: 1px solid rgba(154, 160, 189, .3);
+  padding: .5rem .75rem;
+  font-size: .72rem; color: var(--mist);
+  transition: color .3s, border-color .3s;
+}
+.hud-buttons button:hover { color: var(--ember); border-color: var(--ember); }
+
+#hint {
+  position: absolute; left: 0; right: 0; bottom: 6rem;
+  justify-content: center;
+}
+#readBtn {
+  pointer-events: auto;
+  border: 1px solid var(--ember);
+  background: rgba(16, 19, 31, .7);
+  padding: .75rem 2rem;
+  font-family: var(--font-amiri); font-size: 1.25rem;
+  color: var(--ember);
+  animation: breathe 2.6s ease-in-out infinite;
+}
+#readBtn bdi { font-family: var(--font-readex); color: var(--pearl); }
+
+#placeName {
+  position: absolute; left: 0; right: 0; bottom: 3.5rem;
+  text-align: center;
+  font-family: var(--font-amiri); font-size: 1.1rem;
+  color: rgba(217, 195, 154, .9);
+  opacity: 0;
+  transition: opacity .7s ease;
+}
+
+#joyBase {
+  position: absolute; bottom: 2rem; inset-inline-start: 2rem;
+  width: 7rem; height: 7rem; border-radius: 50%;
+  border: 1px solid rgba(154, 160, 189, .25);
+  background: rgba(23, 27, 46, .4);
+}
+#joyStick {
+  position: absolute; left: 50%; top: 50%;
+  width: 3rem; height: 3rem; border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(232, 161, 92, .5);
+  background: rgba(232, 161, 92, .2);
+}
+
+/* ══ نافذة الرسالة ══ */
+#messageOverlay {
+  position: fixed; inset: 0; z-index: 30;
+  align-items: center; justify-content: center;
+  background: rgba(16, 19, 31, .85);
+  padding: 0 1.25rem;
+}
+#messageOverlay article {
+  max-height: 85vh; width: 100%; max-width: 42rem;
+  overflow-y: auto;
+  border-top: 2px solid rgba(232, 161, 92, .6);
+  border-bottom: 2px solid rgba(232, 161, 92, .6);
+  background: linear-gradient(to bottom, var(--deep), var(--night));
+  padding: 2.5rem 1.75rem;
+  text-align: center;
+}
+#msgPlace { margin-bottom: .5rem; font-size: .72rem; letter-spacing: .4em; color: var(--mist); }
+#msgTitle { font-family: var(--font-amiri); font-weight: 700; font-size: clamp(1.75rem, 4vw, 2.25rem); color: var(--ember); }
+.msg-divider { margin: 1.5rem 0; color: rgba(232, 161, 92, .7); }
+#msgBody { font-family: var(--font-amiri); font-size: clamp(1.25rem, 2.5vw, 1.5rem); line-height: 2.4; color: var(--pearl); }
+#msgSign { margin-top: 2rem; font-family: var(--font-amiri); font-style: italic; font-size: 1.1rem; color: var(--sand); }
+.msg-actions {
+  margin-top: 2.5rem;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: .75rem;
+}
+.msg-actions .btn { padding: .65rem 1.75rem; font-size: .85rem; }
+
+/* ══ الخاتمة ══ */
+#ending {
+  z-index: 30;
+  background: rgba(16, 19, 31, .9);
+  overflow-y: auto;
+}
+#ending .small-line { margin-bottom: 1.5rem; font-size: .75rem; letter-spacing: .45em; color: var(--mist); }
+#ending h2 {
+  font-family: var(--font-amiri); font-weight: 700;
+  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  line-height: 1.6;
+  color: var(--ember);
+}
+#ending .poem { margin-top: 2rem; }
+#ending .mark { margin: 2rem 0; color: rgba(232, 161, 92, .7); }
+.credits { font-size: .72rem; font-weight: 200; line-height: 1.9; color: var(--mist); }
+.credits .brand { letter-spacing: .3em; color: var(--sand); }
+.ending-actions {
+  margin-top: 2.5rem;
+  display: flex; flex-direction: column; align-items: center; gap: .75rem;
+}
+
+/* ══ قائمة الاستراحة ══ */
+#pause { z-index: 30; background: rgba(16, 19, 31, .85); }
+#pause h2 { font-family: var(--font-amiri); font-size: 2.25rem; color: var(--sand); }
+#pause p { margin-top: 1.5rem; max-width: 28rem; font-size: .85rem; line-height: 1.9; color: var(--mist); }
+#pause bdi { color: var(--pearl); }
+#resumeBtn { margin-top: 2rem; padding: .8rem 3rem; }
+
+/* ══ استجابة الشاشات ══ */
+.desktop-only { display: none; }
+.mobile-only { display: inline; }
+@media (min-width: 768px) {
+  .desktop-only { display: inline; }
+  .mobile-only { display: none; }
+  .msg-actions, .ending-actions { flex-direction: row; }
+}

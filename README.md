@@ -1,8 +1,8 @@
 # UAE ALIVE — الإمارات حيّة
 
-**AR** — منصة تراثية تفاعلية تجمع الذكاء الاصطناعي والواقع المعزز عبر المتصفح لإحياء حي الفهيدي التاريخي في دبي: خريطة تفاعلية، توأم رقمي ثلاثي الأبعاد يسافر عبر الحقب، قصص ثنائية اللغة بسرد صوتي، شخصيات تاريخية تحاورك بالبث الحي، تجربة واقع معزز من المتصفح مباشرة، ورحلة بحث عن الكنز بين الأزقة والبراجيل — كل ذلك دون أي تطبيق.
+**AR** — منصة تراثية تفاعلية تجمع الذكاء الاصطناعي والواقع المعزز عبر المتصفح لإحياء حي الفهيدي التاريخي في دبي: خريطة تفاعلية، توأم رقمي ثلاثي الأبعاد يسافر عبر الحقب، قصص ثنائية اللغة بسرد صوتي، شخصيات تاريخية تحاورك بالبث الحي، تجربة واقع معزز من المتصفح مباشرة، رحلة بحث عن الكنز بين الأزقة والبراجيل، و«خور النجوم» — رحلة ليلية ثلاثية الأبعاد تأمّلية تمشي فيها بين سِكك الحي وبراجيله وتجمع رسائل الأجداد — كل ذلك دون أي تطبيق.
 
-**EN** — An AI + WebAR heritage platform that brings Al Fahidi Historical District (Dubai) to life in the browser: an interactive map, a 3D digital twin across eras, bilingual narrated stories, historical characters you can talk to over live streams, in-browser AR, and a scavenger hunt through the alleys and wind towers — no app required.
+**EN** — An AI + WebAR heritage platform that brings Al Fahidi Historical District (Dubai) to life in the browser: an interactive map, a 3D digital twin across eras, bilingual narrated stories, historical characters you can talk to over live streams, in-browser AR, a scavenger hunt through the alleys and wind towers, and *Creek of Stars* — a meditative 3D night-walk where you gather ancestral letters across the district — no app required.
 
 ## Experiences
 
@@ -47,7 +47,7 @@ make test                   # backend tests (pytest against PostGIS)
 cd apps/web && npx playwright test   # E2E smoke (needs api :8000)
 ```
 
-## Demo script (7 stops, ~5 minutes)
+## Demo script (8 stops, ~6 minutes)
 
 1. **`/ar`** — scroll the cinematic hero; note the RTL-first typography and barjeel skyline.
 2. **`/ar/map`** — click the gold مقهى marker (Arabian Tea House); open «اقرأ القصة» from the drawer.
@@ -56,6 +56,7 @@ cd apps/web && npx playwright test   # E2E smoke (needs api :8000)
 5. **`/ar/characters`** — ask سالم الغواص: «كيف كان الغوص على اللؤلؤ؟» — answers stream live in character.
 6. **`/ar/ar-experience`** — desktop: open the simulator (works on any projector); mobile: point the camera.
 7. **`/ar/hunt`** — enter code `DALLAH` at محطة متحف القهوة; watch the progress bar and first badge.
+8. **`/khor`** — headphones on: start «خور النجوم», walk the main sikka to بيت البراجيل, read أم راشد's letter, then hit «حكاية المكان في الخريطة» — it deep-links back to the same POI on the map. Fully procedural Three.js, zero CDN, works offline.
 
 ## Documentation
 

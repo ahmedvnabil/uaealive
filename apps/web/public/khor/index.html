@@ -3,171 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>خَوْر النُّجوم — رحلة تأمّلية في حي الفهيدي</title>
+<title>خَوْر النُّجوم — رحلة تأمّلية في حي الفهيدي | الإمارات حيّة</title>
 <meta name="description" content="تجربة ثلاثية الأبعاد تأمّلية من منصة الإمارات حيّة: امشِ في سِكك حي الفهيدي التاريخي تحت النجوم، واجمع رسائل الأجداد الأربع.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Readex+Pro:wght@200;300;400&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: {
-        amiri: ['Amiri', 'serif'],
-        readex: ['"Readex Pro"', 'sans-serif'],
-      },
-      colors: {
-        night:  '#10131f',
-        deep:   '#171b2e',
-        dusk:   '#3a2b4d',
-        ember:  '#e8a15c',
-        emberdim: '#8a6238',
-        sand:   '#d9c39a',
-        pearl:  '#f3ead8',
-        mist:   '#9aa0bd',
-      },
-      keyframes: {
-        fadeUp:  { '0%': { opacity: '0', transform: 'translateY(28px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
-        fadeIn:  { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
-        twinkle: { '0%,100%': { opacity: '.15' }, '50%': { opacity: '.9' } },
-        breathe: { '0%,100%': { opacity: '.55' }, '50%': { opacity: '1' } },
-        drift:   { '0%': { transform: 'translateY(0)' }, '100%': { transform: 'translateY(-14px)' } },
-      },
-      animation: {
-        'fade-up':   'fadeUp 1.4s cubic-bezier(.16,1,.3,1) both',
-        'fade-in':   'fadeIn 1.8s ease-out both',
-        'twinkle':   'twinkle 3.4s ease-in-out infinite',
-        'breathe':   'breathe 2.6s ease-in-out infinite',
-      },
-    },
-  },
-}
-</script>
+<link rel="stylesheet" href="/khor/fonts/fonts.css">
+<link rel="stylesheet" href="/khor/css/khor.css">
 <script type="importmap">
-{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+{ "imports": { "three": "/khor/vendor/three.module.js" } }
 </script>
 </head>
-<body class="bg-night text-pearl font-readex overflow-hidden select-none [text-rendering:optimizeLegibility]">
+<body>
 
 <!-- ══ لوحة الرسم ══ -->
-<canvas id="scene" class="fixed inset-0 h-full w-full touch-none"></canvas>
+<canvas id="scene"></canvas>
 
 <!-- ══ شاشة البداية ══ -->
-<div id="intro" class="fixed inset-0 z-40 flex flex-col items-center justify-center bg-gradient-to-b from-night via-deep to-dusk px-6 text-center">
+<div id="intro" class="overlay">
   <!-- نجوم زخرفية -->
-  <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
-    <span class="absolute right-[12%] top-[18%] h-1 w-1 rounded-full bg-pearl animate-twinkle"></span>
-    <span class="absolute right-[28%] top-[9%]  h-0.5 w-0.5 rounded-full bg-mist animate-twinkle [animation-delay:.7s]"></span>
-    <span class="absolute right-[64%] top-[14%] h-1 w-1 rounded-full bg-pearl animate-twinkle [animation-delay:1.4s]"></span>
-    <span class="absolute right-[80%] top-[30%] h-0.5 w-0.5 rounded-full bg-mist animate-twinkle [animation-delay:2.1s]"></span>
-    <span class="absolute right-[45%] top-[6%]  h-0.5 w-0.5 rounded-full bg-pearl animate-twinkle [animation-delay:.3s]"></span>
-    <span class="absolute right-[18%] top-[42%] h-0.5 w-0.5 rounded-full bg-mist animate-twinkle [animation-delay:1.1s]"></span>
-    <span class="absolute right-[88%] top-[10%] h-1 w-1 rounded-full bg-pearl/70 animate-twinkle [animation-delay:1.8s]"></span>
+  <div class="intro-deco" aria-hidden="true">
+    <span class="star"     style="right:12%; top:18%;"></span>
+    <span class="star dim" style="right:28%; top:9%;  animation-delay:.7s;"></span>
+    <span class="star"     style="right:64%; top:14%; animation-delay:1.4s;"></span>
+    <span class="star dim" style="right:80%; top:30%; animation-delay:2.1s;"></span>
+    <span class="star dim" style="right:45%; top:6%;  animation-delay:.3s;"></span>
+    <span class="star dim" style="right:18%; top:42%; animation-delay:1.1s;"></span>
+    <span class="star"     style="right:88%; top:10%; animation-delay:1.8s; opacity:.7;"></span>
     <!-- هلال -->
-    <svg class="absolute left-[10%] top-[12%] h-16 w-16 text-sand/80 animate-fade-in [animation-delay:1s]" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+    <svg class="crescent fade-in" style="animation-delay:1s" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
       <path d="M44 8a26 26 0 1 0 12 44A30 30 0 0 1 44 8z"/>
     </svg>
   </div>
 
-  <p class="mb-4 tracking-[.45em] text-xs font-extralight text-mist animate-fade-up [animation-delay:.2s]">رحلة تأمّلية في حي الفهيدي التاريخي — دبي</p>
-  <h1 class="pt-8 font-amiri text-6xl md:text-8xl font-bold text-pearl animate-fade-up [animation-delay:.5s]">خَوْرُ النُّجوم</h1>
-  <div class="my-7 flex items-center gap-4 text-ember animate-fade-up [animation-delay:.8s]" aria-hidden="true">
-    <span class="h-px w-16 bg-gradient-to-l from-ember/60 to-transparent"></span>✦<span class="h-px w-16 bg-gradient-to-r from-ember/60 to-transparent"></span>
+  <a href="/ar" class="platform-link fade-in" style="animation-delay:2s">↩ العودة إلى المنصة</a>
+
+  <p class="kicker fade-up">منصة الإمارات حيّة تقدّم</p>
+  <p class="subtitle fade-up" style="animation-delay:.2s">رحلة تأمّلية في حي الفهيدي التاريخي — دبي</p>
+  <h1 class="title fade-up" style="animation-delay:.5s">خَوْرُ النُّجوم</h1>
+  <div class="divider fade-up" style="animation-delay:.8s" aria-hidden="true">
+    <span class="line start"></span>✦<span class="line end"></span>
   </div>
-  <p class="max-w-xl font-amiri text-xl md:text-2xl leading-loose text-sand animate-fade-up [animation-delay:1.1s]">
+  <p class="poem fade-up" style="animation-delay:1.1s">
     قبل الأبراج، كان الفريج… وكان الهواءُ يعرف أسماءنا.<br>
     سِر في سِكَك الفهيدي على مهلك؛ فقد ترك الأهلُ هنا<br>
     أربعَ رسائل، لمن يعود.
   </p>
-  <button id="startBtn" class="mt-10 border border-ember/70 px-12 py-3.5 font-readex text-lg tracking-wide text-ember transition-all duration-500 hover:bg-ember hover:text-night hover:tracking-[.2em] animate-fade-up [animation-delay:1.5s]">
-    ابدأ الرحلة
-  </button>
-  <p id="introControls" class="mt-8 text-xs font-extralight leading-relaxed text-mist/80 animate-fade-up [animation-delay:1.8s]">
-    <span class="hidden md:inline">امشِ بمفاتيح <bdi class="font-normal text-pearl">W A S D</bdi> أو الأسهم &nbsp;·&nbsp; اسحب بالفأرة للنظر &nbsp;·&nbsp; <bdi class="font-normal text-pearl">E</bdi> لقراءة الرسائل</span>
-    <span class="md:hidden">عصا التحكم يسارًا للمشي · اسحب يمين الشاشة للنظر</span>
-    <br><span class="text-ember/80">يُفضَّل استخدام السماعات ✦ التجربة أجمل بملء الشاشة</span>
+  <button id="startBtn" class="btn btn-ember fade-up" style="animation-delay:1.5s">ابدأ الرحلة</button>
+  <p id="introControls" class="controls-hint fade-up" style="animation-delay:1.8s">
+    <span class="desktop-only">امشِ بمفاتيح <bdi>W A S D</bdi> أو الأسهم &nbsp;·&nbsp; اسحب بالفأرة للنظر &nbsp;·&nbsp; <bdi>E</bdi> لقراءة الرسائل</span>
+    <span class="mobile-only">عصا التحكم للمشي · اسحب باقي الشاشة للنظر</span>
+    <br><span class="ember-line">يُفضَّل استخدام السماعات ✦ التجربة أجمل بملء الشاشة</span>
   </p>
 </div>
 
 <!-- ══ رسالة عدم دعم WebGL ══ -->
-<div id="noWebgl" class="fixed inset-0 z-50 hidden flex-col items-center justify-center bg-night px-8 text-center">
-  <p class="font-amiri text-3xl text-sand">عذرًا، متصفحك لا يدعم WebGL</p>
-  <p class="mt-4 max-w-md text-sm text-mist">هذه التجربة تحتاج متصفحًا حديثًا (Chrome أو Firefox أو Safari) مع تفعيل تسريع الرسوميات.</p>
+<div id="noWebgl" class="overlay hidden">
+  <h2>عذرًا، متصفحك لا يدعم WebGL</h2>
+  <p>هذه التجربة تحتاج متصفحًا حديثًا (Chrome أو Firefox أو Safari) مع تفعيل تسريع الرسوميات.</p>
 </div>
 
 <!-- ══ واجهة اللعب (HUD) ══ -->
-<div id="hud" class="pointer-events-none fixed inset-0 z-20 hidden">
+<div id="hud" class="hidden">
   <!-- عدّاد الرسائل -->
-  <div class="absolute right-5 top-5 flex items-center gap-3 text-sand">
-    <span class="text-ember" aria-hidden="true">✉</span>
-    <span class="text-sm font-extralight tracking-widest">الرسائل</span>
-    <span id="counter" class="font-amiri text-xl text-pearl">٠ / ٤</span>
+  <div class="hud-counter">
+    <span class="icon" aria-hidden="true">✉</span>
+    <span class="label">الرسائل</span>
+    <span id="counter" class="nums">٠ / ٤</span>
   </div>
   <!-- أزرار -->
-  <div class="pointer-events-auto absolute left-5 top-5 flex gap-2">
-    <button id="muteBtn" aria-label="كتم الصوت" class="border border-mist/30 px-3 py-2 text-xs text-mist transition-colors hover:border-ember hover:text-ember">الصوت: يعمل</button>
-    <button id="fsBtn" aria-label="ملء الشاشة" class="hidden md:block border border-mist/30 px-3 py-2 text-xs text-mist transition-colors hover:border-ember hover:text-ember">ملء الشاشة</button>
+  <div class="hud-buttons">
+    <button id="muteBtn" aria-label="كتم الصوت">الصوت: يعمل</button>
+    <button id="fsBtn" aria-label="ملء الشاشة" class="desktop-only">ملء الشاشة</button>
   </div>
   <!-- تلميح التفاعل -->
-  <div id="hint" class="absolute inset-x-0 bottom-24 hidden justify-center">
-    <button id="readBtn" class="pointer-events-auto border border-ember bg-night/70 px-8 py-3 font-amiri text-xl text-ember animate-breathe">
-      <span class="hidden md:inline">اضغط <bdi class="font-readex text-pearl">E</bdi> لقراءة الرسالة</span>
-      <span class="md:hidden">اقرأ الرسالة</span>
+  <div id="hint" class="hidden">
+    <button id="readBtn">
+      <span class="desktop-only">اضغط <bdi>E</bdi> لقراءة الرسالة</span>
+      <span class="mobile-only">اقرأ الرسالة</span>
     </button>
   </div>
   <!-- اسم المكان عند الاقتراب -->
-  <div id="placeName" class="absolute inset-x-0 bottom-14 text-center font-amiri text-lg text-sand/90 opacity-0 transition-opacity duration-700"></div>
+  <div id="placeName"></div>
   <!-- عصا التحكم للموبايل -->
-  <div id="joyBase" class="absolute bottom-8 right-8 hidden h-28 w-28 rounded-full border border-mist/25 bg-deep/40">
-    <div id="joyStick" class="absolute left-1/2 top-1/2 h-12 w-12 -translate-x-1/2 -translate-y-1/2 rounded-full border border-ember/50 bg-ember/20"></div>
+  <div id="joyBase" class="hidden">
+    <div id="joyStick"></div>
   </div>
 </div>
 
 <!-- ══ نافذة الرسالة ══ -->
-<div id="messageOverlay" class="fixed inset-0 z-30 hidden items-center justify-center bg-night/85 px-5">
-  <article class="relative max-h-[85vh] w-full max-w-2xl overflow-y-auto border-y-2 border-ember/60 bg-gradient-to-b from-deep to-night px-7 py-10 md:px-14 text-center shadow-none">
-    <p class="mb-2 text-xs tracking-[.4em] text-mist" id="msgPlace"></p>
-    <h2 id="msgTitle" class="font-amiri text-3xl md:text-4xl font-bold text-ember"></h2>
-    <div class="my-6 text-ember/70" aria-hidden="true">✦ ✦ ✦</div>
-    <p id="msgBody" class="font-amiri text-xl md:text-2xl leading-[2.4] text-pearl"></p>
-    <p id="msgSign" class="mt-8 font-amiri text-lg italic text-sand"></p>
-    <div class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-      <button id="closeMsg" class="border border-mist/40 px-10 py-2.5 text-sm text-mist transition-colors hover:border-ember hover:text-ember">أكمل المسير</button>
-      <a id="msgLink" href="#" class="border border-ember/50 px-6 py-2.5 text-sm text-ember transition-colors hover:bg-ember hover:text-night">حكاية المكان في الخريطة ↖</a>
+<div id="messageOverlay" class="hidden">
+  <article>
+    <p id="msgPlace"></p>
+    <h2 id="msgTitle"></h2>
+    <div class="msg-divider" aria-hidden="true">✦ ✦ ✦</div>
+    <p id="msgBody"></p>
+    <p id="msgSign"></p>
+    <div class="msg-actions">
+      <button id="closeMsg" class="btn btn-mist">أكمل المسير</button>
+      <a id="msgLink" href="#" class="btn btn-ember">حكاية المكان في الخريطة ↖</a>
     </div>
   </article>
 </div>
 
 <!-- ══ الخاتمة ══ -->
-<div id="ending" class="fixed inset-0 z-30 hidden flex-col items-center justify-center overflow-y-auto bg-night/90 px-6 py-12 text-center">
-  <p class="mb-6 tracking-[.45em] text-xs text-mist animate-fade-up">اكتملت الرسائل الأربع</p>
-  <h2 class="font-amiri text-4xl md:text-6xl font-bold leading-relaxed text-ember animate-fade-up [animation-delay:.4s]">وما زال الخورُ يحفظ الأسماء</h2>
-  <p class="mt-8 max-w-xl font-amiri text-xl md:text-2xl leading-loose text-pearl animate-fade-up [animation-delay:.8s]">
-    وما زالت النجومُ تدلُّ البيوتَ على أهلها.<br>
+<div id="ending" class="overlay hidden">
+  <p class="small-line fade-up">اكتملت الرسائل الأربع</p>
+  <h2 class="fade-up" style="animation-delay:.4s">وما زال الخورُ يحفظ الأسماء</h2>
+  <p class="poem fade-up" style="animation-delay:.8s">
+    وما زالت النجومُ تدلُّ بيوتَ الفهيدي على أهلها.<br>
     خذ ما قرأت، وامشِ على مهل —<br>
     فالأجدادُ لا يرحلون؛ إنما يصيرون ضوءًا في الماء.
   </p>
-  <div class="my-8 text-ember/70 animate-fade-up [animation-delay:1.1s]" aria-hidden="true">✦</div>
-  <div class="space-y-1.5 text-xs font-extralight leading-relaxed text-mist animate-fade-up [animation-delay:1.3s]">
-    <p class="tracking-[.3em] text-sand">خَوْرُ النُّجوم</p>
-    <p>جزء من منصة «الإمارات حيّة — UAE ALIVE» لإحياء حي الفهيدي التاريخي</p>
-    <p>عالمٌ وموسيقى ونصوصٌ وُلدت كلُّها بالكود — مستوحاة من تجربة Quantum Summer</p>
+  <div class="mark fade-up" style="animation-delay:1.1s" aria-hidden="true">✦</div>
+  <div class="credits fade-up" style="animation-delay:1.3s">
+    <p class="brand">خَوْرُ النُّجوم</p>
+    <p>إحدى تجارب منصة «الإمارات حيّة — UAE ALIVE» لإحياء حي الفهيدي التاريخي</p>
+    <p>عالمٌ وموسيقى ونصوصٌ وُلدت كلُّها بالكود</p>
   </div>
-  <div class="mt-10 flex flex-col items-center gap-3 sm:flex-row animate-fade-up [animation-delay:1.6s]">
-    <button id="continueBtn" class="border border-ember/70 px-10 py-3 text-ember transition-all duration-500 hover:bg-ember hover:text-night">واصل التجوّل تحت النجوم</button>
-    <a href="/ar" class="border border-mist/40 px-10 py-3 text-mist transition-colors hover:border-ember hover:text-ember">استكشف المنصة كاملة</a>
+  <div class="ending-actions fade-up" style="animation-delay:1.6s">
+    <button id="continueBtn" class="btn btn-ember">واصل التجوّل تحت النجوم</button>
+    <a href="/ar" class="btn btn-mist">استكشف المنصة كاملة</a>
   </div>
 </div>
 
-<!-- ══ قائمة الإيقاف ══ -->
-<div id="pause" class="fixed inset-0 z-30 hidden flex-col items-center justify-center bg-night/85 px-6 text-center">
-  <h2 class="font-amiri text-4xl text-sand">استراحة</h2>
-  <p class="mt-6 max-w-md text-sm leading-relaxed text-mist">
-    امشِ بمفاتيح <bdi class="text-pearl">W A S D</bdi> أو الأسهم · اسحب بالفأرة للنظر<br>
-    <bdi class="text-pearl">E</bdi> لقراءة الرسائل · <bdi class="text-pearl">Esc</bdi> للاستراحة
+<!-- ══ قائمة الاستراحة ══ -->
+<div id="pause" class="overlay hidden">
+  <h2>استراحة</h2>
+  <p>
+    امشِ بمفاتيح <bdi>W A S D</bdi> أو الأسهم · اسحب بالفأرة للنظر<br>
+    <bdi>E</bdi> لقراءة الرسائل · <bdi>Esc</bdi> للاستراحة
   </p>
-  <button id="resumeBtn" class="mt-8 border border-ember/70 px-12 py-3 text-ember transition-colors hover:bg-ember hover:text-night">مواصلة الرحلة</button>
+  <button id="resumeBtn" class="btn btn-ember">مواصلة الرحلة</button>
 </div>
 
 <script type="module" src="/khor/js/main.js"></script>
