@@ -95,6 +95,23 @@
   footer { padding: 3.5rem 0 4.5rem; text-align: center; font-size: .8rem; color: var(--mist); }
   footer .mark { color: var(--ember-dim); margin-bottom: 1rem; }
 
+  /* ══ الظهور مع التمرير ══ */
+  .reveal { opacity: 0; transform: translateY(26px); transition: opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+  /* ══ معرض اللقطات ══ */
+  .gallery { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+  .gallery figure { border: 1px solid var(--line); background: var(--deep); overflow: hidden; transition: border-color .4s; }
+  .gallery figure:hover { border-color: var(--ember-dim); }
+  .gallery figure.wide { grid-column: 1 / -1; }
+  .gallery img { display: block; width: 100%; height: auto; filter: saturate(.96); transition: filter .5s, transform .8s cubic-bezier(.16,1,.3,1); }
+  .gallery figure:hover img { filter: saturate(1.08); transform: scale(1.015); }
+  .gallery figcaption { padding: .8rem 1.1rem; font-size: .8rem; color: var(--mist); border-top: 1px solid var(--line); }
+  .gallery figcaption b { color: var(--sand); font-weight: 400; font-family: var(--amiri); font-size: .95rem; }
+  .khor-shot { margin-top: 1.6rem; border: 1px solid rgba(232,161,92,.35); overflow: hidden; }
+  .khor-shot img { display: block; width: 100%; height: auto; }
+
   @media print {
     body { background: #fff; color: #1a1a1a; }
     :root { --pearl: #1a1a1a; --sand: #6b5232; --mist: #555; --line: #ddd; --deep: #f6f2ea; --night: #fff; --dusk: #fff; }
@@ -160,13 +177,57 @@
         <div class="letter"><b>ضفة الخور</b><span>رسالة سالم الغوّاص — عن اللؤلؤ والنَّفَس الطويل</span></div>
         <div class="letter"><b>مجلس بيت الشاي</b><span>رسالة أسطى حسن البنّاء — عن حكمة السكك الضيقة</span></div>
       </div>
+      <div class="khor-shot">
+        <img src="/docs/img/8-fahidi-world.jpg" alt="داخل خور النجوم — سوق السكة التراثية ليلًا بفوانيسه ومظلاته" loading="lazy" width="1200" height="675">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">٠٣</span><h2>لقطات حيّة من المنصة</h2></div>
+    <p class="muted" style="margin-bottom:2rem">كل اللقطات التالية التُقطت آليًا من البيئة الحيّة أثناء الاختبار الرسمي للمحطات الثماني:</p>
+    <div class="gallery">
+      <figure class="wide">
+        <img src="/docs/img/1-landing.jpg" alt="الصفحة السينمائية — الفهيدي ينبض من جديد" loading="lazy" width="1200" height="675">
+        <figcaption><b>الهبوط السينمائي</b> — «الفهيدي ينبض من جديد» فوق أفق البراجيل المتحرّك</figcaption>
+      </figure>
+      <figure>
+        <img src="/docs/img/2-map.jpg" alt="الخريطة التفاعلية مع دُرج معلومات المعلم" loading="lazy" width="1200" height="675">
+        <figcaption><b>الخريطة</b> — دُرج المعلم وزر «اقرأ القصة»</figcaption>
+      </figure>
+      <figure>
+        <img src="/docs/img/3-story.jpg" alt="صفحة قصة بنبرة الأطفال" loading="lazy" width="1200" height="675">
+        <figcaption><b>القصص</b> — نفس المعلم بثلاث نبرات؛ هنا نسخة الأطفال</figcaption>
+      </figure>
+      <figure>
+        <img src="/docs/img/4-twin.jpg" alt="التوأم الرقمي ثلاثي الأبعاد" loading="lazy" width="1200" height="675">
+        <figcaption><b>التوأم الرقمي</b> — الحي مبني من بيانات OSM الحقيقية</figcaption>
+      </figure>
+      <figure>
+        <img src="/docs/img/5-chat.jpg" alt="حوار مع شخصية سالم الغواص" loading="lazy" width="1200" height="675">
+        <figcaption><b>الشخصيات</b> — سالم الغوّاص يجيب بالبث الحي</figcaption>
+      </figure>
+      <figure>
+        <img src="/docs/img/6-ar.jpg" alt="محاكي الواقع المعزز" loading="lazy" width="1200" height="675">
+        <figcaption><b>الواقع المعزّز</b> — المحاكي المكتبي مع مبدّل قبل/بعد</figcaption>
+      </figure>
+      <figure>
+        <img src="/docs/img/7-hunt.jpg" alt="رحلة الكنوز بعد إدخال كود سر الدلة" loading="lazy" width="1200" height="675">
+        <figcaption><b>رحلة الكنوز</b> — أول وسام بعد كود «سر الدلة»</figcaption>
+      </figure>
+      <figure class="wide">
+        <img src="/docs/img/8-fahidi-letter.jpg" alt="رسالة عبدالرحمن التاجر داخل خور النجوم" loading="lazy" width="1200" height="675">
+        <figcaption><b>خور النجوم</b> — رسالة عبدالرحمن التاجر تُقرأ وسط سوق السكة</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
 <section id="architecture">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-num">٠٣</span><h2>المعمارية</h2></div>
+    <div class="sec-head"><span class="sec-num">٠٤</span><h2>المعمارية</h2></div>
     <div class="arch">
       <div class="arch-row"><div class="arch-box gold"><b>المتصفح</b>هاتف أو حاسوب — دون أي تطبيق</div></div>
       <p class="arch-arrow">↓ HTTPS — شهادة Let's Encrypt</p>
@@ -192,7 +253,7 @@
 
 <section id="stack">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-num">٠٤</span><h2>التقنيات</h2></div>
+    <div class="sec-head"><span class="sec-num">٠٥</span><h2>التقنيات</h2></div>
     <table>
       <tr><th style="width:11rem">الطبقة</th><th>الاختيار</th></tr>
       <tr><td>الواجهة</td><td>Next.js 15 (App Router) · TypeScript strict · Tailwind v4 · React Three Fiber · MapLibre GL · next-intl (عربي أولًا)</td></tr>
@@ -209,7 +270,7 @@
 
 <section id="authenticity">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-num">٠٥</span><h2>المصداقية التراثية</h2></div>
+    <div class="sec-head"><span class="sec-num">٠٦</span><h2>المصداقية التراثية</h2></div>
     <ul class="clean">
       <li>هندسة الحي مأخوذة من ٢٥٤ معلمًا حقيقيًا في OpenStreetMap — الخريطة والتوأم الرقمي مبنيان من نفس الملف الجغرافي.</li>
       <li>القصص الـ٥١ مكتوبة عن معالم قائمة فعلًا (متحف القهوة، مسجد البستكية، بيت الخط العربي…) وتذكر مصادرها.</li>
@@ -222,7 +283,7 @@
 
 <section id="demo">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-num">٠٦</span><h2>سكريبت العرض — ٨ محطات في ~٦ دقائق</h2></div>
+    <div class="sec-head"><span class="sec-num">٠٧</span><h2>سكريبت العرض — ٨ محطات في ~٦ دقائق</h2></div>
     <p class="muted">هذا هو مسار العرض الرسمي أمام اللجنة، وكل محطة منه مُختبَرة آليًا على البيئة الحيّة (٨/٨ ناجحة):</p>
     <ol class="demo">
       <li><span><a href="https://uaelive.zad.tools/ar">/ar</a> — مرّر عبر الصفحة السينمائية ولاحظ أفق البراجيل والطباعة العربية.</span></li>
@@ -240,12 +301,13 @@
 
 <section id="links">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-num">٠٧</span><h2>الروابط</h2></div>
+    <div class="sec-head"><span class="sec-num">٠٨</span><h2>الروابط</h2></div>
     <table>
       <tr><td>uaelive.zad.tools/ar</td><td>المنصة كاملة (عربي)</td></tr>
       <tr><td>uaelive.zad.tools/en</td><td>النسخة الإنجليزية</td></tr>
       <tr><td>uaelive.zad.tools/fahidi</td><td>«خور النجوم» — رحلة الفهيدي الليلية</td></tr>
       <tr><td>uaelive.zad.tools/docs</td><td>هذه الوثيقة</td></tr>
+      <tr><td><a href="https://github.com/ahmedvnabil/uaealive">github.com/ahmedvnabil/uaealive</a></td><td>الكود المصدري الكامل (مستودع خاص — يُتاح للجنة عند الطلب)</td></tr>
     </table>
   </div>
 </section>
@@ -256,5 +318,21 @@
   <p>وثيقة ذاتية الاستضافة — تعمل دون اتصال، مثل التجربة نفسها</p>
 </footer>
 
+<script>
+  // ظهور العناصر مع التمرير — يحترم prefers-reduced-motion عبر CSS
+  const targets = document.querySelectorAll(
+    '.sec-head, .lede, .badges, .cta, .exp, .khor-card, .khor-shot, .gallery figure, .arch-row, .arch-arrow, table, ul.clean li, ol.demo li, .note'
+  );
+  targets.forEach((el) => el.classList.add('reveal'));
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }
+  }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
+  targets.forEach((el, i) => {
+    el.style.transitionDelay = `${(i % 3) * 110}ms`;
+    io.observe(el);
+  });
+</script>
 </body>
 </html>
