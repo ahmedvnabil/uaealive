@@ -18,6 +18,7 @@
 | `/ar-experience` | WebAR: camera magic-window + MindAR marker tracking, desktop simulator fallback that always works |
 | `/hunt` | Treasure hunt — 6 stops, secret codes, badges, server-side progress per anonymous device |
 | `/community` | Moderated community submissions (stories, photos, memories, documents) |
+| `/khor` | «خور النجوم» Creek of Stars — meditative 3D night-walk through Al Fahidi (vanilla Three.js, Arabic, fully procedural), four ancestral letters deep-linked to the map POIs |
 | `/admin` | CMS: bilingual CRUD for POIs/stories/events, moderation queue, analytics dashboard |
 
 ## Stack

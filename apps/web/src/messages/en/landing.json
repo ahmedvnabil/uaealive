@@ -34,6 +34,10 @@
       "hunt": {
         "title": "Hidden treasures",
         "description": "A hunt through the alleys: follow the hints, enter the codes, and collect explorer badges."
+      },
+      "khor": {
+        "title": "Creek of Stars",
+        "description": "A meditative 3D walk through Al Fahidi's alleys and wind towers — wander under the stars and gather four ancestral letters."
       }
     }
   },
