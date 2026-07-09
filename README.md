@@ -18,7 +18,7 @@
 | `/ar-experience` | WebAR: camera magic-window + MindAR marker tracking, desktop simulator fallback that always works |
 | `/hunt` | Treasure hunt — 6 stops, secret codes, badges, server-side progress per anonymous device |
 | `/community` | Moderated community submissions (stories, photos, memories, documents) |
-| `/khor` | «خور النجوم» Creek of Stars — meditative 3D night-walk through Al Fahidi (vanilla Three.js, Arabic, fully procedural), four ancestral letters deep-linked to the map POIs |
+| `/fahidi` | «خور النجوم» Creek of Stars — meditative 3D night-walk through Al Fahidi (vanilla Three.js, Arabic, fully procedural), four ancestral letters deep-linked to the map POIs |
 | `/admin` | CMS: bilingual CRUD for POIs/stories/events, moderation queue, analytics dashboard |
 
 ## Stack
@@ -56,7 +56,7 @@ cd apps/web && npx playwright test   # E2E smoke (needs api :8000)
 5. **`/ar/characters`** — ask سالم الغواص: «كيف كان الغوص على اللؤلؤ؟» — answers stream live in character.
 6. **`/ar/ar-experience`** — desktop: open the simulator (works on any projector); mobile: point the camera.
 7. **`/ar/hunt`** — enter code `DALLAH` at محطة متحف القهوة; watch the progress bar and first badge.
-8. **`/khor`** — headphones on: start «خور النجوم», walk the main sikka to بيت البراجيل, read أم راشد's letter, then hit «حكاية المكان في الخريطة» — it deep-links back to the same POI on the map. Fully procedural Three.js, zero CDN, works offline.
+8. **`/fahidi`** — headphones on: start «خور النجوم», walk the main sikka to بيت البراجيل, read أم راشد's letter, then hit «حكاية المكان في الخريطة» — it deep-links back to the same POI on the map. Fully procedural Three.js, zero CDN, works offline.
 
 ## Documentation
 

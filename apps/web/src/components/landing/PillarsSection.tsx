@@ -20,8 +20,8 @@ const PILLARS = [
   { key: "copilot", href: "/copilot" },
   { key: "arx", href: "/ar-experience" },
   { key: "hunt", href: "/hunt" },
-  // خور النجوم: static experience outside the locale router (public/khor)
-  { key: "khor", href: "/khor" },
+  // خور النجوم: static experience outside the locale router (public/fahidi)
+  { key: "khor", href: "/fahidi" },
 ] as const;
 
 const STATIC_PILLARS: ReadonlySet<string> = new Set(["khor"]);

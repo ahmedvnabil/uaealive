@@ -5,6 +5,7 @@ export default createMiddleware(routing);
 
 export const config = {
   // Skip API routes, Next internals, files with an extension,
-  // and /khor (the static «خور النجوم» experience in public/khor).
-  matcher: "/((?!api|_next|_vercel|khor|.*\\..*).*)",
+  // /fahidi (the static «خور النجوم» experience in public/fahidi),
+  // and legacy /khor (redirected to /fahidi in next.config).
+  matcher: "/((?!api|_next|_vercel|fahidi|khor|.*\\..*).*)",
 };

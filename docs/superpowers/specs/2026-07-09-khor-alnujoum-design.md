@@ -3,7 +3,7 @@
 **التاريخ:** 2026-07-09 (حُدّث بعد الدمج مع UAE ALIVE)
 **النوع:** تجربة ويب تفاعلية ثلاثية الأبعاد (على غرار Quantum Summer)
 **اللغة:** عربية بالكامل (RTL)
-**الموقع النهائي:** `uaealive/apps/web/public/khor/` — تُخدم على المسار `/khor` داخل منصة «الإمارات حيّة»
+**الموقع النهائي:** `uaealive/apps/web/public/fahidi/` — تُخدم على المسار `/fahidi` داخل منصة «الإمارات حيّة»
 
 ## الفكرة
 
@@ -29,7 +29,7 @@
 - **الصوت procedural بـ Web Audio API**: رياح خفيفة + ماء + نغمات بادية هادئة. زر كتم.
 - **بلا أي CDN — self-hosted بالكامل** تماشيًا مع مبدأ المنصة "no runtime CDN": Three.js محلي في `vendor/`، خطا Amiri وReadex Pro في `fonts/`، وأنماط CSS يدوية في `css/khor.css`. التجربة تعمل offline — مناسب لعرض المسابقة.
 - **الملفات**: `index.html` + ملفات JS صغيرة مركزة (`js/main.js`, `js/world.js`, `js/player.js`, `js/messages.js`, `js/audio.js`, `js/ui.js`) — كل ملف أقل من 400 سطر تقريبًا.
-- **النشر**: يعيش في `apps/web/public/khor/` ويُخدم على `/khor` عبر rewrite في Next (مستثنى من locale middleware)، ويمر عبر nginx في الإنتاج بلا إعداد إضافي.
+- **النشر**: يعيش في `apps/web/public/fahidi/` ويُخدم على `/fahidi` عبر rewrite في Next (مستثنى من locale middleware)، ويمر عبر nginx في الإنتاج بلا إعداد إضافي.
 
 ## التحكم
 
