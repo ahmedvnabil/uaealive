@@ -74,7 +74,7 @@ else
   err "Health check failed (/ar → ${STATUS}) — check: ssh $REMOTE '$COMPOSE_REMOTE logs --tail 50'"
   exit 1
 fi
-KHOR=$(ssh "$REMOTE" "curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/khor" || echo "000")
-[[ "$KHOR" == "200" ]] && ok "Health check: /khor → 200" || warn "/khor → ${KHOR}"
+FAHIDI=$(ssh "$REMOTE" "curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8080/fahidi" || echo "000")
+[[ "$FAHIDI" == "200" ]] && ok "Health check: /fahidi → 200" || warn "/fahidi → ${FAHIDI}"
 
 ok "Deploy complete → https://uaelive.zad.tools"
