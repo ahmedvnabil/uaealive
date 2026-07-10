@@ -1,0 +1,107 @@
+<svg viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="UAE ALIVE — الإمارات حيّة">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#070b16"/>
+      <stop offset="0.65" stop-color="#0d1321"/>
+      <stop offset="1" stop-color="#151d33"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b8912e"/>
+      <stop offset="0.5" stop-color="#f3d98b"/>
+      <stop offset="1" stop-color="#b8912e"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.6 0; 0.6 0; -0.6 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e8c469" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e8c469" stop-opacity="0"/>
+    </radialGradient>
+    <g id="barjeel">
+      <!-- wind-tower: shaft + capped head with X braces -->
+      <rect x="-14" y="18" width="28" height="60" fill="#0b101d" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1"/>
+      <rect x="-20" y="-18" width="40" height="38" fill="#0b101d" stroke="#d4af37" stroke-width="1.4"/>
+      <path d="M-20 -18 L0 1 L20 -18 M0 1 L0 20 M-20 20 L20 20" fill="none" stroke="#d4af37" stroke-width="1.4"/>
+      <line x1="-26" y1="-18" x2="26" y2="-18" stroke="#d4af37" stroke-width="2"/>
+    </g>
+    <style>
+      .star { fill: #e9edf5; }
+      .tw1 { animation: tw 3s ease-in-out infinite; }
+      .tw2 { animation: tw 4.2s ease-in-out 1.1s infinite; }
+      .tw3 { animation: tw 5s ease-in-out 2.2s infinite; }
+      @keyframes tw { 0%,100% { opacity: .15; } 50% { opacity: .95; } }
+      .lamp { animation: lampPulse 2.6s ease-in-out infinite; }
+      @keyframes lampPulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g>
+    <circle class="star tw1" cx="80"  cy="52"  r="1.6"/>
+    <circle class="star tw2" cx="160" cy="120" r="1.2"/>
+    <circle class="star tw3" cx="238" cy="40"  r="1.4"/>
+    <circle class="star tw2" cx="332" cy="90"  r="1.1"/>
+    <circle class="star tw1" cx="420" cy="38"  r="1.5"/>
+    <circle class="star tw3" cx="512" cy="110" r="1.2"/>
+    <circle class="star tw2" cx="608" cy="46"  r="1.6"/>
+    <circle class="star tw1" cx="704" cy="96"  r="1.1"/>
+    <circle class="star tw3" cx="798" cy="34"  r="1.4"/>
+    <circle class="star tw1" cx="888" cy="118" r="1.2"/>
+    <circle class="star tw2" cx="968" cy="58"  r="1.5"/>
+    <circle class="star tw3" cx="1064" cy="98" r="1.2"/>
+    <circle class="star tw1" cx="1136" cy="44" r="1.6"/>
+    <circle class="star tw2" cx="60"  cy="180" r="1.0"/>
+    <circle class="star tw3" cx="1150" cy="170" r="1.0"/>
+  </g>
+
+  <!-- shooting star -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.06;0.14;1" dur="9s" repeatCount="indefinite"/>
+    <line x1="0" y1="0" x2="46" y2="-14" stroke="#f3d98b" stroke-width="1.6" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="translate" values="980 40; 700 130; 700 130" keyTimes="0;0.14;1" dur="9s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- moon -->
+  <g transform="translate(1058 84)">
+    <circle r="64" fill="url(#moonGlow)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M 14 -30 A 32 32 0 1 0 14 30 A 25 25 0 1 1 14 -30 Z" fill="#e8c469"/>
+  </g>
+
+  <!-- title -->
+  <text x="600" y="132" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="bold" letter-spacing="6" fill="url(#goldText)">UAE ALIVE</text>
+  <text x="600" y="180" text-anchor="middle" font-family="'Geeza Pro','Segoe UI',Tahoma,sans-serif" font-size="30" fill="#e9edf5">الإمارات حيّة — الفهيدي ينبض من جديد</text>
+  <text x="600" y="212" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" letter-spacing="2" fill="#8f9bb3">AI + WebAR HERITAGE PLATFORM · AL FAHIDI HISTORICAL DISTRICT · DUBAI</text>
+
+  <!-- string lights over the skyline -->
+  <path d="M 250 258 Q 400 286 600 262 Q 800 286 950 258" fill="none" stroke="#d4af37" stroke-opacity="0.45" stroke-width="1"/>
+  <g>
+    <circle class="lamp" cx="330" cy="268" r="3" fill="#f3d98b"/>
+    <circle class="lamp" cx="440" cy="275" r="3" fill="#f3d98b" style="animation-delay:.6s"/>
+    <circle class="lamp" cx="600" cy="264" r="3" fill="#f3d98b" style="animation-delay:1.2s"/>
+    <circle class="lamp" cx="760" cy="275" r="3" fill="#f3d98b" style="animation-delay:1.8s"/>
+    <circle class="lamp" cx="870" cy="268" r="3" fill="#f3d98b" style="animation-delay:2.4s"/>
+  </g>
+
+  <!-- skyline -->
+  <g>
+    <!-- flat rooftops band -->
+    <path d="M0 322 L70 322 L70 300 L140 300 L140 316 L210 316 L210 296 L300 296 L300 318 L390 318 L390 302 L470 302 L470 320 L560 320 L560 300 L640 300 L640 318 L730 318 L730 298 L820 298 L820 316 L900 316 L900 302 L980 302 L980 320 L1060 320 L1060 300 L1130 300 L1130 318 L1200 318 L1200 360 L0 360 Z"
+          fill="#0a0f1c" stroke="#d4af37" stroke-opacity="0.5" stroke-width="1"/>
+    <!-- wind towers -->
+    <use href="#barjeel" transform="translate(170 262) scale(0.9)"/>
+    <use href="#barjeel" transform="translate(420 252)"/>
+    <use href="#barjeel" transform="translate(640 258) scale(0.85)"/>
+    <use href="#barjeel" transform="translate(910 250) scale(1.05)"/>
+    <!-- lit windows -->
+    <g fill="#f3d98b">
+      <rect class="lamp" x="96"  y="306" width="7" height="9" style="animation-delay:.3s"/>
+      <rect class="lamp" x="330" y="304" width="7" height="9" style="animation-delay:1.5s"/>
+      <rect class="lamp" x="518" y="308" width="7" height="9" style="animation-delay:.9s"/>
+      <rect class="lamp" x="778" y="306" width="7" height="9" style="animation-delay:2.1s"/>
+      <rect class="lamp" x="1024" y="308" width="7" height="9" style="animation-delay:2.7s"/>
+    </g>
+  </g>
+</svg>
