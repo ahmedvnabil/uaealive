@@ -14,7 +14,7 @@ httpx>=0.27
 # httpx2/httpcore2: pulled in by openai; GHSA-7mj9-2mp8-4m2p and related.
 # pygments: pulled in by pytest (>=2.7.2); GHSA-mrwq-x4v8-fh7p, GHSA-5239-wwwm-4pmq.
 certifi>=2026.10.23
-httpx2>=2.12.0
+httpx2>=2.16.0
 httpcore2>=2.10.0
 pygments>=2.20.0
 pytest>=9.1.1
