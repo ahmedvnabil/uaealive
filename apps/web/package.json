@@ -14,7 +14,7 @@
     "framer-motion": "^12.42.2",
     "lucide-react": "^1.23.0",
     "maplibre-gl": "^5.24.0",
-    "next": "15.5.20",
+    "next": "15.5.28",
     "next-intl": "^4.13.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -29,9 +29,13 @@
     "@types/react-dom": "^19",
     "@types/three": "^0.185.0",
     "eslint": "^9",
-    "eslint-config-next": "15.5.20",
+    "eslint-config-next": "15.5.28",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vitest": "^4.1.9"
+    "vitest": "^4.1.12"
+  },
+  "overrides": {
+    "postcss": "8.5.23",
+    "vite": "8.1.6"
   }
 }
