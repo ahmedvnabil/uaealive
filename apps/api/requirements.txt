@@ -7,7 +7,7 @@ psycopg[binary]>=3.2
 alembic>=1.13
 pydantic-settings>=2.16.1
 slowapi>=0.1.10
-openai>=1.40
+openai>=3.37.0
 httpx>=0.27
 # Transitive floors. httpx (0.x) has no open advisories at >=0.27.
 # certifi: GHSA-6q48-6c7w-9gw2 — 2026.10.18 is still in the PYSEC range.
