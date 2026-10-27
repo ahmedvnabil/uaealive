@@ -1,12 +1,22 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import maplibregl from "maplibre-gl";
-import "maplibre-gl/dist/maplibre-gl.css";
 import { useLocale, useTranslations } from "next-intl";
+import * as maplibregl from "maplibre-gl";
+import type {
+  FilterSpecification,
+  StyleSpecification,
+} from "@maplibre/maplibre-gl-style-spec";
+import "maplibre-gl/dist/maplibre-gl.css";
 import { colors } from "@/lib/theme";
 import { isRtl, pickLocale } from "@/lib/utils";
 import type { DistrictGeo, PoiOut } from "@/lib/types";
+
+// v6 ships ESM only. Next.js (Turbopack) cannot resolve the worker from the
+// package's own import.meta.url, so point at the bundled worker before Map.
+maplibregl.setWorkerUrl(
+  new URL("maplibre-gl/dist/maplibre-gl-worker.mjs", import.meta.url).toString(),
+);
 
 /** Per-stop marker state for the treasure-hunt variant. */
 export interface HuntMarker {
@@ -54,9 +64,9 @@ function boundsFromPois(pois: PoiOut[]): [[number, number], [number, number]] {
 }
 
 /** Dark-heritage style built inline from design tokens — no external tiles. */
-function buildStyle(geo: DistrictGeo): maplibregl.StyleSpecification {
-  const kindIs = (kind: string): maplibregl.FilterSpecification =>
-    ["==", ["get", "kind"], kind] as maplibregl.FilterSpecification;
+function buildStyle(geo: DistrictGeo): StyleSpecification {
+  const kindIs = (kind: string): FilterSpecification =>
+    ["==", ["get", "kind"], kind] as FilterSpecification;
   return {
     version: 8,
     sources: {
@@ -129,7 +139,7 @@ function buildStyle(geo: DistrictGeo): maplibregl.StyleSpecification {
           "all",
           ["==", ["get", "kind"], "building"],
           ["==", ["get", "barjeel"], true],
-        ] as maplibregl.FilterSpecification,
+        ] as FilterSpecification,
         paint: {
           "line-color": colors.gold,
           "line-width": 1.4,
